@@ -62,7 +62,7 @@
                 title="OnePlus Forums"
                 description="Visit GZR OnePlus2 thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-04-29-opt-tipsy-tesla-validus-6-0-1-aospb-official.437904/</XDAUrl>
         </OnePlus2>
-        <yuga>
+        <C6603>
             <Filename>validus_yuga-6.0.1.beta.9.2-Unofficial-20160507</Filename>
             <RomUrl
                 id="rom"
@@ -71,7 +71,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View ValidusOs changelogs"></ChangelogUrl>
+                description="View ValidusOs changelogs">https://github.com/ValidusOs-M/OTA_config/blob/master/Changelogs/Sony/yuga/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -80,7 +80,7 @@
                 id="xda"
                 title="XDA"
                 description="Visit Validus yuga thread">http://forum.xda-developers.com/xperia-z/development/rom-gzroms-validus-t3359448</XDAUrl>
-        </yuga>
+        </C6603>
         <dogo>
             <Filename>validus_dogo-6.0.1.beta.9.2-Unofficial-20160509</Filename>
             <RomUrl
