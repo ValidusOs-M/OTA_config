@@ -101,15 +101,15 @@
                 description="Visit Validus dogo thread">http://forum.xda-developers.com/xperia-zr/development/rom-validus-rom-ground-zero-roms-t3365364</XDAUrl>
         </dogo>
         <lux>
-            <Filename>validus_lux-6.0.1.beta.9.2-Official-20160509</Filename>
+            <Filename>validus_lux-6.0.1.beta.9.2-Official-20160523.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download latest Validus build">https://www.androidfilehost.com/?fid=24533103863138354</RomUrl>
+                description="Download latest Validus build">https://www.androidfilehost.com/?fid=24533103863143014</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View ValidusOs changelogs"></ChangelogUrl>
+                description="View ValidusOs changelogs">https://github.com/ValidusOs-M/OTA_config/blob/master/Changelogs/Motorola/lux/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
