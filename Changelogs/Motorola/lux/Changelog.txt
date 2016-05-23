@@ -1,0 +1,231 @@
+====================
+     05-23-2016
+====================
+
+   * device/motorola/lux/
+de79f3b  lux: Switch to standalone libinit  [GtrCraft]
+e810077  init: disable bcl hotplug when switching cpu governor  [GtrCraft]
+
+====================
+     05-22-2016
+====================
+
+   * frameworks/base/
+ba51efe  Statusbar: Gracefully adapt 3Minit Battery hook for AOSP  [Alx31]
+   * frameworks/native/
+71168b2  surfaceflinger: Add support for Exynos BGRA mixer  [Alx31]
+9359dfc  sensorservice: fix an invalid format string  [Alx31]
+292cf4d  sensorservice: add power usage to dumpsys  [Alx31]
+717ecbe  Add 3GB dalvik heap and hwui memory  [Alx31]
+   * packages/apps/Snap/
+49caa04  Snap: Restore previous default denoise value  [Gerrit Code Review]
+
+====================
+     05-21-2016
+====================
+
+   * frameworks/base/
+2d6ae61  Add 3Minit battery mod  [Alx31]
+   * packages/apps/Snap/
+6f0c3b6  Automatic translation import  [Jessica Wagantall]
+
+====================
+     05-20-2016
+====================
+
+   * kernel/motorola/msm8916/
+26a6c18  netfilter: x_tables: check for size overflow  [Alberto97]
+1a999ee  osprey: defconfig: Make it stockish!  [Alberto97]
+
+====================
+     05-19-2016
+====================
+
+   * device/motorola/msm8916-common/
+7091835  Automatic translation import  [Shivam Desai]
+2a596ab  msm8916-common: Remove TARGET_INIT_VENDOR_LIB  [Shivam Desai]
+a8a7d46  Automatic translation import  [Shivam Desai]
+fcb7fda  Automatic translation import  [Shivam Desai]
+d476984  msm8916-common: rootdir: Remove sre permissions  [Shivam Desai]
+686306f  Automatic translation import  [Shivam Desai]
+
+====================
+     05-18-2016
+====================
+   * OTA_config/
+b99fc39  yuga: Changelog and changed product name  [airless   *]
+   * external/libnfc-nxp/
+7228d9f  Stop "LLC length mis-match" log spam  [Josue Rivera]
+   * frameworks/base/
+15ceba1  Update Settings.java  [John Brewer]
+6930f37  Remove statusbar icon colors  [theringmaster]
+   * hardware/qcom/camera/
+053305c  camera: pathmap another include path  [Josue Rivera]
+   * packages/apps/Settings/
+581cd0a  Remove Statusbar icon color  [theringmaster]
+   * vendor/motorola/
+70dc8d9  clark: add ipacm-diag  [Dan Pasanen]
+
+====================
+     05-17-2016
+====================
+
+   * frameworks/base/
+c838f80  Adjust battery dimensions for better look  [theringmaster]
+82e5505  SysUI: Use VectorDrawable's for rendering battery  [theringmaster]
+   * kernel/motorola/msm8916/
+e505fbf  ppp: take reference on channels netns  [Sultan Qasim Khan]
+   * packages/apps/Settings/
+d924e7a  Remove dotted circle battery  [theringmaster]
+
+====================
+     05-16-2016
+====================
+
+
+====================
+     05-15-2016
+====================
+
+   * frameworks/av/
+e33b3a7  Revert "Update libwebm include path in MatroskaExtractor"  [theringmaster]
+7d3575a  Update libwebm include path in MatroskaExtractor  [theringmaster]
+333ec2f  DO NOT MERGE:Camera: fix recording stream update logic  [theringmaster]
+c2a9d03  stagefright: ignore port setting change for input port  [theringmaster]
+eb1be19  If the offset is less than 0, it will cause some surprising exceptions.  [theringmaster]
+7ee927d  Remove throttle logcat for bluetooth  [theringmaster]
+1546afd  SoftHEVC: Exit gracefully in case of decoder errors  [theringmaster]
+cad3f83  camera: Fix high battery drain after using flashlight  [theringmaster]
+   * frameworks/base/
+0292c34  Revert "base: Fix proximity check on non power key"  [Martinusbe]
+0d01a22  Revert "only use proximity checks on wakeup keys"  [theringmaster]
+b8391e4  Fix misc-macro-parentheses warnings.  [theringmaster]
+b4b408c  Synchronize access of mSubscriptions  [theringmaster]
+e1b053a  Fix Activity.onConfigurationChanged may not be called.  [theringmaster]
+1cb923b  frameworks/base: Support for third party NFC features  [theringmaster]
+ddaed0f  Checking mCurrentValue twice instead of mCurrentValues  [theringmaster]
+b580448  Boolean logic error could result in a NPE  [theringmaster]
+37a127d  Make android_net_NetUtils include what it actually uses.  [theringmaster]
+edd72d6  Fix: Fix dlfree error when delet mZipInflater.  [theringmaster]
+5568f1b  [RenderScript] Interrupt mMessageThread when tearing down context.  [theringmaster]
+eb64b11  Clear more native pointers in finalizers  [theringmaster]
+d694ccd  Avoid ConcurrentModificationException in method dump  [theringmaster]
+ece32d5  Fix phone crashes after tapping Data Usage in Settings  [theringmaster]
+9b59009  Speed up notification panel pulldown animation when called externally  [theringmaster]
+a6b30f1  Adapt ConnectivityServiceTest to persist.pdp.during.noncellular  [theringmaster]
+ad81a4a  Protect TRANSFER_COMPLETE broadcast  [theringmaster]
+c0f4fa3  Fix the issue that App crash on startForeground.  [theringmaster]
+adfd0d9  Fix String object compare issue.  [theringmaster]
+f59fb07  only use proximity checks on wakeup keys  [theringmaster]
+078519c  base: Fix proximity check on non power key  [theringmaster]
+12039b1  GLSurfaceView: Be less picky about EGLConfig alpha sizes  [theringmaster]
+7881a5c  VPN reconnection fails after data access via VPN connection(frameworks)  [theringmaster]
+383455f  Tiles: Clean up spaghetti factory in BatterySaver tile  [theringmaster]
+cda1d61  ThemeTile: tighten up how we execute a theme change  [theringmaster]
+   * packages/apps/Settings/
+a9d25d9  Use correct icon for sim card  [Martinusbe]
+   * packages/apps/Snap/
+a549c38  Automatic translation import  [Gerrit Code Review]
+1705a87  Snap: Extend user menu, disable dev menu  [Daniel Hillenbrand]
+
+====================
+     05-14-2016
+====================
+   * OTA_config/
+c92b196  Update ValidusOTA.xml  [Anthony Pyrtle]
+   * external/skia/
+6d0d9b1  skia: qc-perf: link against libqc-opt for msm8916  [Josue Rivera]
+d1f3a4b  skia: Fix QC-PERF for msm8992  [Josue Rivera]
+   * manifest/
+17a7e91  track slim's FMRadio  [Martinusbe]
+   * packages/apps/FMRadio/
+7f17da9  tracks: Check track states before transitioning states  [Josue Rivera]
+d0e759f  improve audio startup performace  [Josue Rivera]
+
+====================
+     05-13-2016
+====================
+
+   * external/stagefright-plugins/
+fe44192  stagefright-plugins: Fix crash with invalid FLAC file  [Josue Rivera]
+
+====================
+     05-12-2016
+====================
+
+
+====================
+     05-11-2016
+====================
+   * OTA_config/
+1afc869  onyx: add onyx specific changelog  [Martinusbe]
+258d337  Housekeeping: use spaces, no tabs please  [Martinusbe]
+862f2fa  hammerhead: fix up the mess  [Martinusbe]
+7a054d2  fixes  [Anthony Pyrtle]
+b990029  Add hammerhead  [Anthony Pyrtle]
+97f86af  bacon: add link to thread on OP Forums  [Martinusbe]
+50650b6  oneplus2: add url to thread on OnePlus Forums  [Martinusbe]
+   * frameworks/base/
+f03419c  Introduce FontHelper class  [Martinusbe]
+9d47094  Dashboard font styles 2/2  [Martinusbe]
+4844b31  Dashboard Text Size 2/2  [Martinusbe]
+0615e82  Allow unlocked USB data access (1/2)  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8916/
+0611e66  hal: Garbage output in logcat  [Keith Mok]
+   * kernel/motorola/msm8916/
+621295a  ALSA: timer: Fix leak in events via snd_timer_user_tinterrupt  [Alberto97]
+8aad1f3  ALSA: timer: Fix leak in events via snd_timer_user_ccallback  [Alberto97]
+d4b1e82  ALSA: timer: Fix leak in SNDRV_TIMER_IOCTL_PARAMS  [Alberto97]
+40c19b6  firmware_class: Fix firmware_loading_timeout usage of jiffies  [Alberto97]
+   * packages/apps/DeskClock/
+28304c5  DeskClock: fix crash when trying to view world cities  [shubhmg]
+   * packages/apps/FMRadio/
+148b23b  fmradio: Add an optional static library target  [Josue Rivera]
+   * packages/apps/Settings/
+2c57ece  Dashboard font styles 1/2  [Martinusbe]
+111f3c6  Dashboard Text Size 1/2  [Martinusbe]
+b23c743  Allow unlocked USB data access (2/2)  [Martinusbe]
+   * packages/apps/Snap/
+90d46ce  Automatic translation import  [Abhisek Devkota]
+006ef8d  Automatic translation import  [Michael Bestas]
+   * system/vold/
+ad40674  vold: Fix tool paths for minivold  [Josue Rivera]
+257a82d  cryptfs: Only consider patterns for upgrade conversion  [Josue Rivera]
+d6b8a71  vold: Fix cryptfs changepw parsing  [Josue Rivera]
+   * vendor/motorola/
+ad28ef4  Merge pull request #243 from SkrilaxCZ/cm-13.0  [Dan Pasanen]
+
+====================
+     05-10-2016
+====================
+   * OTA_config/
+34f9cc5  Revert "url wants the blob"  [Martinusbe]
+c59d2dc  Add Lux OTA  [Nick]
+4bcfba0  onyx: add OnePlus Forums thread url  [Martinusbe]
+739b891  oneplus2: oneplus2 < OnePlus2  [Martinusbe]
+1881f11  bacon: change to new afh directory  [Martinusbe]
+866c269  onepluses: get their own changelog habitat  [Martinusbe]
+de36157  put chanelogs in their own device folder  [Martinusbe]
+83b85e0  onepluses: add changelog url  [Martinusbe]
+550b04b  add yuga and dogo  [airless   *]
+e8fddb2  add in a changelog  [Martinusbe]
+b327f94  add oneplus2  [Martinusbe]
+254ff13  add bacon  [Martinusbe]
+94f6ec3  url wants the blob  [Martinusbe]
+b1e77ad  onyx: fix typo  [Martinusbe]
+b0607b3  onyx: Banks gapps  [Martinusbe]
+97bd877  fixes  [Martinusbe]
+8cd3268  create initial files  [Martinusbe]
+   * build/
+a597486  enable adb on userdebug builds  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8916/
+ca2b951  audio: Add sound trigger header  [Gerrit Code Review]
+   * manifest/
+cf54f24  OTA_config  [Martinusbe]
+   * packages/apps/Snap/
+1fdf46f  Snap: force enable zsl for lge hdr  [codeworkx]
+   * vendor/motorola/
+17466f5  quark: Update to latest MM firmware  [Skrilax_CZ]
+754cc17  clark: make room for camera wrapper  [Dan Pasanen]
+68b4add  clark: add io-prefetching daemon  [Dan Pasanen]
+
