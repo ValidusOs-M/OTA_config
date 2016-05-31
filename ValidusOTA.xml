@@ -138,6 +138,17 @@
                 title="XDA"
                 description="Visit Validus Hammerhead thread">http://forum.xda-developers.com/google-nexus-5/development/rom-validusos-m-gzr-t3376563/post66791712#post667917120</XDAUrl>
         </hammerhead>
+        <shamu>
+            <Filename>validus_shamu-6.0.1.beta.9.2-Official-20160530.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download Latest Validus build">https://www.androidfilehost.com/?fid=24562946973631253</RomUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download Latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+        </shamu>
     </Stable>
 </SlimOTA>
 
