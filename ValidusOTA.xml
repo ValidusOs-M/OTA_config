@@ -43,8 +43,8 @@
                 title="XDA"
                 description="Visit ValidusOs bacon XDA thread">http://forum.xda-developers.com/oneplus-one/development/rom-gzroms-validus-t3006089</XDAUrl>
         </bacon>
-        <OnePlus2>
-            <Filename>validus-oneplus2-6.0.1.beta.9.2-Official-20160528.zip</Filename>
+        <oneplus2>
+            <Filename>validus_oneplus2-6.0.1.beta.9.2-Official-20160528.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -61,7 +61,7 @@
                 id="xda"
                 title="OnePlus Forums"
                 description="Visit GZR OnePlus2 thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-04-29-opt-tipsy-tesla-validus-6-0-1-aospb-official.437904/</XDAUrl>
-        </OnePlus2>
+        </oneplus2>
         <C6603>
             <Filename>validus_yuga-6.0.1.beta.9.2-Unofficial-20160507</Filename>
             <RomUrl
