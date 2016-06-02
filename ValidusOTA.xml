@@ -101,11 +101,11 @@
                 description="Visit Validus dogo thread">http://forum.xda-developers.com/xperia-zr/development/rom-validus-rom-ground-zero-roms-t3365364</XDAUrl>
         </dogo>
         <lux>
-            <Filename>validus_lux-6.0.1.beta.9.2-Official-20160523.zip</Filename>
+            <Filename>validus_lux-6.0.1.RC1.9.3-Official-20160601.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download latest Validus build">https://www.androidfilehost.com/?fid=24533103863143458</RomUrl>
+                description="Download latest Validus build">https://www.androidfilehost.com/?fid=24572388905582895</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
