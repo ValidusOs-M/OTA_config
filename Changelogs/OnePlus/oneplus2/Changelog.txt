@@ -1,13 +1,287 @@
 ====================
-     05-28-2016
+     06-02-2016
 ====================
 
+   * kernel/oneplus/msm8974/
+206b15c  ppp: take reference on channels netns  [Martinusbe]
+2671f17  netfilter: x_tables: check for size overflow  [Martinusbe]
+43b17b3  ALSA: timer: Fix leak in events via snd_timer_user_tinterrupt  [Martinusbe]
+435a2e4  ALSA: timer: Fix leak in events via snd_timer_user_ccallback  [Martinusbe]
+38cd2c8  ALSA: timer: Fix leak in SNDRV_TIMER_IOCTL_PARAMS  [Martinusbe]
+c137a48  mmc: clk_scaling: Fix scale_down_in_low_wr_load sysfs return value  [Martinusbe]
+27f3522  sysrq: Emergency Remount R/O in reverse order  [Martinusbe]
+4336e81  msm: thermal: simple: Fix lack of throttling when temp suddenly jumps  [Martinusbe]
+de3750a  bacon_defconfig: Set CONFIG_HZ to 300  [Martinusbe]
+5cc2a49  sched_clock: Avoid corrupting hrtimer tree during suspend  [Martinusbe]
+a0af899  arm: arch_timer: Update for 64bit sched_clock  [Martinusbe]
+6bd94d2  sched_clock: Add support for >32 bit sched_clock  [Martinusbe]
+7828dbf  sched_clock: Use an hrtimer instead of timer  [Martinusbe]
+396ea9f  sched_clock: Use seqcount instead of rolling our own  [Martinusbe]
+180fdcf  clocksource: Extract max nsec calculation into separate function  [Martinusbe]
+60879a0  ARM: sched_clock: Load cycle count after epoch stabilizes  [Martinusbe]
+8dfba65  sched_clock: Make ARM's sched_clock generic for all architectures  [Martinusbe]
+2b5ab69  msm: kgsl: Fix idle timer sysfs after removing references to HZ  [Martinusbe]
+a2b144d  ASoC: msm: qdsp6v2: add integer overflow check  [Martinusbe]
+18564f9  msm: kgsl: Fix direct references to HZ  [Martinusbe]
+9430b45  prima: Update to CAF LA.BF.1.1.3_rb1.13  [Martinusbe]
+08d1e80  ALSA: hrtimer: Fix stall by hrtimer_cancel()  [Martinusbe]
+408b96b  pipe: limit the per-user amount of pages allocated in pipes  [Martinusbe]
+16b9610  ALSA: timer: Harden slave timer list handling  [Martinusbe]
+3dc563f  ALSA: timer: Fix race among timer ioctls  [Martinusbe]
+be06db3  ALSA: timer: Fix double unlink of active_list  [Martinusbe]
+b1ee531  ALSA: usb-audio: avoid freeing umidi object twice  [Martinusbe]
+aec14b0  cpu_input_boost: Use fixed-width integer types for local variables  [Martinusbe]
+8162270  msm: thermal: simple: Remove unnecessary continue  [Martinusbe]
+9775ff5  msm: thermal: simple: Use fixed-width integer types for local variables  [Martinusbe]
+   * kernel/oneplus/msm8994/
+01b2728  oneplus2: thunderplug: move to arch/arm64/hotplug  [Martinusbe]
+   * packages/apps/KernelAdiutor/
+963e429  DayNight  [theringmaster]
+
+====================
+     06-01-2016
+====================
+   * OTA_config/
+27d3850  Add Huashan RC1 Build + Changelog  [a7r3]
+   * device/oneplus/bacon/
+f1508e5  bacon: doze: Add a service to mimic OOS Ambient Display  [Martinusbe]
+   * device/oneplus/onyx/
+2c3b098  onyx: Disable H/W Encryption  [Martinusbe]
+   * device/qcom/sepolicy/
+8fbec17  healthd : allow healthd to read RTC/alarm devices  [Martinusbe]
+779ffc2  msm8960: Fix missing m9kefsc rule  [Martinusbe]
+107fdc6  sepolicy: fix mm-qcamerad permission for persist.camera* properties  [Martinusbe]
+638b6de  sepolicy : allow setattr for init_shell domain on sysfs_devices_system_cpu type of files.  [Martinusbe]
+af33ece  sepolicy: per_mgr: Allow services to find peripheral_manager.  [Martinusbe]
+476be04  msm8952: Label FRP partition  [Martinusbe]
+19edf6e  Seandroid: Adding policy for WLAN and Tethering  [Martinusbe]
+5c16253  sepolicy : add radio.noril property and allow set rule.  [Martinusbe]
+50a36af  Seandroid: Adding policy for WLAN.  [Martinusbe]
+c4a9b6c  msm8996: removed secure camera daemon policy  [Martinusbe]
+8ce89e4  sepolicy: Allow init.qcom.sh script to media setprop's  [Martinusbe]
+3796eb2  sepolicy: mdm_helper: Update policy to allow boot over PCIe  [Martinusbe]
+a68e084  sepolicy :add camera_prop set rule for mm-qcamerad domain  [Martinusbe]
+168de11  sepolicy: allow mm-pp-daemon to set debug property  [Martinusbe]
+0b5be8d  dpmservice_app: donot audit /proc/<pid> query denials  [Martinusbe]
+1f46665  sepolicy : add secontext for general and modem emmc partition  [Martinusbe]
+0e4d6e1  sepolicy: allow location daemons to create directory  [Martinusbe]
+19e7bc1  sepolicy:common: Adding socket connect policy for mm-qcamera-daemon.  [Martinusbe]
+55f8124  SEPolicy: Add permission to set property for location  [Martinusbe]
+8d6af3f  sepolicy : add bootkpi secontext and allow rule to access  [Martinusbe]
+96fff7a  wfd: Add policies to allow encoder/decoder dumps  [Martinusbe]
+76d1ed4  Add SELinux support for factory reset protection  [Martinusbe]
+ba7caf8  Add SELinux support for factory reset protection  [Martinusbe]
+d68c7da  Add SELinux support for factory reset protection  [Martinusbe]
+3796ae9  msm8974: Fix mm-qcamerad denial  [Martinusbe]
+f3e058a  sepolicy: allow gatekeeperd to access firmware_files (ex. kmota)  [Martinusbe]
+d497fd7  sepolicy: Label boot/recovery/cache partitions  [Martinusbe]
+89466d3  sepolicy: add missing fdAlbum type_transition  [Martinusbe]
+e615248  sepolicy : add allow rule for recovery to create file on vfat  [Martinusbe]
+d6966b8  sepolicy: perfd: fix signull permission  [Martinusbe]
+f6b7de8  Add netstats and location permissions support for RIDL/LogKit II  [Martinusbe]
+4e127d4  sepolicy: perf: allow checking for existence of other processes (signull)  [Martinusbe]
+a6b3ebd  Add SELinux support for factory reset protection  [Martinusbe]
+626cdbd  sepolicy: resolve 'init' and 'perfd' access violations  [Martinusbe]
+bbf868e  thermal: Fix labeling the thermal sockets  [Martinusbe]
+c903de0  msm8226: label cache partition  [Martinusbe]
+27cc10f  msm8916/common: Fix various issues  [Martinusbe]
+b0176b1  sepolicy: Add set property permission for irq balance  [Martinusbe]
+a931eef  mm-camera: Add debugfs read file permissions to mm-qcamera  [Martinusbe]
+06fa8af  sepolicy: Define SE policy for alarm and boot animation property  [Martinusbe]
+350518c  Allow ANR for RIDL/LK2 in sepolicy  [Martinusbe]
+3fdadf9  Add SELinux support for factory reset protection  [Martinusbe]
+dc312dd  msm8960: Add thermal daemon changes,rmt storage mount points and removed rmt_storage  [Martinusbe]
+f4f0d0c  msm8960: set labels on block devices  [Martinusbe]
+60099fb  Allow RIDL to drop caps  [Martinusbe]
+5696982  sepolicy: added seccamd policy  [Martinusbe]
+0fbf433  vold: allow vold to mount zram swap device  [Martinusbe]
+63cb628  SELINUX: Add SELINUX permissions for gps  [Martinusbe]
+0f4b979  Enable location_app find permission for user builds  [Martinusbe]
+bdf94fe  Allow PC Tool App to find improveTouch service  [Martinusbe]
+37f5297  audio: Add audio property to sepolicy property_contexts list  [Martinusbe]
+af08538  Location: added network access permission for test app  [Martinusbe]
+e49f824  sepolicy: Add policies for VM BMS executable  [Martinusbe]
+d799064  mm-camera2: mct: Add permission for graphics fd  [Martinusbe]
+dcdd6a8  sepolicy : Add permissions to Camera HAL  [Martinusbe]
+d6881e6  sepolicy: Add btnvtool to be part bluetooth domain  [Martinusbe]
+9185302  Add sdcard and logcat permissions support for RIDL/LogKit II  [Martinusbe]
+39484f2  Allow ANR for RIDL/LK2 in sepolicy  [Martinusbe]
+567f110  Allow ANR sepolicy read permissions for RIDL/LK2  [Martinusbe]
+616daaa  Allow RIDL to drop caps  [Martinusbe]
+6c3fbce  SEAndroid: Allow drmserver access to media files for testing  [Martinusbe]
+2e54d3f  Revert "add sepolices for touchfusion"  [Martinusbe]
+a837827  sepolicy: allow cneservice for platform apps  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8994/
+1a4547a  Merge "hal: update combo device handling" into mm6.0-caf-8994  [Gerrit Code Review]
+148050d  Merge "hal: Garbage output in logcat" into mm6.0-caf-8994  [Gerrit Code Review]
+   * kernel/oneplus/msm8974/
+8859f74  bacon: thunderplug: introducing touch boost  [Martinusbe]
+   * packages/apps/KernelAdiutor/
+ce81ae1  Icon update  [theringmaster]
+e4b1724  CPUHotplug.java: fix thunderplug not showing on arm64  [Martinusbe]
+4766d5b  CPUHotplug: Bluplug - Fix it not showing for people without my enable/disable mod  [Martinusbe]
+   * packages/apps/PackageInstaller/
+5e142bf  Themes: Allow PackageInstaller tab Background to be themed  [theringmaster]
+   * packages/apps/SlimOTA/
+b58f7f8  Icon update  [theringmaster]
+   * vendor/validus/
+8468ed2  APN: Use single APN for T-Mobile US LTE  [Martinusbe]
+cc161ec  cm: Remove garbage from sepolicy  [Martinusbe]
+1cc9b10  APN: Fix Saunalahti APN regression introduced by CYNGNOS-436  [Martinusbe]
+54f895a  APN: update Batelco and Zain APNs for Bahrain  [Martinusbe]
+539adfe  sepolicy: Allow recovery to mount on tmpfs  [Martinusbe]
+9003db5  MetroPCS APN update  [Martinusbe]
+178369f  Irancell & MTS APN updates  [Martinusbe]
+b907c3a  Update APN name for Movistar INTERNET  [Martinusbe]
+a053cfb  APN: fixup single-digit mnc APNs  [Martinusbe]
+b313466  SMART [PH] APN updates  [Martinusbe]
+a47df16  Fix typo  [Martinusbe]
+c7f5797  apns: fix build  [Martinusbe]
+0b18a89  apns: Add ATT Nextgenphone  [Martinusbe]
+df05e4c  Resolve Orange RO authtype  [Martinusbe]
+442650c  Modify APN for Orange Romania  [Martinusbe]
+70504c9  add yufone APN  [Martinusbe]
+619c99b  apns: Net10 310410: Fix port  [Martinusbe]
+7bf76b5  Cleanup APN list for Norway  [Martinusbe]
+84b688a  apns: Cricket AIO 310150: Remove duplicate  [Martinusbe]
+de781f8  apns: T-Mobile 310260: Compatibility update  [Martinusbe]
+6737683  APN: Remove wrong T-Mobile CZ and Vodafone CZ APNs  [Martinusbe]
+76fef78  fix cricket APN  [Martinusbe]
+c6bbb4c  Update IMS APN based on Smartfren Device Technical document-v1 2  [Martinusbe]
+0aada36  APN: Add Smartfren IMS for Volte support RENDANG-525  [Martinusbe]
+6751dd4  APN: Fixup Vodafone IT and remove Noverca  [Martinusbe]
+2814c8e  APN: Update TIM MVNOs  [Martinusbe]
+8198cd6  Fix Digi Mobile defaults  [Martinusbe]
+1f51cbb  apns: update for IMS  [Martinusbe]
+7ab2d8f  vendor/cm: Update Japanese APNs  [Martinusbe]
+47b9754  Correct Tele2 Sweden APNs and remove Comviq Sweden.  [Martinusbe]
+be4a44f  APN: Remove identical MVNO entries  [Martinusbe]
+a1a1c1d  Ventelo is now Phonero  [Martinusbe]
+faefa05  Remove instance of server=""  [Martinusbe]
+b024944  Correct Tele2 Sweden APNs and remove Comviq Sweden.  [Martinusbe]
+2d58074  init: stop ril daemons if ro.radio.noril is set  [Martinusbe]
+6149f00  init: set ro.radio.noril if persist.radio.noril is set  [Martinusbe]
+94c42fa  init: Remove world-writable permissions in BFQ hierarchy  [Martinusbe]
+9453167  slim: remove some cruft  [Martinusbe]
+b9a9b98  init: add permissions for max_freq_hysteresis node  [Martinusbe]
+dee1e60  cm: Update and add additional permissions  [Martinusbe]
+478c0f0  Allow reading of cpufreq attributes  [Martinusbe]
+20c4114  cm: Set perms on a few additional paths  [Martinusbe]
+0e31a57  init.local.rc: Fix typo  [Martinusbe]
+f67280a  vendor/cm: Clean up init.local.rc  [Martinusbe]
+efde651  cm: Update permissions for ondemand sysfs nodes  [Martinusbe]
+418bf86  cm: Set permissions on input_boost node  [Martinusbe]
+0278042  rootdir: Set permissions for additional interactive sysfs nodes  [Martinusbe]
+57896a1  init: provide initial pemissions for ondemand governor  [Martinusbe]
+f982ebd  init.cm: Fix sysinit dependencies  [Martinusbe]
+5c20935  validus: add opt-out for exFAT  [Martinusbe]
+8103b66  sepolicy: Add permission for formatting user/cache partition  [Martinusbe]
+9c17ead  sepolicy: allow vold to trim persist  [Martinusbe]
+eb8db8b  sepolicy: qcom: Allow reading PSU sysfs by system_server  [Martinusbe]
+65dfe03  sepolicy: Remove some denials  [Martinusbe]
+b7ddaae  sepolicy: Add policy for thermal engine changes  [Martinusbe]
+7009ae1  sepolicy: add persist_block_device type  [Martinusbe]
+a1e763e  sepolicy: Allow adb pull of executables without root  [Martinusbe]
+8c42508  sepolicy: Allow system app to set boot anim property  [Martinusbe]
+ba6caac  sepolicy: Allow recovery to set system properties  [Martinusbe]
+deca677  sepolicy: Allow recovery to create links in the rootfs  [Martinusbe]
+10a49c7  sepolicy: fix denial for sudaemon  [Martinusbe]
+a8028cf  sepolicy: Underp the context for persistent storage  [Martinusbe]
+552f75a  sepolicy: Make superuser_device and sudaemon mlstrustedobjects  [Martinusbe]
+ef9c7d4  recovery: Add new rules for recursive wipe  [Martinusbe]
+b32e4a0  Grant platform apps access to /mnt/media_rw with sdcard_posix label  [Martinusbe]
+c1d452a  sepolicy: Add perfprofd with set_prop macro  [Martinusbe]
+5519967  sepolicy: Allow minivold execute_no_trans  [Martinusbe]
+1a6aaa0  sepolicy: label exfat and ntfs mkfs executables  [Martinusbe]
+0142a84  sepolicy: Add domain for mkfs binaries  [Martinusbe]
+a905ef9  sepolicy: Set the context for fsck.exfat/ntfs to fsck_exec  [Martinusbe]
+e5a9547  slim: sepolicy: fix denials for external storage  [Martinusbe]
+
+====================
+     05-31-2016
+====================
+   * OTA_config/
+8da2b1e  Shamu rc1 and changelog  [theringmaster]
+485cfb4  Merge branch 'master' of https://github.com/ValidusOs-M/OTA_config  [theringmaster]
+ffd336a  Add shamu  [theringmaster]
+   * kernel/oneplus/msm8994/
+7b2484c  oneplus2: add in thunderplug all credits go to Varun Chitre <varun.chitre15@gmail.com>  [Martinusbe]
+d2c6f19  msm: mdss: optimize DSI command delay semantics  [Martinusbe]
+0ab8fe6  DTS: optimize DSI command delays  [Martinusbe]
+3b3d8ea  rcu: Don't disable CPU hotplug during OOM notifiers  [Martinusbe]
+169aceb  state notifier: default enabled  [Martinusbe]
+af13fbe  state notifier: update  [Martinusbe]
+663739c  defconfig: enable CONFIG_CPU_IDLE_GOV_NULL  [Martinusbe]
+55fdf04  makefile: O3 < Ofast  [Martinusbe]
+55886cd  makefile: add big/little flags  [Martinusbe]
+e599866  Disable Software CRC / Toggleable Software CRC  [Martinusbe]
+05f7289  oneplus2:defconfig: enable O3  [Martinusbe]
+92e82ed3  Makefile: merge GEN OPT variable with flags for armv8 big.little  [Martinusbe]
+3fbc84b  Makefile: add ccache to speed up compiling  [Martinusbe]
+8b2a8d1  Makefile: O2 < O3  [Martinusbe]
+bc3264d  defconfig: enable kcal  [Martinusbe]
+9c72e0b  mdss: support KCAL  [Martinusbe]
+e17a9b5  sched: Add sysinterface for GENTLE_FAIR_SLEEPERS  [Martinusbe]
+14e70a5  defconfig: enable lcd notifier  [Martinusbe]
+e5a60be  fix LCD_Notify  [Martinusbe]
+607fa86  Add LCD_NOTIFY  [Martinusbe]
+   * kernel/oneplus/onyx/
+36f5b28  onyx: defconfig: enable kcal control  [Martinusbe]
+a51f04d  msm: mdss: Adjust KCAL [v2] to kernel source  [Martinusbe]
+0902d81  msm: mdss: Add KCAL support for post processing control [v2]  [Martinusbe]
+f2e2006  charge_level: Show tilde in charging information to indicate charge rate is inaccurate  [Martinusbe]
+24035a2  qpnp-charger: Reduce max ac charge rate to 1600 mA  [Martinusbe]
+5e6350d  onyx: defconfig; allow oc and set start frequencies  [Martinusbe]
+16510de  msm8974pro: Add CPU overclocking to 2.88 GHz for OnePlus X  [Martinusbe]
+5a77e6a  msm8974pro: Increase cpu voltags for OC frequencies by 25 mV  [Martinusbe]
+3a00b37  msm8974pro: CPU overclocking to 2.88 GHz  [Martinusbe]
+6ce00ce  msm8974pro: Activate additional 27 MHz gpu frequency step (idle freq)  [Martinusbe]
+863ba04  cpufreq: interactive: bring inline with bacon  [Martinusbe]
+0a14b3c  cpufreq: interactive: Move definition of cpufreq_gov_interactive downwards  [Martinusbe]
+dc33b00  cpufreq: interactive: Remove unnecessary cpu_online() check  [Martinusbe]
+b6b5e67  cpufreq: Simplify cpufreq_add_dev()  [Martinusbe]
+2c79ec5  cpufreq: Notify governors when cpus are hot-[un]plugged  [Martinusbe]
+970a98b  cpufreq: Move get_cpu_idle_time() to cpufreq.c  [Martinusbe]
+f62cc97  add thungerplug hotplug  [Martinusbe]
+c9d0482  onyx:defconfig: enable state notifier  [Martinusbe]
+23abaca  drivers: Add state notifier driver  [Martinusbe]
+2c42374  cpufreq: Make sure target freq is within limits  [Martinusbe]
+5f02919  cpufreq: smartmax: Hotfix NULL pointer dereference  [Martinusbe]
+0ff52b5  drivers: cpufreq: Upstream optimizations  [Martinusbe]
+4e816fb  cpufreq: smartmax: added new smartmax governor  [Martinusbe]
+fd661c3  onyx:defconfig: enable SIO  [Martinusbe]
+8d41f41  block: scheduler: tuning SIO  [Martinusbe]
+01888b4  block: scheduler: add SIO  [Martinusbe]
+e5fc72b  block: fiops ioscheduler core  [Martinusbe]
+b74d378  onyx:defconfig: enable charge level  [Martinusbe]
+94b46ee  qpnp-charger: Charge level interface 1.1  [Martinusbe]
+836ac20  Revamp spinlock ASM code  [Martinusbe]
+   * vendor/validus/
+7ca1354  RC1 9.3  [John Brewer]
+
+====================
+     05-30-2016
+====================
+
+   * frameworks/base/
+0aa7e64  Add Screenshot Crop & Share [1/2] * Cleaned up a lill * Need to see if nothing is broken Change-Id: I100c4a86048a3d61cff8457471dd205cf9555714 Signed-off-by: Martinusbe <martinusbe@gmail.com>  [Martinusbe]
+   * kernel/oneplus/msm8974/
+9e7301a  add thungerplug hotplug  [Martinusbe]
+   * packages/apps/Settings/
+d71a1f6  Add Screenshot Crop & Share [2/2]  [Martinusbe]
+
+====================
+     05-29-2016
+====================
+   * OTA_config/
+798f90c  oneplus2:update 20160528  [Martinusbe]
+906ad7b  oneplus2:update 20160528  [Martinusbe]
    * art/
 470b3fe  Fix build breaks when using clang on M  [Martinusbe]
 74b73a9  Build dex2oat without asan instrumentation.  [Martinusbe]
-   * build/
-9efcc91  Set mcpu targets based on cpu variant.  [Martinusbe]
    * device/oneplus/oneplus2/
+56ee298  oneplus2:boardconfig: no dexpreopt  [Martinusbe]
+cd1c587  oneplus2:sepolicy: clean & fix it up  [Martinusbe]
 9b527f9  oneplus2: enable dexpreopt for userdebug  [Martinusbe]
 d112291  Revert "boardconfig:test: no dexpreopt"  [Martinusbe]
 376a2f1  system.prop: persist.dpm.feature=7  [Martinusbe]
@@ -17,6 +291,21 @@ fe89dd7  Revert "prop: ro.qc.sdk.audio.ssr=true"  [Martinusbe]
 ee184f1  system.prop: ro.adb.secure=1  [Martinusbe]
 a4ec5a9  system.prop: ro.product.device=oneplus2  [Martinusbe]
    * frameworks/base/
+c5eebee  Merge branch 'mm6.0' of https://github.com/ValidusOs-M/frameworks_base into mm6.0  [theringmaster]
+c9f382b  Themes: Don't kill blacklisted launchers on theme change  [theringmaster]
+   * kernel/oneplus/msm8974/
+60c68d2  msm: clock-krait-8974: User voltage control for msm-cpufreq device  [Martinusbe]
+5449bff  sound: add sound control to increase headphones, speaker and mic gain.  [Martinusbe]
+   * packages/apps/ThemeChooser/
+de19aaa  Themes: fix dismissing Play Store app installed notification  [theringmaster]
+
+====================
+     05-28-2016
+====================
+
+   * build/
+9efcc91  Set mcpu targets based on cpu variant.  [Martinusbe]
+   * frameworks/base/
 c3a2263  Alarm: Support devices using timerfd without CLOCK_POWEROFF_ALARM  [Martinusbe]
 a1412b3  Chronometer: Update the value only if displayed on screen  [theringmaster]
 57b9bf7  Core: Fix possible OOB  [theringmaster]
@@ -24,11 +313,9 @@ a1412b3  Chronometer: Update the value only if displayed on screen  [theringmast
 a80cfa3  Fix batterySendBroadcast not synchronized issue.  [theringmaster]
 9c82d9e  Fix google-explicit-constructor warnings.  [theringmaster]
 b9e9fb0  Alarm: add missing closedir after opendir when searching for RTC  [theringmaster]
-   * kernel/oneplus/msm8994/
-8931487  rcu: Don't disable CPU hotplug during OOM notifiers  [Martinusbe]
-c3ef05e  state notifier: default enabled  [Martinusbe]
-3749ac7  state notifier: update  [Martinusbe]
-c55249f  Revert "thunderplug: per core default"  [Martinusbe]
+   * packages/apps/KernelAdiutor/
+e188ae6  thunderplug: add octacore support  [Martinusbe]
+0614fe5  utils: dark theme default  [Martinusbe]
    * packages/apps/OmniStyle/
 fb77ee7  Lil Red Headers  [theringmaster]
 22c703e  OmniStyle: Add Marshmallow weather icons  [theringmaster]
@@ -45,49 +332,13 @@ c005e4f  Update dashboard_categories.xml  [John Brewer]
      05-27-2016
 ====================
 
-   * kernel/oneplus/msm8994/
-b801641  thunderplug: add octacore support  [Martinusbe]
-343d3fb  thunderplug: per core default  [Martinusbe]
-96b36d0  thunderplug: Turbo it is  [Martinusbe]
-1cb396f  thunderplug: move to qcom  [Martinusbe]
-26ba78a  defconfig: enable CONFIG_CPU_IDLE_GOV_NULL  [Martinusbe]
-03e0a52  makefile: O3 < Ofast  [Martinusbe]
-ee32651  makefile: add big/little flags  [Martinusbe]
    * packages/apps/KernelAdiutor/
-e188ae6  thunderplug: add octacore support  [Martinusbe]
-0614fe5  utils: dark theme default  [Martinusbe]
 82e3e8a  strings: GZR Kernel Adiutor  [Martinusbe]
 2004826  add GZR banner  [Martinusbe]
 9058743  CPUHotplugFragment: fix up thunderplug  [Martinusbe]
 9ab7abb  corecontrol: some fixes  [Martinusbe]
 b380749  corecontrol.java: clean it up a lill  [Martinusbe]
 d5db93f  Setup Core Control  [Martinusbe]
-
-====================
-     05-26-2016
-====================
-
-   * frameworks/base/
-ff5b5c7  Revert "Keyguard : Ensure we expand onIconClicked"  [theringmaster]
-3fbc118  fix build  [theringmaster]
-9611b23  Long press StatusBarHeaderView to launch ThemeChooser headers browser Fix long press vibrate while we're in here. All long press events should fire the vibrate indication here.  [theringmaster]
-58efc01  SystemUI: Check current data subscription when updating signal cluster  [theringmaster]
-77ab776  usb: ensure accessory detached sent on re-attach  [theringmaster]
-3d52258  Settings: add Kiev time zones to picker  [theringmaster]
-1dba7dc  ShutdownThread: Decrypt before stopping storage manager  [theringmaster]
-7e8b858  Update volume slider only if ringer mode changed  [theringmaster]
-da65d55  Lockscreen : Only animate targets if launched via swipe  [theringmaster]
-2cfcf9e  Keyguard : Ensure we expand onIconClicked  [theringmaster]
-3d137b6  WindowManagerService : Ensure we update both size/position  [theringmaster]
-bbf78a3  Themes: Expose Power Dialogs  [theringmaster]
-e98707b  Themes: Theme reboot safemode dialog  [theringmaster]
-   * kernel/oneplus/msm8994/
-3d5355a  Disable Software CRC / Toggleable Software CRC  [Martinusbe]
-cc64290  oneplus2:defconfig: enable O3  [Martinusbe]
-2711a9e  Makefile: merge GEN OPT variable with flags for armv8 big.little  [Martinusbe]
-9e3532f  Makefile: add ccache to speed up compiling  [Martinusbe]
-d78d52a  Makefile: O2 < O3  [Martinusbe]
-   * packages/apps/KernelAdiutor/
 5dffead  strings: GZR Kernel Adiutor  [Martinusbe]
 572b9e3  Thunderplug settings  [Martinusbe]
 f0bc779  Revert "Updater: Check for update after boot, display notification"  [Martinusbe]
@@ -120,6 +371,25 @@ f3b4a4e  Revert "HBM Stuff: Add a check"  [Martinusbe]
 45d9fbf  fix Adiutor fc  [Martinusbe]
 54e8a65  dash: change for new Adiutor prebuilt  [Martinusbe]
 7da25b6  Add KernelAdiutor and Viper4Android on Dashboard when installed  [Martinusbe]
+
+====================
+     05-26-2016
+====================
+
+   * frameworks/base/
+ff5b5c7  Revert "Keyguard : Ensure we expand onIconClicked"  [theringmaster]
+3fbc118  fix build  [theringmaster]
+9611b23  Long press StatusBarHeaderView to launch ThemeChooser headers browser Fix long press vibrate while we're in here. All long press events should fire the vibrate indication here.  [theringmaster]
+58efc01  SystemUI: Check current data subscription when updating signal cluster  [theringmaster]
+77ab776  usb: ensure accessory detached sent on re-attach  [theringmaster]
+3d52258  Settings: add Kiev time zones to picker  [theringmaster]
+1dba7dc  ShutdownThread: Decrypt before stopping storage manager  [theringmaster]
+7e8b858  Update volume slider only if ringer mode changed  [theringmaster]
+da65d55  Lockscreen : Only animate targets if launched via swipe  [theringmaster]
+2cfcf9e  Keyguard : Ensure we expand onIconClicked  [theringmaster]
+3d137b6  WindowManagerService : Ensure we update both size/position  [theringmaster]
+bbf78a3  Themes: Expose Power Dialogs  [theringmaster]
+e98707b  Themes: Theme reboot safemode dialog  [theringmaster]
    * packages/apps/ThemeChooser/
 71ac096  ThemeChooser: update icon  [theringmaster]
    * packages/providers/ThemesProvider/
@@ -128,6 +398,8 @@ f3b4a4e  Revert "HBM Stuff: Add a check"  [Martinusbe]
 6c89f5d  Update controls preview to properly render themed assets.  [theringmaster]
 c7544ee  Fix blank WiFi and signal icon previews  [theringmaster]
 85c7dfa  Guard to prevent inserting a record twice when a new theme is installed  [theringmaster]
+   * vendor/validus/
+57100c0  devices: add huashan  [martin coulon]
 
 ====================
      05-25-2016
@@ -145,13 +417,15 @@ cd1aa99  Fix coloring of frame and bolt  [theringmaster]
 6a359cf  audio: Hacks for sound trigger  [theringmaster]
    * manifest/
 5052790  track qcom audio  [John Brewer]
+6871f01  pull in GZR adiutor  [Martinusbe]
+667ebe4  fix sync (mah derp)  [Martinusbe]
    * packages/apps/OmniStyle/
 622c1b1  Add Retro Header Randoms  [theringmaster]
    * packages/apps/Settings/
 d7399a9  newValue  [John Brewer]
 a2cf9d7  Add animations to quick settings tiles [2/2]  [theringmaster]
    * vendor/validus/
-57100c0  devices: add huashan  [martin coulon]
+89e2711  build KernelAdiutor  [Martinusbe]
 
 ====================
      05-24-2016
@@ -159,24 +433,6 @@ a2cf9d7  Add animations to quick settings tiles [2/2]  [theringmaster]
    * OTA_config/
 09f5531  Fixed OTA linked for Lux  [Nick]
 24fe62a  oneplus2: update 05/23  [Martinusbe]
-   * frameworks/base/
-3dc8e5d  Themes: Headers overlay support [2/5] Acknowledgements Much love and respect to the developer of the CyanogenMod Theme Engine Clark Scheff @0xD34D. Your robust platform and API has allowed for continued development enhancing the lives of Android users. Thanks!  [theringmaster]
-   * manifest/
-6871f01  pull in GZR adiutor  [Martinusbe]
-667ebe4  fix sync (mah derp)  [Martinusbe]
-c7010e4  track our Snap  [Martinusbe]
-   * packages/apps/Settings/
-056054b  Theme Header Enabler Switch  [theringmaster]
-   * packages/apps/Snap/
-57f2b5b  Revert "Snap: Use new window manager flag for prevent system keys."  [Martinusbe]
-   * vendor/validus/
-89e2711  build KernelAdiutor  [Martinusbe]
-d54e4c1  Themes: Headers overlay support [4/4] Allow themers to replace org.cyanogenmod.theme with org.cyanogenmod.theme.extensions in theme manifest features to indicate to  Play Store that their apk should only show on    *s that support extensions. For example...  [theringmaster]
-
-====================
-     05-23-2016
-====================
-   * OTA_config/
 19bcac1  Update lux  [Nick]
 69a6333  Add lux changelog  [GtrCraft]
    * device/oneplus/oneplus2/
@@ -185,13 +441,15 @@ d54e4c1  Themes: Headers overlay support [4/4] Allow themers to replace org.cyan
 84b5f79  audio: Add aanc tuning mixer  [Martinusbe]
 0578e29  audio: Disable tunnel encode and three mic  [Martinusbe]
    * frameworks/base/
+3dc8e5d  Themes: Headers overlay support [2/5] Acknowledgements Much love and respect to the developer of the CyanogenMod Theme Engine Clark Scheff @0xD34D. Your robust platform and API has allowed for continued development enhancing the lives of Android users. Thanks!  [theringmaster]
 c2f6582  Revert "Add 3Minit battery mod"  [Martinusbe]
 53274a7  Revert "Statusbar: Gracefully adapt 3Minit Battery hook for AOSP"  [Martinusbe]
-   * kernel/oneplus/msm8994/
-f123a06  defconfig: enable kcal  [Martinusbe]
-6f79d08  mdss: support KCAL  [Martinusbe]
-c18bbf3  selinux: force permissive  [Martinusbe]
+   * manifest/
+c7010e4  track our Snap  [Martinusbe]
+   * packages/apps/Settings/
+056054b  Theme Header Enabler Switch  [theringmaster]
    * packages/apps/Snap/
+57f2b5b  Revert "Snap: Use new window manager flag for prevent system keys."  [Martinusbe]
 94574eb  Snap: Use new window manager flag for prevent system keys.  [Gerrit Code Review]
    * packages/apps/ThemeChooser/
 d78e47e  Themes: Harden against null bitmaps from provider still processing  [theringmaster]
@@ -202,62 +460,35 @@ d5556ae  Themes: rename package to prevent conflicts with restores from other   
 cd9adb4  themesprovider: Fix priority of verifier thread  [theringmaster]
    * packages/services/Telecomm/
 ff7db57  IMS: Fix ImsService crash due to default phones not created.  [Martinusbe]
+   * vendor/validus/
+d54e4c1  Themes: Headers overlay support [4/4] Allow themers to replace org.cyanogenmod.theme with org.cyanogenmod.theme.extensions in theme manifest features to indicate to  Play Store that their apk should only show on    *s that support extensions. For example...  [theringmaster]
+
+====================
+     05-23-2016
+====================
+
 
 ====================
      05-22-2016
 ====================
 
+   * frameworks/base/
+ba51efe  Statusbar: Gracefully adapt 3Minit Battery hook for AOSP  [Alx31]
    * frameworks/native/
 71168b2  surfaceflinger: Add support for Exynos BGRA mixer  [Alx31]
 9359dfc  sensorservice: fix an invalid format string  [Alx31]
 292cf4d  sensorservice: add power usage to dumpsys  [Alx31]
 717ecbe  Add 3GB dalvik heap and hwui memory  [Alx31]
+   * packages/apps/Snap/
+49caa04  Snap: Restore previous default denoise value  [Gerrit Code Review]
 
 ====================
      05-21-2016
 ====================
 
    * frameworks/base/
-ba51efe  Statusbar: Gracefully adapt 3Minit Battery hook for AOSP  [Alx31]
 2d6ae61  Add 3Minit battery mod  [Alx31]
-   * packages/apps/Snap/
-49caa04  Snap: Restore previous default denoise value  [Gerrit Code Review]
-6f0c3b6  Automatic translation import  [Jessica Wagantall]
-
-====================
-     05-20-2016
-====================
-
    * kernel/oneplus/msm8994/
-a01519c  thunderplug default enabled  [Martinusbe]
-0b4d57f  sched: Add sysinterface for GENTLE_FAIR_SLEEPERS  [Martinusbe]
-9b59ad4  defconfig: enable lcd notifier  [Martinusbe]
-dfa21f1  fix LCD_Notify  [Martinusbe]
-ee86359  Revert "random: merge fixes"  [Martinusbe]
-3ca0670  Add LCD_NOTIFY  [Martinusbe]
-80d855e  defconfig: enable thunderplug  [Martinusbe]
-0adc67f  thunderplug: improved touch boost  [Martinusbe]
-eea522b  thunderplug: fix variable name  [Martinusbe]
-f19f011  thunderplug: update to v5.0!  [Martinusbe]
-7a468ec  thunderplug: update to 3.0  [Martinusbe]
-1b354da  thunderplug : improve hotplugging algorithm  [Martinusbe]
-ed35971  thunderplug : don't issue a touch boost if hp disabled  [Martinusbe]
-c0e6bd5  thunderplug : bump to v2.5  [Martinusbe]
-98c1ead  thunderplug : introducing touch boost  [Martinusbe]
-c05918a  thunderplug : use new wq for resume and fix some derps  [Martinusbe]
-2b7a1f33  thunderplug : switch to lcd_notifier to handle suspend/resume  [Martinusbe]
-df912a1  thunderplug : bump to 2.1  [Martinusbe]
-2f3397b  thunderplug : cleanup  [Martinusbe]
-55c28f7  thunderplug : add toggle to disable hotplugging  [Martinusbe]
-2966573  thunderplug : make load threshold tunable  [Martinusbe]
-e3b6cdb  thunderplug: let's respect endurance mode  [Martinusbe]
-6986aa1  thunderplug : make sampling rate tunable  [Martinusbe]
-e12631d  thunderplug : load based hotplugging  [Martinusbe]
-b931cc9  random: merge fixes  [Martinusbe]
-a79676b  thunderplug: move to arm64  [Martinusbe]
-18a52d3a  thunderplug : version 1.5  [Martinusbe]
-1205f65  thunderplug: implement sysfs interface for max-online cpus while sleep  [Martinusbe]
-d5fd949  Introducing ThunderPlug Control: a young hotplug driver  [Martinusbe]
 b5fd9b0  power: quickwakeup: initial driver  [Martinusbe]
 b747534  defconfig: enable sioplus, tripndroid, zen  [Martinusbe]
 33fbbb7  workqueue: squashed: Add system wide power_efficient workqueues  [Martinusbe]
@@ -286,6 +517,14 @@ c01c464  cpuidle: lpm-levels: Disable dynamic routing of interrupts  [Martinusbe
 2ef14e2  and block this backup as well  [Shmuel Rosansky]
 716eeea  Do not use android backup if a user installs the app on a new phone they should setup their settings again their new phone may not support the old configuration they have and we should force them to re-configure the app  [Shmuel Rosansky]
 344e310  Merge branch 'master' of git://github.com/Grarak/KernelAdiutor  [Shmuel Rosansky]
+   * packages/apps/Snap/
+6f0c3b6  Automatic translation import  [Jessica Wagantall]
+
+====================
+     05-20-2016
+====================
+
+   * packages/apps/KernelAdiutor/
 3872957  HBM Stuff: Add a check  [Joe Schubert]
 c55f0c7  Merge pull request #2 from yoinx/master  [shmuelr]
 2698012  HBM_Widget: Ensure that the HBM path is set before trying to toggle it  [Joe Schubert]
@@ -298,95 +537,4 @@ badf2b0  AutoHBM: use the function to check if HBM is enabled.  [Joe Schubert]
 627baba  Auto_HBM: Increase threshold max to 10,000.  [Joe Schubert]
 fa2ab92  Gradle: Update gradle  [Joe Schubert]
 390e257  HBM_Widget: Add some values  [Joe Schubert]
-
-====================
-     05-19-2016
-====================
-
-
-====================
-     05-18-2016
-====================
-   * OTA_config/
-b99fc39  yuga: Changelog and changed product name  [airless   *]
-
-====================
-     05-17-2016
-====================
-
-   * external/libnfc-nxp/
-7228d9f  Stop "LLC length mis-match" log spam  [Josue Rivera]
-   * frameworks/base/
-15ceba1  Update Settings.java  [John Brewer]
-6930f37  Remove statusbar icon colors  [theringmaster]
-c838f80  Adjust battery dimensions for better look  [theringmaster]
-82e5505  SysUI: Use VectorDrawable's for rendering battery  [theringmaster]
-   * hardware/qcom/camera/
-053305c  camera: pathmap another include path  [Josue Rivera]
-   * packages/apps/Settings/
-581cd0a  Remove Statusbar icon color  [theringmaster]
-d924e7a  Remove dotted circle battery  [theringmaster]
-
-====================
-     05-16-2016
-====================
-
-
-====================
-     05-15-2016
-====================
-
-   * device/oneplus/onyx/
-ede75c3  onyx: Update notification LED settings in overlay  [Martinusbe]
-f9238ee  onyx: Update LED sysfs node permissions for liblights update  [Martinusbe]
-0d2f824  onyx: liblights: Use 21 ramp steps  [Martinusbe]
-54803d2  onyx: liblights: Calculate brightness ramp automatically on init  [Martinusbe]
-c0d7727  onyx: liblights: Import lights-qpnp from hardware/cyanogen  [Martinusbe]
-552e313  onyx: Kang hci_qcomm_init from bacon  [Martinusbe]
-ee36f1d  onyx: Remove QCOM_BT_USE_BTNV  [Martinusbe]
-19a64ff  onyx: Switch to libwcnss_qmi blob  [Martinusbe]
-7847d12  onyx: set BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET  [Martinusbe]
-   * frameworks/av/
-e33b3a7  Revert "Update libwebm include path in MatroskaExtractor"  [theringmaster]
-7d3575a  Update libwebm include path in MatroskaExtractor  [theringmaster]
-333ec2f  DO NOT MERGE:Camera: fix recording stream update logic  [theringmaster]
-c2a9d03  stagefright: ignore port setting change for input port  [theringmaster]
-eb1be19  If the offset is less than 0, it will cause some surprising exceptions.  [theringmaster]
-7ee927d  Remove throttle logcat for bluetooth  [theringmaster]
-1546afd  SoftHEVC: Exit gracefully in case of decoder errors  [theringmaster]
-cad3f83  camera: Fix high battery drain after using flashlight  [theringmaster]
-   * frameworks/base/
-0292c34  Revert "base: Fix proximity check on non power key"  [Martinusbe]
-0d01a22  Revert "only use proximity checks on wakeup keys"  [theringmaster]
-b8391e4  Fix misc-macro-parentheses warnings.  [theringmaster]
-b4b408c  Synchronize access of mSubscriptions  [theringmaster]
-e1b053a  Fix Activity.onConfigurationChanged may not be called.  [theringmaster]
-1cb923b  frameworks/base: Support for third party NFC features  [theringmaster]
-ddaed0f  Checking mCurrentValue twice instead of mCurrentValues  [theringmaster]
-b580448  Boolean logic error could result in a NPE  [theringmaster]
-37a127d  Make android_net_NetUtils include what it actually uses.  [theringmaster]
-edd72d6  Fix: Fix dlfree error when delet mZipInflater.  [theringmaster]
-5568f1b  [RenderScript] Interrupt mMessageThread when tearing down context.  [theringmaster]
-eb64b11  Clear more native pointers in finalizers  [theringmaster]
-d694ccd  Avoid ConcurrentModificationException in method dump  [theringmaster]
-ece32d5  Fix phone crashes after tapping Data Usage in Settings  [theringmaster]
-9b59009  Speed up notification panel pulldown animation when called externally  [theringmaster]
-a6b30f1  Adapt ConnectivityServiceTest to persist.pdp.during.noncellular  [theringmaster]
-ad81a4a  Protect TRANSFER_COMPLETE broadcast  [theringmaster]
-c0f4fa3  Fix the issue that App crash on startForeground.  [theringmaster]
-adfd0d9  Fix String object compare issue.  [theringmaster]
-f59fb07  only use proximity checks on wakeup keys  [theringmaster]
-078519c  base: Fix proximity check on non power key  [theringmaster]
-12039b1  GLSurfaceView: Be less picky about EGLConfig alpha sizes  [theringmaster]
-7881a5c  VPN reconnection fails after data access via VPN connection(frameworks)  [theringmaster]
-383455f  Tiles: Clean up spaghetti factory in BatterySaver tile  [theringmaster]
-cda1d61  ThemeTile: tighten up how we execute a theme change  [theringmaster]
-   * kernel/oneplus/onyx/
-3e67406  ARM: dts: 15055: Update RGB LED settings  [Martinusbe]
-ade2428  pwm: qpnp-pwm: add api for synchronous enable of pwms  [Martinusbe]
-59b9e702  leds: leds-qpnp: add synchronized rgb control  [Martinusbe]
-494577b  leds: leds-qpnp: Remove OEM modifications to RGB LED  [Martinusbe]
-d92c742  ARM: dts: 15055: Fix multi-color breathing LED & LEDs error on init  [Martinusbe]
-   * packages/apps/Snap/
-a549c38  Automatic translation import  [Gerrit Code Review]
 
