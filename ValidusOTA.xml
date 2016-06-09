@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <onyx>
-            <Filename>validus_onyx-6.0.1.beta.9.2-Official-20160601.zip</Filename>
+            <Filename>validus_onyx-6.0.1.beta.9.2-Official-20160609.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -10,7 +10,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View ValidusOs changelogs">https://github.com/ValidusOs-M/OTA_config/blob/master/Changelogs/OnePlus/onyx/Changelog.txt</ChangelogUrl>
+                description="View ValidusOs changelogs">https://github.com/ValidusOs-M/OTA_config/blob/master/Changelogs/OnePlus/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -21,7 +21,7 @@
                 description="Visit GZR onyx thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-05-07-onyx-tipsy-tesla-validus-6-0-1_43-aospb-official.437885/</XDAUrl>
         </onyx>
         <bacon>
-            <Filename>validus_bacon-6.0.1.beta.9.2-Official-20160601.zip</Filename>
+            <Filename>validus_bacon-6.0.1.beta.9.2-Official-20160609.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -29,7 +29,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View ValidusOs changelogs">https://github.com/ValidusOs-M/OTA_config/blob/master/Changelogs/OnePlus/bacon/Changelog.txt</ChangelogUrl>
+                description="View ValidusOs changelogs">https://github.com/ValidusOs-M/OTA_config/blob/master/Changelogs/OnePlus/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -44,7 +44,7 @@
                 description="Visit ValidusOs bacon XDA thread">http://forum.xda-developers.com/oneplus-one/development/rom-gzroms-validus-t3006089</XDAUrl>
         </bacon>
         <oneplus2>
-            <Filename>validus_oneplus2-6.0.1.beta.9.2-Official-20160601.zip</Filename>
+            <Filename>validus_oneplus2-6.0.1.beta.9.2-Official-20160609.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -52,7 +52,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View ValidusOs changelogs">https://github.com/ValidusOs-M/OTA_config/blob/master/Changelogs/OnePlus/oneplus2/Changelog.txt</ChangelogUrl>
+                description="View ValidusOs changelogs">https://github.com/ValidusOs-M/OTA_config/blob/master/Changelogs/OnePlus/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
