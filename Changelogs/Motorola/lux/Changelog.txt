@@ -1,7 +1,182 @@
 ====================
+     06-10-2016
+====================
+
+   * build/
+a64bb48  MOB30M  [Martinusbe]
+acbd5ae  "MOB30L"  [Martinusbe]
+f24d13d  "MOB30K"  [Martinusbe]
+e597bdd  Update security patch string to 2016-06-01  [Martinusbe]
+   * frameworks/av/
+0081e6d  Fixing ALOGE message in commit ad40e57890f81a3cf436c5f06da66396010bd9e5  [Martinusbe]
+b847d00  SampleTable.cpp: Fixed a regression caused by a fix for bug 28076789.  [Martinusbe]
+ca246c7  Resolve merge conflict when cp'ing ag/931301 to mnc-mr1-release  [Martinusbe]
+58eca4f  h264dec: check for overflows when calculating allocation size.  [Martinusbe]
+41484e6  codecs: check OMX buffer size before use in (avc|hevc|mpeg2)dec  [Martinusbe]
+e50360d  codecs: check OMX buffer size before use in (gsm|g711)dec  [Martinusbe]
+221f4d0  AudioSource: initialize variables  [Martinusbe]
+f159637  Check mp3 output buffer size  [Martinusbe]
+2d4ecf4  codecs: check OMX buffer size before use in (h263|h264)dec  [Martinusbe]
+6389036  DO NOT MERGE codecs: check OMX buffer size before use in (vorbis|opus)dec  [Martinusbe]
+07bd53a  Fix OMX_IndexParamConsumerUsageBits size check  [Martinusbe]
+36a60d5  Fix size check for OMX_IndexParamConsumerUsageBits  [Martinusbe]
+c0a3b69  Fix initialization of AAC presentation struct  [Martinusbe]
+67ab358  DO NOT MERGE Verify OMX buffer sizes prior to access  [Martinusbe]
+7ea1fee  Clear allocation to avoid info leak  [Martinusbe]
+2e10c55  Fixing safteynet logging bug introduced in ag/862848  [Martinusbe]
+759368b  3 uninitialized variables in IOMX.cpp  [Martinusbe]
+c7bbfa5  IOMX.cpp uninitialized pointer in BnOMX::onTransact  [Martinusbe]
+   * frameworks/base/
+0fa9ffc  Kill the real/isolated uid group, not the ApplicationInfo uid  [Martinusbe]
+80d70cb  Add new, hidden MotionEvent flag for partially obscured windows.  [Martinusbe]
+   * manifest/
+bac9ca7  r46  [martin coulon]
+   * system/core/
+c563594  Fix overflow in path building  [Martinusbe]
+
+====================
+     06-09-2016
+====================
+
+   * device/qcom/common/
+ad90ded  power: Use declared enums where possible  [Gerrit Code Review]
+   * kernel/motorola/msm8916/
+5336e78  f2fs: set f2fs garbage collection thread as freezable  [Alberto Pedron]
+   * manifest/
+bc1763b   clone-depth="1" on all prebuilts  [Martinusbe]
+
+====================
+     06-08-2016
+====================
+
+   * hardware/qcom/audio-caf/msm8916/
+277f5f4  Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.14' into cm-13.0-caf-8916  [Ethan Chen]
+   * hardware/qcom/media-caf/msm8916/
+69616e0  Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.14' into cm-13.0-caf-8916  [Ethan Chen]
+   * kernel/motorola/msm8916/
+7748f3b  ASoC: msm: audio-effects: fix stack overread and heap overwrite  [Alberto97]
+d821978  msm: kgsl: Add missing checks for alloc size and sglen  [Alberto97]
+5f15864a  msm: kgsl: Cast perfcounter query count to an unsigned int  [Alberto97]
+b618825  msm: camera: ispif: Validate VFE num input during reset  [Alberto97]
+826f6f7  msm: mdss: fix possible out-of-bounds and overflow issue in mdp debugfs  [Alberto97]
+2cae851  surnia: defconfig: Make it stockish!  [Alberto Pedron]
+
+====================
+     06-07-2016
+====================
+
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel/
+9b2d6a0  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x-kernel/
+dae88cc  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.0-kernel/
+817494f  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
+37a887e  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
+7473700  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
+ea9738c  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
+b6d54f4  Initial commit  [DespairFactor]
+   * vendor/motorola/
+5ebc37a  clark: update adreno from adreno_nexus_may2016.zip  [Dan Pasanen]
+
+====================
+     06-06-2016
+====================
+   * OTA_config/
+796e8fb  update changelog  [Anthony Pyrtle]
+ec7eab7  changelog  [Anthony Pyrtle]
+12a1736  updates for hammerhead  [Anthony Pyrtle]
+
+====================
+     06-05-2016
+====================
+
+   * build/
+588386d  uber.mk: add exclusions to build with new tcs.  [Alx31]
+   * device/qcom/common/
+674fb85  power-8952: Fix array initialization  [Ethan Chen]
+   * frameworks/native/
+e60a542  Add dalvik heap/hwui overrides for xxxhdpi phone with 4096MB RAM  [Martinusbe]
+   * manifest/
+f376807  track external_dhcpcd from slim  [Martinusbe]
+   * packages/apps/KernelAdiutor/
+adc155d  Revert "add support for MSM Performance"  [Martinusbe]
+34936d6  Revert "Hotplugs: Fix crash caused by MSM_Performance"  [Martinusbe]
+cb3ce78  Revert "MSM_Performance: Get rid of the big/little stuff..."  [Martinusbe]
+c2b0796  Hotplugs: AutoSMP - Fix  a warning being added to the divider card  [Martinusbe]
+08e9974  Hotplugs: Intelliplug - Fix some malfunctioning cards  [Martinusbe]
+4acb965  Hotplugs: Bricked - remove some variable usage  [Martinusbe]
+86743f6  MSM_Performance: Get rid of the big/little stuff...  [Martinusbe]
+bbd7fae  Hotplugs: Fixup IntelliPlug enable/disable toggle and tunables issue  [Martinusbe]
+55de6b1  Hotplugs: Fix IntelliPlug logic.  [Martinusbe]
+fcab1a1  Hotplugs: Fix crash caused by MSM_Performance  [Martinusbe]
+78a174c  GPU: Gaming Mode Min Power Level  [Martinusbe]
+92ebb58  add support for MSM Performance  [Martinusbe]
+f8599a6  CoreControl: Remove BCH and clean up the formatting a bit  [Martinusbe]
+d1c7258  Constants: Add some sysfs paths from @Benschold for OP2  [Martinusbe]
+792e2d1  Utils: Add helper function to return the existing sysfs path from an array of paths.  [Martinusbe]
+ff60e30  Add MW and TW gestures  [Martinusbe]
+
+====================
+     06-04-2016
+====================
+
+   * device/motorola/msm8916-common/
+86f2bab  msm8916-common: sepolicy: Remove bluetooth_loader and healthd sepolicy  [Shivam Desai]
+e39df0b  msm8916-common: Allow using new Moto Camera  [Shivam Desai]
+0f9f7bf  msm8916-common: rootdir: Remove sdcard symlink to /storage  [Shivam Desai]
+68c87eb  Automatic translation import  [Shivam Desai]
+12f7ef5  msm8916-common: Add missing graphics permissions  [Shivam Desai]
+   * manifest/
+27b52d7  Change Uber TC path  [Shivam Desai]
+   * packages/apps/KernelAdiutor/
+d249e5a  THermal: Remove derp  [Martinusbe]
+f87e3c5  Revert "SysFS Dump: This creates a sysfs dump function."  [Martinusbe]
+c50b3d6  fix constants  [Martinusbe]
+114199f  Add CoreControl to Bootservice  [Martinusbe]
+b7dc946  Setup Core Control  [Martinusbe]
+6789947  Add switch for Boeffla Config Helper  [Martinusbe]
+83e121e  Add possibility to switch back and recents button  [Martinusbe]
+d9490fc  GPU: Adreno Idler - Allow for either a Y or 1 for enabled  [Martinusbe]
+4326deb  Utils: isLetter function  [Martinusbe]
+a05ea81  Fix Merge Derps from Previous 2 commits  [Martinusbe]
+924c0e8  Thunderplug settings  [Martinusbe]
+0189ae2  Slider for SD810 low power mode  [Martinusbe]
+14cf69f  Hotplugs: Fixup some compatability issues.  [Martinusbe]
+4a0098c  CPU Governor Tunables: Add support for big/little tuned paths  [Martinusbe]
+b7e2195  Reduce MinSDK back to 19  [Martinusbe]
+9029a18  SysFS Dump: This creates a sysfs dump function.  [Martinusbe]
+fdfd86f  Decrease MinSDK to 19 here as well...  [Martinusbe]
+76204cf  DayNight  [Martinusbe]
+5e1771b  Icon update  [Martinusbe]
+080732a  strings: GZR Kernel Adiutor  [Martinusbe]
+e413a68  add GZR banner  [Martinusbe]
+ae5a5da  strings: GZR Kernel Adiutor  [Martinusbe]
+21acf45  CPUHotplug: Bluplug - Fix it not showing for people without my enable/disable mod  [Martinusbe]
+
+====================
+     06-03-2016
+====================
+   * OTA_config/
+6dc3418  Update changelog for Lux  [Nick]
+1c54202  Update Lux with RC  [Nick]
+bd53486  Merge branch 'master' into HEAD  [Martinusbe]
+d305a78  onepluses: update 20160601  [Martinusbe]
+832ebf7  Add Angler to OTA  [xlxfoxxlx]
+   * device/qcom/common/
+a214e51  power: Fixup typo in 8939 cpu4 timer rate  [Pat Erley]
+   * kernel/motorola/msm8916/
+6ccf311  defconfig: Upgrade to 24.107-56  [Alberto97]
+ba92424  ARM: smp: add memory barrier before waking thread up  [Alberto97]
+
+====================
      06-02-2016
 ====================
    * OTA_config/
+4320fe7  update  [John Brewer]
 27d3850  Add Huashan RC1 Build + Changelog  [a7r3]
    * device/qcom/sepolicy/
 8fbec17  healthd : allow healthd to read RTC/alarm devices  [Martinusbe]
@@ -147,10 +322,8 @@ e5a9547  slim: sepolicy: fix denials for external storage  [Martinusbe]
      06-01-2016
 ====================
 
-   * packages/apps/KernelAdiutor/
-ce81ae1  Icon update  [theringmaster]
-e4b1724  CPUHotplug.java: fix thunderplug not showing on arm64  [Martinusbe]
-4766d5b  CPUHotplug: Bluplug - Fix it not showing for people without my enable/disable mod  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8916/
+f5295b5  Merge AU_LINUX_ANDROID_LA.BR.1.2.6_RB1.06.00.01.179.018 on remote branch  [Linux Build Service Account]
    * packages/apps/PackageInstaller/
 5e142bf  Themes: Allow PackageInstaller tab Background to be themed  [theringmaster]
    * packages/apps/SlimOTA/
@@ -209,11 +382,6 @@ a1412b3  Chronometer: Update the value only if displayed on screen  [theringmast
 a80cfa3  Fix batterySendBroadcast not synchronized issue.  [theringmaster]
 9c82d9e  Fix google-explicit-constructor warnings.  [theringmaster]
 b9e9fb0  Alarm: add missing closedir after opendir when searching for RTC  [theringmaster]
-   * packages/apps/KernelAdiutor/
-e188ae6  thunderplug: add octacore support  [Martinusbe]
-0614fe5  utils: dark theme default  [Martinusbe]
-82e3e8a  strings: GZR Kernel Adiutor  [Martinusbe]
-2004826  add GZR banner  [Martinusbe]
    * packages/apps/OmniStyle/
 fb77ee7  Lil Red Headers  [theringmaster]
 22c703e  OmniStyle: Add Marshmallow weather icons  [theringmaster]
@@ -223,199 +391,4 @@ c005e4f  Update dashboard_categories.xml  [John Brewer]
 75350a5  Themes: Stop resetting per-app overlays all the time!  [theringmaster]
 4f6487d  Add RTL support  [theringmaster]
 98e1cd3  Themes: Show title of category in browser fragment  [theringmaster]
-
-====================
-     05-27-2016
-====================
-
-   * packages/apps/KernelAdiutor/
-9058743  CPUHotplugFragment: fix up thunderplug  [Martinusbe]
-9ab7abb  corecontrol: some fixes  [Martinusbe]
-b380749  corecontrol.java: clean it up a lill  [Martinusbe]
-d5db93f  Setup Core Control  [Martinusbe]
-5dffead  strings: GZR Kernel Adiutor  [Martinusbe]
-572b9e3  Thunderplug settings  [Martinusbe]
-f0bc779  Revert "Updater: Check for update after boot, display notification"  [Martinusbe]
-b324fd6  Revert "implement app update checker"  [Martinusbe]
-23c23b0  Revert "fix bug in github url"  [Martinusbe]
-2d6123b  Revert "update updater :)"  [Martinusbe]
-64e0b39  per app:radiobutton: make it compile  [Martinusbe]
-261f575  version 01  [Martinusbe]
-cdaa2de  GZR banner  [Martinusbe]
-7b7d3de  Build KA inline  [Martinusbe]
-e035d1e  Lists: Sort items  [Martinusbe]
-addb5c6  Bump to Build 10  [Martinusbe]
-0e3465a  WakeLocks: Only display if tunable wakelocks exist in kernel  [Martinusbe]
-9708068  AutoHBM: This toast is no longer necessary  [Martinusbe]
-9582c2f  AutoHBM: check screen state when the service starts and stops for sensor reading.  [Martinusbe]
-2bd02c8  AutoHBM: Let's not leave our services running in the background if the user wants to disable it...  [Martinusbe]
-9c11cea  AutoHBM: Fix some bugs with sensor reading  [Martinusbe]
-ab5d76a  AutoHBM: Stop starting the service each boot if the user hasn't enabled AutoHBM  [Martinusbe]
-75ffd52  Utils: Add 64bit check. Increase min SDK to 21 to allow for this  [Martinusbe]
-6ea932c  HBM_Widget: Add toast when a user without HBM adds the widget  [Martinusbe]
-de3d0ac  HBM_Widget: Hopefully fix it not responding  [Martinusbe]
-1a256f8  HBM_Widget: Update images with something that *should* look a little better  [Martinusbe]
-b7b12f9  Zenfone Commits: Cleanup a little  [Martinusbe]
-d2ba763  Fix min brightness value, init led if led has speed control and fix a typo  [Martinusbe]
-59795e5  Add Led Blink Rate Control and Led Blink Test Switch  [Martinusbe]
-918fd3d  Add entry for min_brightness for ZE551ML/ZE550ML this allows selecting minimum brightness on my kernel aka kernel FlareM for zenfone 2  [Martinusbe]
-cb58f35  AutoHBM: Put the checks in the right places.  [Martinusbe]
-f3b4a4e  Revert "HBM Stuff: Add a check"  [Martinusbe]
-   * packages/apps/Settings/
-45d9fbf  fix Adiutor fc  [Martinusbe]
-54e8a65  dash: change for new Adiutor prebuilt  [Martinusbe]
-7da25b6  Add KernelAdiutor and Viper4Android on Dashboard when installed  [Martinusbe]
-   * vendor/motorola/
-0846a9f  clark: move init.mmi.touch.sh to ramdisk  [Dan Pasanen]
-
-====================
-     05-26-2016
-====================
-
-   * frameworks/base/
-ff5b5c7  Revert "Keyguard : Ensure we expand onIconClicked"  [theringmaster]
-3fbc118  fix build  [theringmaster]
-9611b23  Long press StatusBarHeaderView to launch ThemeChooser headers browser Fix long press vibrate while we're in here. All long press events should fire the vibrate indication here.  [theringmaster]
-58efc01  SystemUI: Check current data subscription when updating signal cluster  [theringmaster]
-77ab776  usb: ensure accessory detached sent on re-attach  [theringmaster]
-3d52258  Settings: add Kiev time zones to picker  [theringmaster]
-1dba7dc  ShutdownThread: Decrypt before stopping storage manager  [theringmaster]
-7e8b858  Update volume slider only if ringer mode changed  [theringmaster]
-da65d55  Lockscreen : Only animate targets if launched via swipe  [theringmaster]
-2cfcf9e  Keyguard : Ensure we expand onIconClicked  [theringmaster]
-3d137b6  WindowManagerService : Ensure we update both size/position  [theringmaster]
-bbf78a3  Themes: Expose Power Dialogs  [theringmaster]
-e98707b  Themes: Theme reboot safemode dialog  [theringmaster]
-   * packages/apps/ThemeChooser/
-71ac096  ThemeChooser: update icon  [theringmaster]
-   * packages/providers/ThemesProvider/
-90b2eb3  dupe  [theringmaster]
-7f547cf  New icon  [theringmaster]
-6c89f5d  Update controls preview to properly render themed assets.  [theringmaster]
-c7544ee  Fix blank WiFi and signal icon previews  [theringmaster]
-85c7dfa  Guard to prevent inserting a record twice when a new theme is installed  [theringmaster]
-   * vendor/validus/
-57100c0  devices: add huashan  [martin coulon]
-
-====================
-     05-25-2016
-====================
-   * OTA_config/
-09f5531  Fixed OTA linked for Lux  [Nick]
-24fe62a  oneplus2: update 05/23  [Martinusbe]
-   * frameworks/base/
-29cce53  Grant signature permission to setup and search  [theringmaster]
-7dcd2d6  Add animations to quick settings tiles [1/2]  [theringmaster]
-4b37a72  SystemUI: make sure to expand all the way when flinging  [theringmaster]
-b2306d4  Adjust the CAF task manager layout  [theringmaster]
-a94a7ff  Use linear interpolator for battery level  [theringmaster]
-cd1aa99  Fix coloring of frame and bolt  [theringmaster]
-06f4ecd  Allow styling of battery text/charge blend mode  [theringmaster]
-   * manifest/
-5052790  track qcom audio  [John Brewer]
-6871f01  pull in GZR adiutor  [Martinusbe]
-667ebe4  fix sync (mah derp)  [Martinusbe]
-c7010e4  track our Snap  [Martinusbe]
-   * packages/apps/OmniStyle/
-622c1b1  Add Retro Header Randoms  [theringmaster]
-   * packages/apps/Settings/
-d7399a9  newValue  [John Brewer]
-a2cf9d7  Add animations to quick settings tiles [2/2]  [theringmaster]
-   * packages/apps/Snap/
-57f2b5b  Revert "Snap: Use new window manager flag for prevent system keys."  [Martinusbe]
-   * vendor/validus/
-89e2711  build KernelAdiutor  [Martinusbe]
-
-====================
-     05-24-2016
-====================
-   * OTA_config/
-19bcac1  Update lux  [Nick]
-69a6333  Add lux changelog  [GtrCraft]
-   * device/motorola/lux/
-de79f3b  lux: Switch to standalone libinit  [GtrCraft]
-e810077  init: disable bcl hotplug when switching cpu governor  [GtrCraft]
-   * frameworks/base/
-3dc8e5d  Themes: Headers overlay support [2/5] Acknowledgements Much love and respect to the developer of the CyanogenMod Theme Engine Clark Scheff @0xD34D. Your robust platform and API has allowed for continued development enhancing the lives of Android users. Thanks!  [theringmaster]
-c2f6582  Revert "Add 3Minit battery mod"  [Martinusbe]
-53274a7  Revert "Statusbar: Gracefully adapt 3Minit Battery hook for AOSP"  [Martinusbe]
-   * packages/apps/Settings/
-056054b  Theme Header Enabler Switch  [theringmaster]
-   * packages/apps/Snap/
-94574eb  Snap: Use new window manager flag for prevent system keys.  [Gerrit Code Review]
-   * packages/apps/ThemeChooser/
-d78e47e  Themes: Harden against null bitmaps from provider still processing  [theringmaster]
-dd504aa  Themes: Headers overlay support [3/4]  [theringmaster]
-   * packages/providers/ThemesProvider/
-b6b8b81  Themes: Headers overlay support [1/4]  [theringmaster]
-d5556ae  Themes: rename package to prevent conflicts with restores from other    *s  [theringmaster]
-cd9adb4  themesprovider: Fix priority of verifier thread  [theringmaster]
-   * packages/services/Telecomm/
-ff7db57  IMS: Fix ImsService crash due to default phones not created.  [Martinusbe]
-   * vendor/motorola/
-52a9298  Merge pull request #244 from SkrilaxCZ/cm-13.0  [ciwrl]
-   * vendor/validus/
-d54e4c1  Themes: Headers overlay support [4/4] Allow themers to replace org.cyanogenmod.theme with org.cyanogenmod.theme.extensions in theme manifest features to indicate to  Play Store that their apk should only show on    *s that support extensions. For example...  [theringmaster]
-
-====================
-     05-23-2016
-====================
-
-   * frameworks/native/
-71168b2  surfaceflinger: Add support for Exynos BGRA mixer  [Alx31]
-9359dfc  sensorservice: fix an invalid format string  [Alx31]
-292cf4d  sensorservice: add power usage to dumpsys  [Alx31]
-717ecbe  Add 3GB dalvik heap and hwui memory  [Alx31]
-
-====================
-     05-22-2016
-====================
-
-   * frameworks/base/
-ba51efe  Statusbar: Gracefully adapt 3Minit Battery hook for AOSP  [Alx31]
-2d6ae61  Add 3Minit battery mod  [Alx31]
-   * packages/apps/Snap/
-49caa04  Snap: Restore previous default denoise value  [Gerrit Code Review]
-   * vendor/motorola/
-720d935  quark: Fix libqc-opt  [Skrilax_CZ]
-
-====================
-     05-21-2016
-====================
-
-   * packages/apps/KernelAdiutor/
-9a55f3d  Merge pull request #22 from shmuelr/master  [Joe Schubert]
-2ef14e2  and block this backup as well  [Shmuel Rosansky]
-716eeea  Do not use android backup if a user installs the app on a new phone they should setup their settings again their new phone may not support the old configuration they have and we should force them to re-configure the app  [Shmuel Rosansky]
-344e310  Merge branch 'master' of git://github.com/Grarak/KernelAdiutor  [Shmuel Rosansky]
-3872957  HBM Stuff: Add a check  [Joe Schubert]
-   * packages/apps/Snap/
-6f0c3b6  Automatic translation import  [Jessica Wagantall]
-
-====================
-     05-20-2016
-====================
-
-   * device/motorola/msm8916-common/
-7091835  Automatic translation import  [Shivam Desai]
-2a596ab  msm8916-common: Remove TARGET_INIT_VENDOR_LIB  [Shivam Desai]
-a8a7d46  Automatic translation import  [Shivam Desai]
-fcb7fda  Automatic translation import  [Shivam Desai]
-d476984  msm8916-common: rootdir: Remove sre permissions  [Shivam Desai]
-686306f  Automatic translation import  [Shivam Desai]
-   * kernel/motorola/msm8916/
-26a6c18  netfilter: x_tables: check for size overflow  [Alberto97]
-1a999ee  osprey: defconfig: Make it stockish!  [Alberto97]
-   * packages/apps/KernelAdiutor/
-c55f0c7  Merge pull request #2 from yoinx/master  [shmuelr]
-2698012  HBM_Widget: Ensure that the HBM path is set before trying to toggle it  [Joe Schubert]
-a20e206  HBM_Widget: Allow proper resizing of widget image  [Joe Schubert]
-4e9d5fb  Merge pull request #20 from spezi77/master  [Joe Schubert]
-fdf92c3  AutoHBM: Add toast reminding users to turn screen off and on before AutoHBM will take effect  [Joe Schubert]
-badf2b0  AutoHBM: use the function to check if HBM is enabled.  [Joe Schubert]
-59b611c  HBM: Add support for CM's SRE implementation  [Joe Schubert]
-42fa793  Screen: Move some declarations to a single line  [Joe Schubert]
-627baba  Auto_HBM: Increase threshold max to 10,000.  [Joe Schubert]
-fa2ab92  Gradle: Update gradle  [Joe Schubert]
-390e257  HBM_Widget: Add some values  [Joe Schubert]
 
