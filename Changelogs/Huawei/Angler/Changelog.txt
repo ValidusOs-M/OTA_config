@@ -1,7 +1,186 @@
 ====================
-     06-01-2016
+     06-14-2016
+====================
+
+   * external/sepolicy/
+9b232eb  Add policy to SELinux to allow ViPER4Android in enforcing mode  [Martinusbe]
+
+====================
+     06-13-2016
+====================
+
+   * device/huawei/angler/
+2eebb36  Update Fingerprint to MTC19V  [xlxfoxxlx]
+d384069  kill bugreport - we remove this so the service isnt needed  [xlxfoxxlx]
+d6bd8c8  Enable multi voice sessions to support VoLTE audio  [xlxfoxxlx]
+f7780fc  angler: Add in missing v4a props  [xlxfoxxlx]
+78d0ced  Enable IMSI from Sim  [xlxfoxxlx]
+3d2fba5  angler: Add old-apns-conf.xml  [xlxfoxxlx]
+
+====================
+     06-12-2016
+====================
+
+
+====================
+     06-11-2016
 ====================
    * OTA_config/
+df9aa95  Update Huashan to 9.3-RC1  [a7r3]
+461218a  Update Lux  [GitHub]
+d7986a6  Update changelog for June update  [GitHub]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel/
+d735c67  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x-kernel/
+557bbad  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.0-kernel/
+3de3f06  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
+410d4d8  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
+a218dca  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
+a93454c  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
+65e8632  Initial commit  [DespairFactor]
+
+====================
+     06-10-2016
+====================
+   * OTA_config/
+1219432  onepluses: update 20160609 + one chanelog for all  [Martinusbe]
+   * build/
+a64bb48  MOB30M  [Martinusbe]
+acbd5ae  "MOB30L"  [Martinusbe]
+f24d13d  "MOB30K"  [Martinusbe]
+e597bdd  Update security patch string to 2016-06-01  [Martinusbe]
+   * frameworks/av/
+0081e6d  Fixing ALOGE message in commit ad40e57890f81a3cf436c5f06da66396010bd9e5  [Martinusbe]
+b847d00  SampleTable.cpp: Fixed a regression caused by a fix for bug 28076789.  [Martinusbe]
+ca246c7  Resolve merge conflict when cp'ing ag/931301 to mnc-mr1-release  [Martinusbe]
+58eca4f  h264dec: check for overflows when calculating allocation size.  [Martinusbe]
+41484e6  codecs: check OMX buffer size before use in (avc|hevc|mpeg2)dec  [Martinusbe]
+e50360d  codecs: check OMX buffer size before use in (gsm|g711)dec  [Martinusbe]
+221f4d0  AudioSource: initialize variables  [Martinusbe]
+f159637  Check mp3 output buffer size  [Martinusbe]
+2d4ecf4  codecs: check OMX buffer size before use in (h263|h264)dec  [Martinusbe]
+6389036  DO NOT MERGE codecs: check OMX buffer size before use in (vorbis|opus)dec  [Martinusbe]
+07bd53a  Fix OMX_IndexParamConsumerUsageBits size check  [Martinusbe]
+36a60d5  Fix size check for OMX_IndexParamConsumerUsageBits  [Martinusbe]
+c0a3b69  Fix initialization of AAC presentation struct  [Martinusbe]
+67ab358  DO NOT MERGE Verify OMX buffer sizes prior to access  [Martinusbe]
+7ea1fee  Clear allocation to avoid info leak  [Martinusbe]
+2e10c55  Fixing safteynet logging bug introduced in ag/862848  [Martinusbe]
+759368b  3 uninitialized variables in IOMX.cpp  [Martinusbe]
+c7bbfa5  IOMX.cpp uninitialized pointer in BnOMX::onTransact  [Martinusbe]
+   * frameworks/base/
+0fa9ffc  Kill the real/isolated uid group, not the ApplicationInfo uid  [Martinusbe]
+80d70cb  Add new, hidden MotionEvent flag for partially obscured windows.  [Martinusbe]
+   * manifest/
+bac9ca7  r46  [martin coulon]
+   * system/core/
+c563594  Fix overflow in path building  [Martinusbe]
+
+====================
+     06-09-2016
+====================
+
+   * manifest/
+bc1763b   clone-depth="1" on all prebuilts  [Martinusbe]
+
+====================
+     06-08-2016
+====================
+
+
+====================
+     06-07-2016
+====================
+
+
+====================
+     06-06-2016
+====================
+   * OTA_config/
+796e8fb  update changelog  [Anthony Pyrtle]
+ec7eab7  changelog  [Anthony Pyrtle]
+12a1736  updates for hammerhead  [Anthony Pyrtle]
+
+====================
+     06-05-2016
+====================
+
+   * build/
+588386d  uber.mk: add exclusions to build with new tcs.  [Alx31]
+   * frameworks/native/
+e60a542  Add dalvik heap/hwui overrides for xxxhdpi phone with 4096MB RAM  [Martinusbe]
+   * manifest/
+f376807  track external_dhcpcd from slim  [Martinusbe]
+   * packages/apps/KernelAdiutor/
+adc155d  Revert "add support for MSM Performance"  [Martinusbe]
+34936d6  Revert "Hotplugs: Fix crash caused by MSM_Performance"  [Martinusbe]
+cb3ce78  Revert "MSM_Performance: Get rid of the big/little stuff..."  [Martinusbe]
+c2b0796  Hotplugs: AutoSMP - Fix  a warning being added to the divider card  [Martinusbe]
+08e9974  Hotplugs: Intelliplug - Fix some malfunctioning cards  [Martinusbe]
+4acb965  Hotplugs: Bricked - remove some variable usage  [Martinusbe]
+86743f6  MSM_Performance: Get rid of the big/little stuff...  [Martinusbe]
+bbd7fae  Hotplugs: Fixup IntelliPlug enable/disable toggle and tunables issue  [Martinusbe]
+55de6b1  Hotplugs: Fix IntelliPlug logic.  [Martinusbe]
+fcab1a1  Hotplugs: Fix crash caused by MSM_Performance  [Martinusbe]
+78a174c  GPU: Gaming Mode Min Power Level  [Martinusbe]
+92ebb58  add support for MSM Performance  [Martinusbe]
+f8599a6  CoreControl: Remove BCH and clean up the formatting a bit  [Martinusbe]
+d1c7258  Constants: Add some sysfs paths from @Benschold for OP2  [Martinusbe]
+792e2d1  Utils: Add helper function to return the existing sysfs path from an array of paths.  [Martinusbe]
+ff60e30  Add MW and TW gestures  [Martinusbe]
+
+====================
+     06-04-2016
+====================
+
+   * device/huawei/angler/
+394a034  modify apns  [xlxfoxxlx]
+   * manifest/
+27b52d7  Change Uber TC path  [Shivam Desai]
+   * packages/apps/KernelAdiutor/
+d249e5a  THermal: Remove derp  [Martinusbe]
+f87e3c5  Revert "SysFS Dump: This creates a sysfs dump function."  [Martinusbe]
+c50b3d6  fix constants  [Martinusbe]
+114199f  Add CoreControl to Bootservice  [Martinusbe]
+b7dc946  Setup Core Control  [Martinusbe]
+6789947  Add switch for Boeffla Config Helper  [Martinusbe]
+83e121e  Add possibility to switch back and recents button  [Martinusbe]
+d9490fc  GPU: Adreno Idler - Allow for either a Y or 1 for enabled  [Martinusbe]
+4326deb  Utils: isLetter function  [Martinusbe]
+a05ea81  Fix Merge Derps from Previous 2 commits  [Martinusbe]
+924c0e8  Thunderplug settings  [Martinusbe]
+0189ae2  Slider for SD810 low power mode  [Martinusbe]
+14cf69f  Hotplugs: Fixup some compatability issues.  [Martinusbe]
+4a0098c  CPU Governor Tunables: Add support for big/little tuned paths  [Martinusbe]
+b7e2195  Reduce MinSDK back to 19  [Martinusbe]
+9029a18  SysFS Dump: This creates a sysfs dump function.  [Martinusbe]
+fdfd86f  Decrease MinSDK to 19 here as well...  [Martinusbe]
+76204cf  DayNight  [Martinusbe]
+5e1771b  Icon update  [Martinusbe]
+080732a  strings: GZR Kernel Adiutor  [Martinusbe]
+e413a68  add GZR banner  [Martinusbe]
+ae5a5da  strings: GZR Kernel Adiutor  [Martinusbe]
+21acf45  CPUHotplug: Bluplug - Fix it not showing for people without my enable/disable mod  [Martinusbe]
+
+====================
+     06-03-2016
+====================
+   * OTA_config/
+6dc3418  Update changelog for Lux  [Nick]
+1c54202  Update Lux with RC  [Nick]
+bd53486  Merge branch 'master' into HEAD  [Martinusbe]
+d305a78  onepluses: update 20160601  [Martinusbe]
+
+====================
+     06-02-2016
+====================
+   * OTA_config/
+832ebf7  Add Angler to OTA  [xlxfoxxlx]
 4320fe7  update  [John Brewer]
 27d3850  Add Huashan RC1 Build + Changelog  [a7r3]
    * device/huawei/angler/
@@ -70,8 +249,6 @@ d6881e6  sepolicy: Add btnvtool to be part bluetooth domain  [Martinusbe]
 6c3fbce  SEAndroid: Allow drmserver access to media files for testing  [Martinusbe]
 2e54d3f  Revert "add sepolices for touchfusion"  [Martinusbe]
 a837827  sepolicy: allow cneservice for platform apps  [Martinusbe]
-   * packages/apps/KernelAdiutor/
-963e429  DayNight  [theringmaster]
    * vendor/validus/
 8468ed2  APN: Use single APN for T-Mobile US LTE  [Martinusbe]
 cc161ec  cm: Remove garbage from sepolicy  [Martinusbe]
@@ -146,309 +323,15 @@ a905ef9  sepolicy: Set the context for fsck.exfat/ntfs to fsck_exec  [Martinusbe
 e5a9547  slim: sepolicy: fix denials for external storage  [Martinusbe]
 
 ====================
-     05-31-2016
+     06-01-2016
 ====================
 
    * hardware/qcom/audio-caf/msm8994/
+53d6d5e  hal: Compilation fixes  [Nicholas Flintham]
 1a4547a  Merge "hal: update combo device handling" into mm6.0-caf-8994  [Gerrit Code Review]
 148050d  Merge "hal: Garbage output in logcat" into mm6.0-caf-8994  [Gerrit Code Review]
-   * packages/apps/KernelAdiutor/
-ce81ae1  Icon update  [theringmaster]
-e4b1724  CPUHotplug.java: fix thunderplug not showing on arm64  [Martinusbe]
-4766d5b  CPUHotplug: Bluplug - Fix it not showing for people without my enable/disable mod  [Martinusbe]
    * packages/apps/PackageInstaller/
 5e142bf  Themes: Allow PackageInstaller tab Background to be themed  [theringmaster]
    * packages/apps/SlimOTA/
 b58f7f8  Icon update  [theringmaster]
-
-====================
-     05-30-2016
-====================
-   * OTA_config/
-8da2b1e  Shamu rc1 and changelog  [theringmaster]
-485cfb4  Merge branch 'master' of https://github.com/ValidusOs-M/OTA_config  [theringmaster]
-ffd336a  Add shamu  [theringmaster]
-   * vendor/validus/
-7ca1354  RC1 9.3  [John Brewer]
-
-====================
-     05-29-2016
-====================
-
-   * frameworks/base/
-0aa7e64  Add Screenshot Crop & Share [1/2] * Cleaned up a lill * Need to see if nothing is broken Change-Id: I100c4a86048a3d61cff8457471dd205cf9555714 Signed-off-by: Martinusbe <martinusbe@gmail.com>  [Martinusbe]
-   * packages/apps/Settings/
-d71a1f6  Add Screenshot Crop & Share [2/2]  [Martinusbe]
-
-====================
-     05-28-2016
-====================
-   * OTA_config/
-798f90c  oneplus2:update 20160528  [Martinusbe]
-906ad7b  oneplus2:update 20160528  [Martinusbe]
-   * art/
-470b3fe  Fix build breaks when using clang on M  [Martinusbe]
-74b73a9  Build dex2oat without asan instrumentation.  [Martinusbe]
-   * build/
-9efcc91  Set mcpu targets based on cpu variant.  [Martinusbe]
-   * frameworks/base/
-c5eebee  Merge branch 'mm6.0' of https://github.com/ValidusOs-M/frameworks_base into mm6.0  [theringmaster]
-c9f382b  Themes: Don't kill blacklisted launchers on theme change  [theringmaster]
-c3a2263  Alarm: Support devices using timerfd without CLOCK_POWEROFF_ALARM  [Martinusbe]
-   * packages/apps/Settings/
-842b1c3  Revert "dash: change for new Adiutor prebuilt"  [Martinusbe]
-4934d8d  Revert "fix Adiutor fc"  [Martinusbe]
-   * packages/apps/ThemeChooser/
-de19aaa  Themes: fix dismissing Play Store app installed notification  [theringmaster]
-
-====================
-     05-27-2016
-====================
-
-   * frameworks/base/
-a1412b3  Chronometer: Update the value only if displayed on screen  [theringmaster]
-57b9bf7  Core: Fix possible OOB  [theringmaster]
-8483737  Fix system crash caused by invalid array index of LegacyTypeTracker  [theringmaster]
-a80cfa3  Fix batterySendBroadcast not synchronized issue.  [theringmaster]
-9c82d9e  Fix google-explicit-constructor warnings.  [theringmaster]
-b9e9fb0  Alarm: add missing closedir after opendir when searching for RTC  [theringmaster]
-   * packages/apps/KernelAdiutor/
-e188ae6  thunderplug: add octacore support  [Martinusbe]
-0614fe5  utils: dark theme default  [Martinusbe]
-82e3e8a  strings: GZR Kernel Adiutor  [Martinusbe]
-2004826  add GZR banner  [Martinusbe]
-   * packages/apps/OmniStyle/
-fb77ee7  Lil Red Headers  [theringmaster]
-22c703e  OmniStyle: Add Marshmallow weather icons  [theringmaster]
-   * packages/apps/Settings/
-c005e4f  Update dashboard_categories.xml  [John Brewer]
-   * packages/apps/ThemeChooser/
-75350a5  Themes: Stop resetting per-app overlays all the time!  [theringmaster]
-4f6487d  Add RTL support  [theringmaster]
-98e1cd3  Themes: Show title of category in browser fragment  [theringmaster]
-
-====================
-     05-26-2016
-====================
-
-   * packages/apps/KernelAdiutor/
-9058743  CPUHotplugFragment: fix up thunderplug  [Martinusbe]
-9ab7abb  corecontrol: some fixes  [Martinusbe]
-b380749  corecontrol.java: clean it up a lill  [Martinusbe]
-d5db93f  Setup Core Control  [Martinusbe]
-5dffead  strings: GZR Kernel Adiutor  [Martinusbe]
-572b9e3  Thunderplug settings  [Martinusbe]
-f0bc779  Revert "Updater: Check for update after boot, display notification"  [Martinusbe]
-b324fd6  Revert "implement app update checker"  [Martinusbe]
-23c23b0  Revert "fix bug in github url"  [Martinusbe]
-2d6123b  Revert "update updater :)"  [Martinusbe]
-64e0b39  per app:radiobutton: make it compile  [Martinusbe]
-261f575  version 01  [Martinusbe]
-cdaa2de  GZR banner  [Martinusbe]
-7b7d3de  Build KA inline  [Martinusbe]
-e035d1e  Lists: Sort items  [Martinusbe]
-addb5c6  Bump to Build 10  [Martinusbe]
-0e3465a  WakeLocks: Only display if tunable wakelocks exist in kernel  [Martinusbe]
-9708068  AutoHBM: This toast is no longer necessary  [Martinusbe]
-9582c2f  AutoHBM: check screen state when the service starts and stops for sensor reading.  [Martinusbe]
-2bd02c8  AutoHBM: Let's not leave our services running in the background if the user wants to disable it...  [Martinusbe]
-9c11cea  AutoHBM: Fix some bugs with sensor reading  [Martinusbe]
-ab5d76a  AutoHBM: Stop starting the service each boot if the user hasn't enabled AutoHBM  [Martinusbe]
-75ffd52  Utils: Add 64bit check. Increase min SDK to 21 to allow for this  [Martinusbe]
-6ea932c  HBM_Widget: Add toast when a user without HBM adds the widget  [Martinusbe]
-de3d0ac  HBM_Widget: Hopefully fix it not responding  [Martinusbe]
-1a256f8  HBM_Widget: Update images with something that *should* look a little better  [Martinusbe]
-b7b12f9  Zenfone Commits: Cleanup a little  [Martinusbe]
-d2ba763  Fix min brightness value, init led if led has speed control and fix a typo  [Martinusbe]
-59795e5  Add Led Blink Rate Control and Led Blink Test Switch  [Martinusbe]
-918fd3d  Add entry for min_brightness for ZE551ML/ZE550ML this allows selecting minimum brightness on my kernel aka kernel FlareM for zenfone 2  [Martinusbe]
-cb58f35  AutoHBM: Put the checks in the right places.  [Martinusbe]
-f3b4a4e  Revert "HBM Stuff: Add a check"  [Martinusbe]
-   * packages/apps/Settings/
-45d9fbf  fix Adiutor fc  [Martinusbe]
-54e8a65  dash: change for new Adiutor prebuilt  [Martinusbe]
-7da25b6  Add KernelAdiutor and Viper4Android on Dashboard when installed  [Martinusbe]
-
-====================
-     05-25-2016
-====================
-
-   * frameworks/base/
-ff5b5c7  Revert "Keyguard : Ensure we expand onIconClicked"  [theringmaster]
-3fbc118  fix build  [theringmaster]
-9611b23  Long press StatusBarHeaderView to launch ThemeChooser headers browser Fix long press vibrate while we're in here. All long press events should fire the vibrate indication here.  [theringmaster]
-58efc01  SystemUI: Check current data subscription when updating signal cluster  [theringmaster]
-77ab776  usb: ensure accessory detached sent on re-attach  [theringmaster]
-3d52258  Settings: add Kiev time zones to picker  [theringmaster]
-1dba7dc  ShutdownThread: Decrypt before stopping storage manager  [theringmaster]
-7e8b858  Update volume slider only if ringer mode changed  [theringmaster]
-da65d55  Lockscreen : Only animate targets if launched via swipe  [theringmaster]
-2cfcf9e  Keyguard : Ensure we expand onIconClicked  [theringmaster]
-3d137b6  WindowManagerService : Ensure we update both size/position  [theringmaster]
-bbf78a3  Themes: Expose Power Dialogs  [theringmaster]
-e98707b  Themes: Theme reboot safemode dialog  [theringmaster]
-   * kernel/huawei/angler/
-91ee861  build 4.753  [f100cleveland]
-b67a1ba  Defconfig - Remove hotplugging and cpu hotplugging  [f100cleveland]
-b880f2b  Arm64: Enable Dcache word access  [f100cleveland]
-71aae43  Topology: Enhance For MultiCore Decision Making  [f100cleveland]
-   * packages/apps/ThemeChooser/
-71ac096  ThemeChooser: update icon  [theringmaster]
-   * packages/providers/ThemesProvider/
-90b2eb3  dupe  [theringmaster]
-7f547cf  New icon  [theringmaster]
-6c89f5d  Update controls preview to properly render themed assets.  [theringmaster]
-c7544ee  Fix blank WiFi and signal icon previews  [theringmaster]
-85c7dfa  Guard to prevent inserting a record twice when a new theme is installed  [theringmaster]
-   * vendor/validus/
-57100c0  devices: add huashan  [martin coulon]
-
-====================
-     05-24-2016
-====================
-   * OTA_config/
-09f5531  Fixed OTA linked for Lux  [Nick]
-24fe62a  oneplus2: update 05/23  [Martinusbe]
-   * frameworks/base/
-29cce53  Grant signature permission to setup and search  [theringmaster]
-7dcd2d6  Add animations to quick settings tiles [1/2]  [theringmaster]
-4b37a72  SystemUI: make sure to expand all the way when flinging  [theringmaster]
-b2306d4  Adjust the CAF task manager layout  [theringmaster]
-a94a7ff  Use linear interpolator for battery level  [theringmaster]
-cd1aa99  Fix coloring of frame and bolt  [theringmaster]
-06f4ecd  Allow styling of battery text/charge blend mode  [theringmaster]
-   * hardware/qcom/audio/default/
-6a359cf  audio: Hacks for sound trigger  [theringmaster]
-   * manifest/
-5052790  track qcom audio  [John Brewer]
-6871f01  pull in GZR adiutor  [Martinusbe]
-667ebe4  fix sync (mah derp)  [Martinusbe]
-c7010e4  track our Snap  [Martinusbe]
-   * packages/apps/OmniStyle/
-622c1b1  Add Retro Header Randoms  [theringmaster]
-   * packages/apps/Settings/
-d7399a9  newValue  [John Brewer]
-a2cf9d7  Add animations to quick settings tiles [2/2]  [theringmaster]
-   * packages/apps/Snap/
-57f2b5b  Revert "Snap: Use new window manager flag for prevent system keys."  [Martinusbe]
-   * vendor/validus/
-89e2711  build KernelAdiutor  [Martinusbe]
-
-====================
-     05-23-2016
-====================
-   * OTA_config/
-19bcac1  Update lux  [Nick]
-69a6333  Add lux changelog  [GtrCraft]
-   * frameworks/base/
-3dc8e5d  Themes: Headers overlay support [2/5] Acknowledgements Much love and respect to the developer of the CyanogenMod Theme Engine Clark Scheff @0xD34D. Your robust platform and API has allowed for continued development enhancing the lives of Android users. Thanks!  [theringmaster]
-c2f6582  Revert "Add 3Minit battery mod"  [Martinusbe]
-53274a7  Revert "Statusbar: Gracefully adapt 3Minit Battery hook for AOSP"  [Martinusbe]
-   * kernel/huawei/angler/
-ae4df36  build 4.75  [f100cleveland]
-4a325f1  cpufreq: cpu-boost: Bring up to latest iteration  [f100cleveland]
-   * packages/apps/Settings/
-056054b  Theme Header Enabler Switch  [theringmaster]
-   * packages/apps/Snap/
-94574eb  Snap: Use new window manager flag for prevent system keys.  [Gerrit Code Review]
-   * packages/apps/ThemeChooser/
-d78e47e  Themes: Harden against null bitmaps from provider still processing  [theringmaster]
-dd504aa  Themes: Headers overlay support [3/4]  [theringmaster]
-   * packages/providers/ThemesProvider/
-b6b8b81  Themes: Headers overlay support [1/4]  [theringmaster]
-d5556ae  Themes: rename package to prevent conflicts with restores from other    *s  [theringmaster]
-cd9adb4  themesprovider: Fix priority of verifier thread  [theringmaster]
-   * packages/services/Telecomm/
-ff7db57  IMS: Fix ImsService crash due to default phones not created.  [Martinusbe]
-   * vendor/validus/
-d54e4c1  Themes: Headers overlay support [4/4] Allow themers to replace org.cyanogenmod.theme with org.cyanogenmod.theme.extensions in theme manifest features to indicate to  Play Store that their apk should only show on    *s that support extensions. For example...  [theringmaster]
-
-====================
-     05-22-2016
-====================
-
-   * frameworks/native/
-71168b2  surfaceflinger: Add support for Exynos BGRA mixer  [Alx31]
-9359dfc  sensorservice: fix an invalid format string  [Alx31]
-292cf4d  sensorservice: add power usage to dumpsys  [Alx31]
-717ecbe  Add 3GB dalvik heap and hwui memory  [Alx31]
-
-====================
-     05-21-2016
-====================
-
-   * frameworks/base/
-ba51efe  Statusbar: Gracefully adapt 3Minit Battery hook for AOSP  [Alx31]
-2d6ae61  Add 3Minit battery mod  [Alx31]
-   * packages/apps/Snap/
-49caa04  Snap: Restore previous default denoise value  [Gerrit Code Review]
-
-====================
-     05-20-2016
-====================
-
-   * kernel/huawei/angler/
-1d39a73  locking/mcs: Fix mcs_spin_lock() ordering  [f100cleveland]
-366eb04  locking/mcs: Use acquire/release semantics  [f100cleveland]
-ac486ed  locking/asm-generic: Add _{relaxed|acquire|release}() variants for inc/dec atomics  [f100cleveland]
-a02a285  locking/atomics: Add _{acquire|release|relaxed}() variants of some atomic operations  [f100cleveland]
-967ef00  locking: Remove deprecated smp_mb__() barriers  [f100cleveland]
-dae3905  locking, asm-generic: Add _{relaxed|acquire|release}() variants for 'atomic_long_t'  [f100cleveland]
-7a15008  locking, asm-generic: Rework atomic-long.h to avoid bulk code duplication  [f100cleveland]
-07ffc42  futex: Acknowledge a new waiter in counter before plist  [f100cleveland]
-f59771f  futex: Rename barrier references in ordering guarantees  [f100cleveland]
-9fd5826  futex: Allow FUTEX_CLOCK_REALTIME with FUTEX_WAIT op  [f100cleveland]
-87b97a8  futex: Cleanup the goto confusion in requeue_pi()  [f100cleveland]
-27d444b  futex: Remove pointless put_pi_state calls in requeue()  [f100cleveland]
-e83afc6  futex: Document pi_state refcounting in requeue code  [f100cleveland]
-e619c6b  futex: Rename free_pi_state() to put_pi_state()  [f100cleveland]
-dc04deb  futex: Force hot variables into a single cache line  [f100cleveland]
-5255c2c  futex: Enhance comments in futex_lock_pi() for blocking paths  [f100cleveland]
-1f4ee8a  futex: Fix a race condition between REQUEUE_PI and task death  [f100cleveland]
-16595e8  futex: Mention key referencing differences between shared and private futexes  [f100cleveland]
-6753e41  futex: Ensure get_futex_key_refs() always implies a barrier  [f100cleveland]
-5553fc8  futex: Unlock hb->lock in futex_wait_requeue_pi() error path  [f100cleveland]
-c346aed  futex: Simplify futex_lock_pi_atomic() and make it more robust  [f100cleveland]
-14488b8  futex: Split out the first waiter attachment from lookup_pi_state()  [f100cleveland]
-b13634a  futex: Split out the waiter check from lookup_pi_state()  [f100cleveland]
-a21dc40  futex: Use futex_top_waiter() in lookup_pi_state()  [f100cleveland]
-19744cf  futex: update documentation for ordering guarantees  [f100cleveland]
-f974332  futex: avoid race between requeue and wake  [f100cleveland]
-738882e  futex: revert back to the explicit waiter counting code  [f100cleveland]
-384647d  futexes: Fix futex_hashsize initialization  [f100cleveland]
-d7f2bc0  futexes: Avoid taking the hb->lock if there's nothing to wake up  [f100cleveland]
-72b21e0  futexes: Document multiprocessor ordering guarantees  [f100cleveland]
-f6f87a8  futexes: Increase hash table size for better performance  [f100cleveland]
-9838dc6  futexes: Clean up various details  [f100cleveland]
-74312de  futex: move user address verification up to common code  [f100cleveland]
-2111748  futex: Implement lockless wakeups  [f100cleveland]
-a6a9f6b  locking/futex: Check PF_KTHREAD rather than !p->mm to filter out kthreads  [f100cleveland]
-8cffa39  futex: Fix argument handling in futex_lock_pi() calls  [f100cleveland]
-08434b4  usbnet: cleanup after bind() in probe()  [f100cleveland]
-e449c30  USB: cdc-acm: more sanity checking  [f100cleveland]
-   * packages/apps/KernelAdiutor/
-9a55f3d  Merge pull request #22 from shmuelr/master  [Joe Schubert]
-2ef14e2  and block this backup as well  [Shmuel Rosansky]
-716eeea  Do not use android backup if a user installs the app on a new phone they should setup their settings again their new phone may not support the old configuration they have and we should force them to re-configure the app  [Shmuel Rosansky]
-344e310  Merge branch 'master' of git://github.com/Grarak/KernelAdiutor  [Shmuel Rosansky]
-3872957  HBM Stuff: Add a check  [Joe Schubert]
-   * packages/apps/Snap/
-6f0c3b6  Automatic translation import  [Jessica Wagantall]
-
-====================
-     05-19-2016
-====================
-
-   * packages/apps/KernelAdiutor/
-c55f0c7  Merge pull request #2 from yoinx/master  [shmuelr]
-2698012  HBM_Widget: Ensure that the HBM path is set before trying to toggle it  [Joe Schubert]
-a20e206  HBM_Widget: Allow proper resizing of widget image  [Joe Schubert]
-4e9d5fb  Merge pull request #20 from spezi77/master  [Joe Schubert]
-fdf92c3  AutoHBM: Add toast reminding users to turn screen off and on before AutoHBM will take effect  [Joe Schubert]
-badf2b0  AutoHBM: use the function to check if HBM is enabled.  [Joe Schubert]
-59b611c  HBM: Add support for CM's SRE implementation  [Joe Schubert]
-42fa793  Screen: Move some declarations to a single line  [Joe Schubert]
-627baba  Auto_HBM: Increase threshold max to 10,000.  [Joe Schubert]
-fa2ab92  Gradle: Update gradle  [Joe Schubert]
-390e257  HBM_Widget: Add some values  [Joe Schubert]
 
