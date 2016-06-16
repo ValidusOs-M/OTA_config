@@ -1,9 +1,114 @@
 ====================
-     06-10-2016
+     06-16-2016
 ====================
 
    * bionic/
-fdbab91  Add prlimit to LP32.  [a7r3]
+f589c5d  Add prlimit to LP32.  [a7r3]
+   * vendor/validus/
+5f995b9  devices: add oneplus3  [Martinusbe]
+
+====================
+     06-15-2016
+====================
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
+0c368e2  Initial commit  [DespairFactor]
+   * vendor/sony/
+53cd857  blue: Cleanup unused hayabusa, mint and tsubasa blobs  [AdrianDC]
+5d6e374  hayabusa: Fix camera capture due to overlapping do_mmap_ion  [AdrianDC]
+f30cc40  blue-common: Move prima WiFi files to the device tree  [AdrianDC]
+52e005b  blue-common: Update to newer mpdecision  [AdrianDC]
+cfc9ddf  blue-common: Remove libqc-opt and update libmmcamera_wavelet_lib.so  [AdrianDC]
+c942f9c  blue-common: Add libqti-perfd-client to replace libqc-opt  [AdrianDC]
+0068eb8  blue-common: Use cancro mm fm patch downloader  [AdrianDC]
+5ef01b7  hayabusa: Reimport old device blobs  [AdrianDC]
+2a703dc  blue-common: Delete unused yamato firmware  [AdrianDC]
+
+====================
+     06-14-2016
+====================
+   * OTA_config/
+6a5f918  Update angler OTA  [xlxfoxxlx]
+   * external/sepolicy/
+9b232eb  Add policy to SELinux to allow ViPER4Android in enforcing mode  [Martinusbe]
+   * frameworks/base/
+346f70b  Option to use volume keys to control media volume anytime (1/2)  [GtrCraft]
+bcf85bc  SettingsProvider: Allow default volume adjust sound to be overlayed.  [Martinusbe]
+03e0bab  Fixes the system server crash issues caused by null pointer in NetworkPolicyManagerService.  [Martinusbe]
+   * kernel/sony/msm8960t/
+a0c2cb4  defconfig: huashan: Update configuration  [AdrianDC]
+7add4e0  drivers: convert shrinkers to new count/scan API  [AdrianDC]
+b702cf5  shrinker: add node awareness  [AdrianDC]
+ccbd744  mm: new shrinker API  [AdrianDC]
+2b502c7  Revert "mm: zcache: Fix 3.4 backport"  [AdrianDC]
+a1aabde  msm: camera: Add checks for integer overflow  [AdrianDC]
+de796ec  msm: camera: Add check for zero length buffer  [AdrianDC]
+7b14181  msm: camera: Add check to prevent array index out of bounds  [AdrianDC]
+79eb768  msm: camera: Fix off by one error  [AdrianDC]
+bd26fbf  msm: camera: Add check to prevent array index out of bounds  [AdrianDC]
+fb2a966  msm: camera: Check for array index out of bounds  [AdrianDC]
+6dc4cd5  msm: camera: Add proper bounds check for resolution config  [AdrianDC]
+80b5344  msm: camera: Check for array index out of bounds  [AdrianDC]
+e87cc51  msm: camera: Add check to prevent array index out of bounds  [AdrianDC]
+f6a1e29  msm: camera: Check for overflow condition  [AdrianDC]
+06d1b93  msm: vpe: Add check to prevent index out of bounds  [AdrianDC]
+c2383ea  Revert "mm: vmstat: make vmstat_work cpu bound during requeue"  [AdrianDC]
+   * packages/apps/Settings/
+9e533de  Option to use volume keys to control media volume anytime (1/2)  [GtrCraft]
+
+====================
+     06-13-2016
+====================
+
+
+====================
+     06-12-2016
+====================
+
+   * kernel/sony/msm8960t/
+68c0029  msm: camera: sensor: Validate step_boundary  [AdrianDC]
+b85f8ba  msm: kgsl: Defer adding the mem entry to a process  [AdrianDC]
+
+====================
+     06-11-2016
+====================
+   * OTA_config/
+df9aa95  Update Huashan to 9.3-RC1  [a7r3]
+   * kernel/sony/msm8960t/
+12d405c  defconfig: huashan: Disable CONFIG_DYNAMIC_DEBUG  [AdrianDC]
+   * packages/apps/Nfc/
+01ba29d  Revert "Nfc: Clear transfer manager service on Destroy"  [Gerrit Code Review]
+606f7ef  Revert "nfc: create a bootstrap service"  [Roman Birg]
+
+====================
+     06-10-2016
+====================
+   * OTA_config/
+461218a  Update Lux  [GitHub]
+d7986a6  Update changelog for June update  [GitHub]
+1219432  onepluses: update 20160609 + one chanelog for all  [Martinusbe]
+   * device/sony/huashan/
+d8afe7d  Revert "Add DTC Module Exclusion Makefile"  [a7r3]
+   * kernel/sony/msm8960t/
+6156687  mm/swapfile.c: do not skip lowest_bit in scan_swap_map() scan loop  [AdrianDC]
+8077e82  mm: vmstat: make vmstat_work cpu bound during requeue  [AdrianDC]
+589d1b2  vmscan: fix increasing nr_isolated incurred by putback unevictable pages  [AdrianDC]
+50d593f  mm: compaction: fix the page state calculation in too_many_isolated  [AdrianDC]
+f9b5144  mm: page-writeback: fix page state calculation in  throttle_vm_writeout  [AdrianDC]
+0f7e1fa  mm/compaction: fix wrong order check in compact_finished()  [AdrianDC]
+eb1c618  mm/compaction: make isolate_freepages start at pageblock boundary  [AdrianDC]
+bef7736  mm: compaction: detect when scanners meet in isolate_freepages  [AdrianDC]
+f0b19a8  mm: compaction: reset cached scanner pfn's before reading them  [AdrianDC]
+29034eb  mm: Fix "mm: vmpressure: account allocstalls only on higher pressures"  [AdrianDC]
+e8fc50d  mm: process_reclaim: Fix "mm: process_reclaim: use unbounded cpu workqueue"  [AdrianDC]
+97b8f6d  mm: process_reclaim: fix reclaim skip on low efficiency  [AdrianDC]
+1706885  mm: Remove shrink_page  [AdrianDC]
+98ea3cb  mm: make shrink_page_list with pages work from multiple zones  [AdrianDC]
+
+====================
+     06-09-2016
+====================
+
    * build/
 a64bb48  MOB30M  [Martinusbe]
 acbd5ae  "MOB30L"  [Martinusbe]
@@ -35,29 +140,9 @@ c7bbfa5  IOMX.cpp uninitialized pointer in BnOMX::onTransact  [Martinusbe]
 80d70cb  Add new, hidden MotionEvent flag for partially obscured windows.  [Martinusbe]
    * manifest/
 bac9ca7  r46  [martin coulon]
+bc1763b   clone-depth="1" on all prebuilts  [Martinusbe]
    * system/core/
 c563594  Fix overflow in path building  [Martinusbe]
-
-====================
-     06-09-2016
-====================
-
-   * kernel/sony/msm8960t/
-0d576c0  defconfig: huashan: Update configuration  [AdrianDC]
-c65229c  drivers: convert shrinkers to new count/scan API  [AdrianDC]
-8accb688  shrinker: add node awareness  [AdrianDC]
-68a4ee7  mm: new shrinker API  [AdrianDC]
-a9ec1f1  Revert "mm: zcache: Fix 3.4 backport"  [AdrianDC]
-f50984a  mm/compaction: fix wrong order check in compact_finished()  [AdrianDC]
-15e6a4d  mm/compaction: make isolate_freepages start at pageblock boundary  [AdrianDC]
-68df777  mm: compaction: detect when scanners meet in isolate_freepages  [AdrianDC]
-dcced4e  mm: compaction: reset cached scanner pfn's before reading them  [AdrianDC]
-addcc79  mm: Fix "mm: vmpressure: account allocstalls only on higher pressures"  [AdrianDC]
-6a6eadc  mm: process_reclaim: fix reclaim skip on low efficiency  [AdrianDC]
-7ed0a57  mm: Remove shrink_page  [AdrianDC]
-842c9b2  mm: make shrink_page_list with pages work from multiple zones  [AdrianDC]
-   * manifest/
-bc1763b   clone-depth="1" on all prebuilts  [Martinusbe]
 
 ====================
      06-08-2016
@@ -77,8 +162,6 @@ eca2738  huashan: Adapt Doze Sensors detection for AOSP-based ROMs  [a7r3]
      06-07-2016
 ====================
 
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
-ea9738c  Initial commit  [DespairFactor]
 
 ====================
      06-06-2016
@@ -91,8 +174,6 @@ ec7eab7  changelog  [Anthony Pyrtle]
 859e773  arm: irq: warn only when affinity really breaks  [AdrianDC]
 5f4962a  arm: irq: Notify affinity change when migrating IRQs during hotplug  [AdrianDC]
 4c87858  msm: perf: Do not allocate new hw_event if event is duplicate.  [AdrianDC]
-   * vendor/sony/
-b315bce  Merge pull request #171 from AdrianDC/cm-13.0  [Chirayu Desai]
 
 ====================
      06-05-2016
@@ -100,8 +181,6 @@ b315bce  Merge pull request #171 from AdrianDC/cm-13.0  [Chirayu Desai]
 
    * build/
 588386d  uber.mk: add exclusions to build with new tcs.  [Alx31]
-   * device/sony/huashan/
-2c0775b  huashan: Move prima WiFi files to the device tree  [AdrianDC]
    * frameworks/native/
 e60a542  Add dalvik heap/hwui overrides for xxxhdpi phone with 4096MB RAM  [Martinusbe]
    * manifest/
@@ -117,18 +196,15 @@ c2b0796  Hotplugs: AutoSMP - Fix  a warning being added to the divider card  [Ma
 bbd7fae  Hotplugs: Fixup IntelliPlug enable/disable toggle and tunables issue  [Martinusbe]
 55de6b1  Hotplugs: Fix IntelliPlug logic.  [Martinusbe]
 fcab1a1  Hotplugs: Fix crash caused by MSM_Performance  [Martinusbe]
-78a174c  GPU: Gaming Mode Min Power Level  [Martinusbe]
-92ebb58  add support for MSM Performance  [Martinusbe]
-f8599a6  CoreControl: Remove BCH and clean up the formatting a bit  [Martinusbe]
-d1c7258  Constants: Add some sysfs paths from @Benschold for OP2  [Martinusbe]
-792e2d1  Utils: Add helper function to return the existing sysfs path from an array of paths.  [Martinusbe]
-ff60e30  Add MW and TW gestures  [Martinusbe]
+   * vendor/sony/
+b315bce  Merge pull request #171 from AdrianDC/cm-13.0  [Chirayu Desai]
 
 ====================
      06-04-2016
 ====================
 
    * device/sony/huashan/
+2c0775b  huashan: Move prima WiFi files to the device tree  [AdrianDC]
 608037f  Automatic translation import  [Gerrit Code Review]
 aeba35d  huashan: Fix the combined bootimage recovery build  [AdrianDC]
    * kernel/sony/msm8960t/
@@ -206,6 +282,12 @@ bfec5da  f2fs: give RO message when recovering superblock  [AdrianDC]
    * manifest/
 27b52d7  Change Uber TC path  [Shivam Desai]
    * packages/apps/KernelAdiutor/
+78a174c  GPU: Gaming Mode Min Power Level  [Martinusbe]
+92ebb58  add support for MSM Performance  [Martinusbe]
+f8599a6  CoreControl: Remove BCH and clean up the formatting a bit  [Martinusbe]
+d1c7258  Constants: Add some sysfs paths from @Benschold for OP2  [Martinusbe]
+792e2d1  Utils: Add helper function to return the existing sysfs path from an array of paths.  [Martinusbe]
+ff60e30  Add MW and TW gestures  [Martinusbe]
 d249e5a  THermal: Remove derp  [Martinusbe]
 f87e3c5  Revert "SysFS Dump: This creates a sysfs dump function."  [Martinusbe]
 c50b3d6  fix constants  [Martinusbe]
@@ -244,299 +326,4 @@ d305a78  onepluses: update 20160601  [Martinusbe]
 cee129a  kgsl: allocate shared memory one page at a time  [AdrianDC]
 5f28860  mmc: core: add function comment header  [AdrianDC]
 781b595  mmc: block: Remove call to mmc_blk_set_blksize  [AdrianDC]
-
-====================
-     06-02-2016
-====================
-   * OTA_config/
-832ebf7  Add Angler to OTA  [xlxfoxxlx]
-4320fe7  update  [John Brewer]
-27d3850  Add Huashan RC1 Build + Changelog  [a7r3]
-   * device/qcom/sepolicy/
-8fbec17  healthd : allow healthd to read RTC/alarm devices  [Martinusbe]
-779ffc2  msm8960: Fix missing m9kefsc rule  [Martinusbe]
-107fdc6  sepolicy: fix mm-qcamerad permission for persist.camera* properties  [Martinusbe]
-638b6de  sepolicy : allow setattr for init_shell domain on sysfs_devices_system_cpu type of files.  [Martinusbe]
-af33ece  sepolicy: per_mgr: Allow services to find peripheral_manager.  [Martinusbe]
-476be04  msm8952: Label FRP partition  [Martinusbe]
-19edf6e  Seandroid: Adding policy for WLAN and Tethering  [Martinusbe]
-5c16253  sepolicy : add radio.noril property and allow set rule.  [Martinusbe]
-50a36af  Seandroid: Adding policy for WLAN.  [Martinusbe]
-c4a9b6c  msm8996: removed secure camera daemon policy  [Martinusbe]
-8ce89e4  sepolicy: Allow init.qcom.sh script to media setprop's  [Martinusbe]
-3796eb2  sepolicy: mdm_helper: Update policy to allow boot over PCIe  [Martinusbe]
-a68e084  sepolicy :add camera_prop set rule for mm-qcamerad domain  [Martinusbe]
-168de11  sepolicy: allow mm-pp-daemon to set debug property  [Martinusbe]
-0b5be8d  dpmservice_app: donot audit /proc/<pid> query denials  [Martinusbe]
-1f46665  sepolicy : add secontext for general and modem emmc partition  [Martinusbe]
-0e4d6e1  sepolicy: allow location daemons to create directory  [Martinusbe]
-19e7bc1  sepolicy:common: Adding socket connect policy for mm-qcamera-daemon.  [Martinusbe]
-55f8124  SEPolicy: Add permission to set property for location  [Martinusbe]
-8d6af3f  sepolicy : add bootkpi secontext and allow rule to access  [Martinusbe]
-96fff7a  wfd: Add policies to allow encoder/decoder dumps  [Martinusbe]
-76d1ed4  Add SELinux support for factory reset protection  [Martinusbe]
-ba7caf8  Add SELinux support for factory reset protection  [Martinusbe]
-d68c7da  Add SELinux support for factory reset protection  [Martinusbe]
-3796ae9  msm8974: Fix mm-qcamerad denial  [Martinusbe]
-f3e058a  sepolicy: allow gatekeeperd to access firmware_files (ex. kmota)  [Martinusbe]
-d497fd7  sepolicy: Label boot/recovery/cache partitions  [Martinusbe]
-89466d3  sepolicy: add missing fdAlbum type_transition  [Martinusbe]
-e615248  sepolicy : add allow rule for recovery to create file on vfat  [Martinusbe]
-d6966b8  sepolicy: perfd: fix signull permission  [Martinusbe]
-f6b7de8  Add netstats and location permissions support for RIDL/LogKit II  [Martinusbe]
-4e127d4  sepolicy: perf: allow checking for existence of other processes (signull)  [Martinusbe]
-a6b3ebd  Add SELinux support for factory reset protection  [Martinusbe]
-626cdbd  sepolicy: resolve 'init' and 'perfd' access violations  [Martinusbe]
-bbf868e  thermal: Fix labeling the thermal sockets  [Martinusbe]
-c903de0  msm8226: label cache partition  [Martinusbe]
-27cc10f  msm8916/common: Fix various issues  [Martinusbe]
-b0176b1  sepolicy: Add set property permission for irq balance  [Martinusbe]
-a931eef  mm-camera: Add debugfs read file permissions to mm-qcamera  [Martinusbe]
-06fa8af  sepolicy: Define SE policy for alarm and boot animation property  [Martinusbe]
-350518c  Allow ANR for RIDL/LK2 in sepolicy  [Martinusbe]
-3fdadf9  Add SELinux support for factory reset protection  [Martinusbe]
-dc312dd  msm8960: Add thermal daemon changes,rmt storage mount points and removed rmt_storage  [Martinusbe]
-f4f0d0c  msm8960: set labels on block devices  [Martinusbe]
-60099fb  Allow RIDL to drop caps  [Martinusbe]
-5696982  sepolicy: added seccamd policy  [Martinusbe]
-0fbf433  vold: allow vold to mount zram swap device  [Martinusbe]
-63cb628  SELINUX: Add SELINUX permissions for gps  [Martinusbe]
-0f4b979  Enable location_app find permission for user builds  [Martinusbe]
-bdf94fe  Allow PC Tool App to find improveTouch service  [Martinusbe]
-37f5297  audio: Add audio property to sepolicy property_contexts list  [Martinusbe]
-af08538  Location: added network access permission for test app  [Martinusbe]
-e49f824  sepolicy: Add policies for VM BMS executable  [Martinusbe]
-d799064  mm-camera2: mct: Add permission for graphics fd  [Martinusbe]
-dcdd6a8  sepolicy : Add permissions to Camera HAL  [Martinusbe]
-d6881e6  sepolicy: Add btnvtool to be part bluetooth domain  [Martinusbe]
-9185302  Add sdcard and logcat permissions support for RIDL/LogKit II  [Martinusbe]
-39484f2  Allow ANR for RIDL/LK2 in sepolicy  [Martinusbe]
-567f110  Allow ANR sepolicy read permissions for RIDL/LK2  [Martinusbe]
-616daaa  Allow RIDL to drop caps  [Martinusbe]
-6c3fbce  SEAndroid: Allow drmserver access to media files for testing  [Martinusbe]
-2e54d3f  Revert "add sepolices for touchfusion"  [Martinusbe]
-a837827  sepolicy: allow cneservice for platform apps  [Martinusbe]
-   * device/sony/huashan/
-d97fb16  Automatic translation import  [inky@build01]
-   * kernel/sony/msm8960t/
-4fad55e  mutex: Add a delay into the SPIN_ON_OWNER wait loop.  [AdrianDC]
-1d1a067  kernel: use the gnu89 standard explicitly  [AdrianDC]
-760a3f8  kbuild: Remove reference to uninitialised variable  [AdrianDC]
-f545c4c  kbuild: Remove useless warning while appending KCFLAGS  [AdrianDC]
-1f40685  wlan: Remove support for deprecated api get/set countryrev  [AdrianDC]
-fb110b3  wlan: EnableStrictRegulatoryForFCC should be False by default.  [AdrianDC]
-bcfeec5  wlan: Synchronize country code HDD ioctl  [AdrianDC]
-721da5b  wlan: Correcting timeout value for event driver_crda_req.  [AdrianDC]
-3c1f333  net/wireless: Fix kernel crash while doing iwlist scan  [AdrianDC]
-fc51aaa  cfg80211: avoid restoring the regulatory during disconnect  [AdrianDC]
-d47d11f  cfg80211: unblock user hint when cfg80211_regdom is intersected  [AdrianDC]
-   * vendor/sony/
-d88bb58  huashan: Move prima WiFi files to the device tree  [AdrianDC]
-   * vendor/validus/
-8468ed2  APN: Use single APN for T-Mobile US LTE  [Martinusbe]
-cc161ec  cm: Remove garbage from sepolicy  [Martinusbe]
-1cc9b10  APN: Fix Saunalahti APN regression introduced by CYNGNOS-436  [Martinusbe]
-54f895a  APN: update Batelco and Zain APNs for Bahrain  [Martinusbe]
-539adfe  sepolicy: Allow recovery to mount on tmpfs  [Martinusbe]
-9003db5  MetroPCS APN update  [Martinusbe]
-178369f  Irancell & MTS APN updates  [Martinusbe]
-b907c3a  Update APN name for Movistar INTERNET  [Martinusbe]
-a053cfb  APN: fixup single-digit mnc APNs  [Martinusbe]
-b313466  SMART [PH] APN updates  [Martinusbe]
-a47df16  Fix typo  [Martinusbe]
-c7f5797  apns: fix build  [Martinusbe]
-0b18a89  apns: Add ATT Nextgenphone  [Martinusbe]
-df05e4c  Resolve Orange RO authtype  [Martinusbe]
-442650c  Modify APN for Orange Romania  [Martinusbe]
-70504c9  add yufone APN  [Martinusbe]
-619c99b  apns: Net10 310410: Fix port  [Martinusbe]
-7bf76b5  Cleanup APN list for Norway  [Martinusbe]
-84b688a  apns: Cricket AIO 310150: Remove duplicate  [Martinusbe]
-de781f8  apns: T-Mobile 310260: Compatibility update  [Martinusbe]
-6737683  APN: Remove wrong T-Mobile CZ and Vodafone CZ APNs  [Martinusbe]
-76fef78  fix cricket APN  [Martinusbe]
-c6bbb4c  Update IMS APN based on Smartfren Device Technical document-v1 2  [Martinusbe]
-0aada36  APN: Add Smartfren IMS for Volte support RENDANG-525  [Martinusbe]
-6751dd4  APN: Fixup Vodafone IT and remove Noverca  [Martinusbe]
-2814c8e  APN: Update TIM MVNOs  [Martinusbe]
-8198cd6  Fix Digi Mobile defaults  [Martinusbe]
-1f51cbb  apns: update for IMS  [Martinusbe]
-7ab2d8f  vendor/cm: Update Japanese APNs  [Martinusbe]
-47b9754  Correct Tele2 Sweden APNs and remove Comviq Sweden.  [Martinusbe]
-be4a44f  APN: Remove identical MVNO entries  [Martinusbe]
-a1a1c1d  Ventelo is now Phonero  [Martinusbe]
-faefa05  Remove instance of server=""  [Martinusbe]
-b024944  Correct Tele2 Sweden APNs and remove Comviq Sweden.  [Martinusbe]
-2d58074  init: stop ril daemons if ro.radio.noril is set  [Martinusbe]
-6149f00  init: set ro.radio.noril if persist.radio.noril is set  [Martinusbe]
-94c42fa  init: Remove world-writable permissions in BFQ hierarchy  [Martinusbe]
-9453167  slim: remove some cruft  [Martinusbe]
-b9a9b98  init: add permissions for max_freq_hysteresis node  [Martinusbe]
-dee1e60  cm: Update and add additional permissions  [Martinusbe]
-478c0f0  Allow reading of cpufreq attributes  [Martinusbe]
-20c4114  cm: Set perms on a few additional paths  [Martinusbe]
-0e31a57  init.local.rc: Fix typo  [Martinusbe]
-f67280a  vendor/cm: Clean up init.local.rc  [Martinusbe]
-efde651  cm: Update permissions for ondemand sysfs nodes  [Martinusbe]
-418bf86  cm: Set permissions on input_boost node  [Martinusbe]
-0278042  rootdir: Set permissions for additional interactive sysfs nodes  [Martinusbe]
-57896a1  init: provide initial pemissions for ondemand governor  [Martinusbe]
-f982ebd  init.cm: Fix sysinit dependencies  [Martinusbe]
-5c20935  validus: add opt-out for exFAT  [Martinusbe]
-8103b66  sepolicy: Add permission for formatting user/cache partition  [Martinusbe]
-9c17ead  sepolicy: allow vold to trim persist  [Martinusbe]
-eb8db8b  sepolicy: qcom: Allow reading PSU sysfs by system_server  [Martinusbe]
-65dfe03  sepolicy: Remove some denials  [Martinusbe]
-b7ddaae  sepolicy: Add policy for thermal engine changes  [Martinusbe]
-7009ae1  sepolicy: add persist_block_device type  [Martinusbe]
-a1e763e  sepolicy: Allow adb pull of executables without root  [Martinusbe]
-8c42508  sepolicy: Allow system app to set boot anim property  [Martinusbe]
-ba6caac  sepolicy: Allow recovery to set system properties  [Martinusbe]
-deca677  sepolicy: Allow recovery to create links in the rootfs  [Martinusbe]
-10a49c7  sepolicy: fix denial for sudaemon  [Martinusbe]
-a8028cf  sepolicy: Underp the context for persistent storage  [Martinusbe]
-552f75a  sepolicy: Make superuser_device and sudaemon mlstrustedobjects  [Martinusbe]
-ef9c7d4  recovery: Add new rules for recursive wipe  [Martinusbe]
-b32e4a0  Grant platform apps access to /mnt/media_rw with sdcard_posix label  [Martinusbe]
-c1d452a  sepolicy: Add perfprofd with set_prop macro  [Martinusbe]
-5519967  sepolicy: Allow minivold execute_no_trans  [Martinusbe]
-1a6aaa0  sepolicy: label exfat and ntfs mkfs executables  [Martinusbe]
-0142a84  sepolicy: Add domain for mkfs binaries  [Martinusbe]
-a905ef9  sepolicy: Set the context for fsck.exfat/ntfs to fsck_exec  [Martinusbe]
-e5a9547  slim: sepolicy: fix denials for external storage  [Martinusbe]
-
-====================
-     06-01-2016
-====================
-
-   * packages/apps/PackageInstaller/
-5e142bf  Themes: Allow PackageInstaller tab Background to be themed  [theringmaster]
-   * packages/apps/SlimOTA/
-b58f7f8  Icon update  [theringmaster]
-
-====================
-     05-31-2016
-====================
-   * OTA_config/
-8da2b1e  Shamu rc1 and changelog  [theringmaster]
-485cfb4  Merge branch 'master' of https://github.com/ValidusOs-M/OTA_config  [theringmaster]
-ffd336a  Add shamu  [theringmaster]
-   * vendor/validus/
-7ca1354  RC1 9.3  [John Brewer]
-
-====================
-     05-30-2016
-====================
-
-   * device/sony/common/
-8fb31de  init: Add a device overridable finish_keycheck function  [AdrianDC]
-   * device/sony/huashan/
-fb44931  huashan: Run the LEDs introduction in a sub-process  [Adrian DC]
-37b11b9  huashan: Cleanup unneeded product/media.mk line-break  [AdrianDC]
-74bbc2d  huashan: Address a mpdecision sepolicy denial  [AdrianDC]
-   * frameworks/base/
-0aa7e64  Add Screenshot Crop & Share [1/2] * Cleaned up a lill * Need to see if nothing is broken Change-Id: I100c4a86048a3d61cff8457471dd205cf9555714 Signed-off-by: Martinusbe <martinusbe@gmail.com>  [Martinusbe]
-   * kernel/sony/msm8960t/
-3b6ed5d  wlan: Resolve excessive logging issue.  [AdrianDC]
-b5b9607  f2fs: fix to update dirty page count correctly  [AdrianDC]
-   * packages/apps/Settings/
-d71a1f6  Add Screenshot Crop & Share [2/2]  [Martinusbe]
-
-====================
-     05-29-2016
-====================
-   * OTA_config/
-798f90c  oneplus2:update 20160528  [Martinusbe]
-906ad7b  oneplus2:update 20160528  [Martinusbe]
-   * art/
-470b3fe  Fix build breaks when using clang on M  [Martinusbe]
-74b73a9  Build dex2oat without asan instrumentation.  [Martinusbe]
-   * build/
-9efcc91  Set mcpu targets based on cpu variant.  [Martinusbe]
-   * device/sony/huashan/
-73207f1  huashan: delete default_values file every every reboot  [Adrian DC]
-4beef4e  huashan: Restructure the device tree into fragments  [AdrianDC]
-   * frameworks/base/
-c5eebee  Merge branch 'mm6.0' of https://github.com/ValidusOs-M/frameworks_base into mm6.0  [theringmaster]
-c9f382b  Themes: Don't kill blacklisted launchers on theme change  [theringmaster]
-c3a2263  Alarm: Support devices using timerfd without CLOCK_POWEROFF_ALARM  [Martinusbe]
-   * kernel/sony/msm8960t/
-3dc5a29  mm: slub: Default slub_max_order to 0  [AdrianDC]
-e4f0b4b  slub: fix incorrect return type of get_any_partial()  [AdrianDC]
-93a081c  defconfig: huashan: Remove unused CONFIG_ANDROID_PMEM  [AdrianDC]
-3f4bbb6  WLAN: same p2p MAC address is observed from mutiple devices  [AdrianDC]
-d92ca07  msm: wfd: Fix initialization of variable  [AdrianDC]
-de8ffb2  msm: ipc_router: Bind only a client port as control port  [AdrianDC]
-1a4afaa  misc: Remove pmem driver completely  [AdrianDC]
-3c59889  msm: Remove ANDROID_PMEM from the Kconfig dependencies  [AdrianDC]
-ae276d9  msm: Don't depend on ANDROID_PMEM for contiguous region  [AdrianDC]
-30a852a  ASoC: msm: Remove android_pmem.h header  [AdrianDC]
-d4d2708  msm: wfd: Remove reference to android_pmem.h  [AdrianDC]
-68d75e3  msm: board-7630: Remove all references to PMEM  [AdrianDC]
-36a8bcd  msm: Remove all references to pmem from audio files  [AdrianDC]
-231d455  msm: Remove default y from hw3d driver  [AdrianDC]
-6274a3a  msm: video: Remove remaining android_pmem header  [AdrianDC]
-c5e643c  msm: camera: Remove references to CONFIG_ANDROID_PMEM  [AdrianDC]
-f69b3aa  crypto: msm: Remove use of PMEM  [AdrianDC]
-e8a4056  misc: Fix NULL pointer dereferences and trivial issues  [AdrianDC]
-1786235  Resolved static analysis issues - set 6  [AdrianDC]
-e30a68d  Resolved static analysis issues - set 5  [AdrianDC]
-a62923b  Resolved static analysis issues - set 3  [AdrianDC]
-4aed946  input: atmel_mxt_ts: check NULL pointer after requesting firmware  [AdrianDC]
-5181ee1  msm: wfd: Fix null pointer dereferencing  [AdrianDC]
-d7efe0f  msm: wfd: Fix null pointer dereferencing  [AdrianDC]
-beeefc7  msm: wfd: Fix null pointer dereferencing for ion handle  [AdrianDC]
-aa13c05  msm: wfd: Check for NULL pointers  [AdrianDC]
-d730223  msm: camera: Fix potential null pointer access  [AdrianDC]
-8404c38  msm: camera: Fix potential null pointer dereference  [AdrianDC]
-bcefe87  USB: usbfs: fix potential infoleak in devio  [AdrianDC]
-   * packages/apps/Settings/
-842b1c3  Revert "dash: change for new Adiutor prebuilt"  [Martinusbe]
-4934d8d  Revert "fix Adiutor fc"  [Martinusbe]
-   * packages/apps/ThemeChooser/
-de19aaa  Themes: fix dismissing Play Store app installed notification  [theringmaster]
-
-====================
-     05-28-2016
-====================
-
-   * device/sony/huashan/
-2263294  huashan: Delete unused persist.timed.enable flag  [AdrianDC]
-0ecdf38  huashan: Delete unused device_perms.h header  [Gerrit Code Review]
-2a2eda9  Automatic translation import  [clyde@build01]
-e2d976c  huashan: Assure Glove Mode is enabled by default  [AdrianDC]
-   * frameworks/base/
-a1412b3  Chronometer: Update the value only if displayed on screen  [theringmaster]
-57b9bf7  Core: Fix possible OOB  [theringmaster]
-8483737  Fix system crash caused by invalid array index of LegacyTypeTracker  [theringmaster]
-a80cfa3  Fix batterySendBroadcast not synchronized issue.  [theringmaster]
-9c82d9e  Fix google-explicit-constructor warnings.  [theringmaster]
-b9e9fb0  Alarm: add missing closedir after opendir when searching for RTC  [theringmaster]
-   * kernel/sony/msm8960t/
-11ec626  msm: perf: validate input argument of ev_constraints functions  [AdrianDC]
-f76c6b8  msm: Fixes for static analysis issues - set 2  [AdrianDC]
-4a20649  AKM8963: Use the common sysfs __BIN_ATTR macro  [AdrianDC]
-e5e7ec2  USB: gadget: android: Fix checkpatch related errors  [AdrianDC]
-872ca36  gadget: composite: Fix crash seen when SS descriptor is not available  [AdrianDC]
-4accb21  USB: core: Add USB_DEVICE_ERROR uevent for enumeration timeout  [AdrianDC]
-a1e0e7d  usb: gadget: Set size only after validating pointer is valid  [AdrianDC]
-8c27024  usb: gadget: Validate the port number in acm_bind_config  [AdrianDC]
-10df771  zram: cosmetic ZRAM_ATTR_RO code formatting tweak  [AdrianDC]
-e14c6bb  UPSTREAM: zram: use DEVICE_ATTR_[RW|RO|WO] to define zram sys  device attribute  [AdrianDC]
-20c231f  driver core: create write-only attribute macros for devices and drivers  [AdrianDC]
-3965c78  sysfs: create __ATTR_WO()  [AdrianDC]
-f47b86a  driver core: device.h: add RW and RO attribute macros  [AdrianDC]
-39e507a  sysfs: use file mode defines from stat.h  [AdrianDC]
-51515f5  sysfs: add more helper macro's for (bin_)attribute(_groups)  [AdrianDC]
-39573c9  sysfs.h: add BIN_ATTR macro  [AdrianDC]
-e1315e2  sysfs.h: add __ATTR_RW() macro  [AdrianDC]
-   * packages/apps/OmniStyle/
-fb77ee7  Lil Red Headers  [theringmaster]
-22c703e  OmniStyle: Add Marshmallow weather icons  [theringmaster]
-   * packages/apps/Settings/
-c005e4f  Update dashboard_categories.xml  [John Brewer]
-   * packages/apps/ThemeChooser/
-75350a5  Themes: Stop resetting per-app overlays all the time!  [theringmaster]
-4f6487d  Add RTL support  [theringmaster]
-98e1cd3  Themes: Show title of category in browser fragment  [theringmaster]
 
