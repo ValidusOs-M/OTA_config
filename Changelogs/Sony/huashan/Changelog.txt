@@ -1,20 +1,220 @@
 ====================
-     06-23-2016
+     06-28-2016
 ====================
 
    * bionic/
-ebee92c  Add prlimit to LP32.  [a7r3]
+36008f2  Add prlimit to LP32.  [a7r3]
+   * device/sony/huashan/
+e9836bc  huashan: Use jemalloc instead of dlmalloc  [a7r3]
+1c83c40  huashan: Tune Memory parameters based on recommended values  [a7r3]
+1d00c80  huashan: Avoid a rare bootloop where the SensorService boots late  [a7r3]
+   * external/DUtils/
+cc8ceb4  Merge remote-tracking branch 'duu/mm6.0' into HEAD  [theringmaster]
+   * frameworks/base/
+6aab17a  Few more fixes  [theringmaster]
+b9a59e1  Disable/Enable screenshot sound [1/2]  [theringmaster]
+36898e6  Add missing drawables  [theringmaster]
+ce67726  Revert "SettingsProvider: Allow default volume adjust sound to be overlayed."  [theringmaster]
+d59927e  SystemUI: [Screenshot Crop & Share] Add blur feature  [theringmaster]
+dba938a  SystemUI: fix wrong intent extra for screenshot edit  [theringmaster]
+6dcccaa  SystemUI: add edit action for screenshot notification to start the crop&share editor thanks to @LorDClockaN for the idea  [theringmaster]
+11b6884  Don't let rogue themes ruin notifications If we encounter an exception when inflating a notification's views, and a theme is applied, we should make a second attempt at inflating the notification without a theme applied in case the theme cause the issue.  If the exception still occurs, we treat it like we normally do and allow the app to be killed for posting a bad notification.  [theringmaster]
+e022e8e  Themes: Clear out bootanimation if pkgName empty An empty string for the package name implies the given component should be cleared out, so make sure updateBootAnim respects that.  [theringmaster]
+b05d4f5  Themes: Use default audibles when pkgName is empty Fixes an issue where audibles would be "unknown" causing them to not play when phone rings, notifications arive or an alarm goes off  [theringmaster]
+897f9d9  Adding NullPointerException check in DocumentsUI  [theringmaster]
+f8bab1d  SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission  [theringmaster]
+b4abb01  base: Screenshot Crop & Share: add draw stroke width support Change-Id: Ife8ccaf1775f81d3cdb097e8cbeca53895bd6945  [theringmaster]
+694ac66  SettingsProvider: Allow default volume adjust sound to be overlayed.  [theringmaster]
+2a5214b  SystemUI: add volume tones back  [theringmaster]
+   * packages/apps/DUI/
+8b63235  Smartbar/Fling Volume panel action [2/2]  [theringmaster]
+8f0ea4a  SmartBar: expose color res for all the SmartBar things  [theringmaster]
+026d311  Add a visual cue for editing smartbar  [theringmaster]
+   * packages/apps/Settings/
+d72e85b  Disable/Enable screenshot sound [2/2] Change-Id: If254407c43fbcd70c1fafce244686f07b20864b7  [theringmaster]
+1dab5af  More import fixes  [theringmaster]
+c6e902a  Fix call  [theringmaster]
+34f4613  DUI: Use DocumentsProvider API for handling custom icons [1/2] All images requested for DUI features will be copied and kept in a folder in external storage. We can not rely on third party content providers to deliver our icons to SystemUI. Either the provider gets us a good icon and we copy it successfully or we toast an error and let SystemUI know the request was canceled.  [theringmaster]
+
+====================
+     06-27-2016
+====================
+
+   * art/
+3e70ed2  Disable Clang_arm  [GitHub]
+   * device/sony/common/
+a8e5bd5  init: Launch the ramdisk init inside of the main thread  [AdrianDC]
+
+====================
+     06-26-2016
+====================
+
+   * device/sony/common/
+97b461a  init: Avoid overriding root toybox binary after booting  [AdrianDC]
+   * external/DUtils/
+7907183  Smartbar/Fling Volume panel action [1/2]  [xlxfoxxlx]
+f369368  DUI: Use DocumentsProvider API helper methods [2/2]  [xlxfoxxlx]
+fbc92a9  DUI: Bring up "In-app search" bindable action and resources [2/2]  [xlxfoxxlx]
+3dd0800  Revert "No intention of adding lockscreen shortcuts"  [xlxfoxxlx]
+   * frameworks/base/
+1ecb8ae  StrictMode: fix deserialization of ViolationInfo on large stacks  [Martinusbe]
+7f63225  Framework: allow ResolverActivity to be specialized from other package  [Martinusbe]
+   * kernel/sony/msm8960t/
+5c89c9f  android: configs: Update Android config fragments  [AdrianDC]
+1cceea4  defconfig: huashan: Restrict access to perf events  [AdrianDC]
+34d31bd  FROMLIST: security,perf: Allow further restriction of perf_event_open  [AdrianDC]
+a79f223  BACKPORT: perf tools: Document the perf sysctls  [AdrianDC]
+da29301  KEYS: potential uninitialized variable  [AdrianDC]
+f9637fa  net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom  [AdrianDC]
+827bc1b  mnt: Fail collect_mounts when applied to unmounted mounts  [AdrianDC]
+
+====================
+     06-25-2016
+====================
+
+   * art/
+3c59cf6  Small correction in Optimizing's ARM64 code generator.  [Martinusbe]
+1c367ed  Allow void to get in ARM64ReturnLocation.  [Martinusbe]
+3bf7afb  Optimizing String.Equals as an intrinsic (ARM64)  [Martinusbe]
+498f255  Structure for String.Equals intrinsic  [Martinusbe]
+2f14fbc  Remove interpreter entrypoint in ArtMethod.  [Martinusbe]
+1e0e698  ARM/ARM64: Implement numberOfLeadingZeros intrinsic.  [Martinusbe]
+2b936d1  ART: Disable Math.round intrinsics  [Martinusbe]
+1e09a9e  ARM/ARM64: Implement numberOfLeadingZeros intrinsic.  [Martinusbe]
+91fb148  Fix missing header inclusion in art/runtime/thread.cc.  [Martinusbe]
+c1f25e1  ART: Speed up thread stack tracing for ANRs  [Martinusbe]
+cf84bc0  SafeStack-friendly stack protection in ART.  [Martinusbe]
+be91148  Rename VisitCondition's argument in code generators.  [Martinusbe]
+ba99d4f  Opt compiler: Speedup div/rem by constants on arm32 and arm64.  [Martinusbe]
+0ecbb29  Use _exit instead of exit for the system exit.  [Martinusbe]
+680bc6b  Use delete/delete[] rather than free/realloc in tracedump  [Martinusbe]
+01d3ba3  ART: Clean up undefines and target clang  [Martinusbe]
+7dab683  Optimizing: Add direct calls to math intrinsics  [Martinusbe]
+006935e  Rename ZipEntryName to ZipString  [Martinusbe]
+91ae8f0  Remove bogus DCHECK().  [Martinusbe]
+aa64122  ART: Speed up stack guard page install  [Martinusbe]
+40a1bde  Fix lock ordering violation  [Martinusbe]
+aa20fc2  Allow for sig chain to be disabled.  [Martinusbe]
+2c49b9a  Suppress a valgrind libc issue.  [Martinusbe]
+c2540da  ART: Allow unwinding unattached threads  [Martinusbe]
+3626dd7  Change JIT code to use optimizing.  [Martinusbe]
+5f9009a  Make the JIT the default in ART.  [Martinusbe]
+8d187b7  Build dex2oat without asan instrumentation.  [Martinusbe]
+c81fdc0  Fix imgdiag build rules.  [Martinusbe]
+5079e81  ART: Fix missing include  [Martinusbe]
+3862f9c  JDWP: fix returned tag for ClassType.NewInstance  [Martinusbe]
+acf0263  JDWP: fix java.lang.String creation  [Martinusbe]
+033c3c2  ART: Refactor CommonRuntimeTest::SetUp  [Martinusbe]
+1629dd4  Skip DumpForSigQuit if debugger is active  [Martinusbe]
+4984d8d  Fix braino in parallel move resolver.  [Martinusbe]
+9daf74d  Add test case for bad arm code generation.  [Martinusbe]
+1be5f34  Assert we don't store an invalid dex_pc in the stack maps.  [Martinusbe]
+97ab3e1  Block callee save fp registers in debuggable.  [Martinusbe]
+27c52b8  ART: Use an iterative way in DoDFSPreOrderSSARename()  [Martinusbe]
+4c5b43d  Quick: Avoid shifting -1 left (undefined behavior).  [Martinusbe]
+d9a7f7c  Add deoptimization test.  [Martinusbe]
+78f20d1  ART: Fix DeadPhiHandling creating >2 equivalents  [Martinusbe]
+4a0339f  Disable class unloading test for tracing tests  [Martinusbe]
+ec0850b  ART: PathClassLoader test  [Martinusbe]
+3b92d10  Minor cleanup of Monitor::VisitLocks  [Martinusbe]
+cefadd5  Use _exit instead of exit after exec fails  [Martinusbe]
+4a330c9  Adjust jit code cache on ThreadStress to avoid timeouts.  [Martinusbe]
+f4a4966  Fix dependencies when not building with Jack.  [Martinusbe]
+5912f77  Refactor the alloc entry point generation code.  [Martinusbe]
+02971d4  Use HashMap for DexFileVerifier  [Martinusbe]
+9e3fa54  ART: Add VLOG printing of SetStatus(Error)  [Martinusbe]
+7c4d72e  ART: Fix arm32 assembly for Clang  [Martinusbe]
+000f037  Revert "Disable clang optimization to boot up on arm64."  [Martinusbe]
+f04789a  Reduce sleep duration in SuspendAllDaemonThreads  [Martinusbe]
+d2f9c8f  Get class loader to remember interrupts  [Martinusbe]
+1263d7f  ART: Special form of lock aliasing  [Martinusbe]
+1e63866  ART: Recognize cortex-a53.a57 for ARM features  [Martinusbe]
+4a8f7f3  ART: Use __ANDROID__ instead of HAVE_ANDROID_OS  [Martinusbe]
+7f6c16c  Add oat location to oatdump.  [Martinusbe]
+943d215  JIT: Fix incorrect CHECK  [Martinusbe]
+f9dd198  Fix memory fences in the ARM64 UnsafeCas intrinsics.  [Martinusbe]
+6335594  Use --oat-fd instead of --oat-file when calling dex2oat.  [Martinusbe]
+aa4190a  Disable the ARM & ARM64 UnsafeCASObject intrinsic with heap poisoning.  [Martinusbe]
+25d8fd5  ART: Fix left-shift of negative numbers  [Martinusbe]
+85d1b9f  Block signals before invoking special or user handlers  [Martinusbe]
+808833d  Change dex_location_ from const char* to std::string.  [Martinusbe]
+e49dada  Optimizing: Allow storing value objects in containers.  [Martinusbe]
+753b54f  ARM64: Better recognition of constants encodable as immediates.  [Martinusbe]
+8ef4461  Remove unnecessary std::move from variant_map.h  [Martinusbe]
+bf92a45  ART: Enable the JustInTime compiler  [Martinusbe]
+958f41a  Use liblog for logging  [Martinusbe]
+02c602f  art: fix dex2oat watchdog timeout  [Martinusbe]
+6c7c853  art: disable FDO  [Martinusbe]
+74ec133  ART: remove fallthrough  [Martinusbe]
+bbf296b  tests: All or nothing  [Martinusbe]
+820aebf  build: Major Cleanup  [Martinusbe]
+e2350ac  dalvikvm: Compile with GCC  [Martinusbe]
+8de4af0  Register signal handler to kernel if not claimed  [Martinusbe]
+3cb51c0  Fix DDM reply buffer deallocation  [Martinusbe]
+7738f43  ART: Fix stub_test  [Martinusbe]
+b4973a2  ART: Remove unique-numbered labels from arm64 assembly  [Martinusbe]
+65f1266  ART-Optimizing: Fix the type of HDivZeroCheck  [Martinusbe]
+d5d1339  ART: Fix bug in DeadPhiHandling  [Martinusbe]
+e137760  ART: Make dex2oat timing a bit more granular  [Martinusbe]
+a67a994  ART: Fix destruction order in Runtime.  [Martinusbe]
+9aba189  ART: Include zero-padding in String::SizeOf().  [Martinusbe]
+6a02354  ART: Abort if malloc() fails in SwapAllocator::allocate().  [Martinusbe]
+297c5c4  ART: (Partially) fix lock aliasing  [Martinusbe]
+22976d2  Remove unused WorkStealing thread pool  [Martinusbe]
+b76b2dc  Clean up some includes  [Martinusbe]
+68d32d1  Fix oatdump after ArtMethod change.  [Martinusbe]
+61aa509  Added next condition check to branch instruction  [Martinusbe]
+abcdb30  Make oatdump work with .art files and code generated by Optimizing.  [Martinusbe]
+5f396b4  Disable sanitization of dex2oat on device.  [Martinusbe]
+e636aac  ART: Simplify (Not)Equal bool vs. int to true/false  [Martinusbe]
+fa4cb3f  ART: Compiler generated GC map should take care of temp registers.  [Martinusbe]
+9d4db96  Use GetOffsetDuringLinking instead of GetOffset.  [Martinusbe]
+d62a45a  base: Fix an infinite loop in HashSet::Insert  [Martinusbe]
+6c45470  ART: Fix potential integer overflow in JNI.  [Martinusbe]
+5017409  Remove unnecessary std::move from test_dex_file_builder  [Martinusbe]
+2f48bc7  Move dmtracedump from dalvik to art.  [Martinusbe]
+61b08b2  ART: Tuning compiler thread count for application runtime  [Martinusbe]
+b0bfc46  Optimizing: Move optimization objects to Arena.  [Martinusbe]
+5f4e2c1  Fix hash set memory leaks  [Martinusbe]
+a00b6a1  Fix C++14 bitrot.  [Martinusbe]
+c39a98f  Delegate long-to-float type conversions to the runtime on ARM.  [Martinusbe]
+ebe2039  Fix race condition for method root marking in VisitNativeRoots  [Martinusbe]
+ded7ef3  ART: Improve Indenter performance.  [Martinusbe]
+5c5aded  Add Non-debug cflags to debug cflags  [Martinusbe]
+4bf3f4f  Disable Clang as Host Compiler  [Martinusbe]
+   * vendor/validus/
+f2f666a  v9.4 keep forgetting that  [Martinusbe]
+
+====================
+     06-24-2016
+====================
+
+   * packages/apps/Browser/
+08342a0  Browser: runtime permissions  [Josue Rivera]
+
+====================
+     06-23-2016
+====================
+   * OTA_config/
+1e34090  Update Huashan 2206  [a7r3]
+   * hardware/qcom/audio-caf/msm8960/
+fb47c68  hal: Don't make missing CSD init/deinit functions fatal  [Ethan Chen]
+a4fb123  hal: Detect additional baseband properties  [Ethan Chen]
+a6a5908  hal: Add support for HTC CSD client  [Ethan Chen]
+5a07631  hal: Support old CSD API and add support for Samsung CSD client  [Ethan Chen]
+   * vendor/validus/
+efae23e  devices:add bullhead  [GitHub]
+
+====================
+     06-22-2016
+====================
+
    * device/sony/huashan/
 394c30b  Wolves howl on the Source  [a7r3]
 6da70cc  Revert "huashan: Enable persistent usb drive notification"  [a7r3]
 1d3dd87  huashan: Always enable Glove Mode service  [a7r3]
 36d25eb  Revert "huashan: Multiple LEDs LibLights control"  [a7r3]
 353deff  huashan: Adapt Doze Sensors detection for AOSP-based ROMs  [a7r3]
-
-====================
-     06-22-2016
-====================
-
    * hardware/qcom/audio-caf/msm8960/
 36aec39  hal: only open the amplifier once  [Matt Mower]
 2d69794  hal: enable amplifier earlier  [Matt Mower]
@@ -61,6 +261,15 @@ f2ca570  blue-common: Delete unused yamato firmware  [AdrianDC]
      06-19-2016
 ====================
 
+   * hardware/ril-caf/
+8248ad7  Revert "Allow voice radio tech update in Airplane Mode"  [Nicholas Flintham]
+c501257  Revert "Fix build libril with RILC_LOG"  [Nicholas Flintham]
+095c27b  Revert "librilutils: Relocate pb-generated objects to their expected path"  [Nicholas Flintham]
+dfe2dda  Revert "Fix memory leaks and use of uninitialized pointers."  [Nicholas Flintham]
+61819f6  Revert "libril: correct include"  [Nicholas Flintham]
+49976a2  Revert "Add p2 option in openLogicalChannel"  [Nicholas Flintham]
+133bd44  Revert "Add pdp data call reject throttle error code"  [Nicholas Flintham]
+6bd70f8  Revert "Revert "Fix libril build errors""  [Nicholas Flintham]
 
 ====================
      06-18-2016
@@ -68,6 +277,9 @@ f2ca570  blue-common: Delete unused yamato firmware  [AdrianDC]
 
    * device/sony/huashan/
 93049a3  Automatic translation import  [inky@build01]
+   * external/libnetfilter_conntrack/
+4e75a53  conntrack: Add kernel dependency  [deadman96385]
+6ec2aa5  conntrack: Fix Clang errors  [deadman96385]
 
 ====================
      06-17-2016
@@ -90,16 +302,11 @@ f2ca570  blue-common: Delete unused yamato firmware  [AdrianDC]
 ====================
      06-15-2016
 ====================
-   * OTA_config/
-6a5f918  Update angler OTA  [xlxfoxxlx]
+
    * device/qcom/common/
 c0a6bdb  power-8994: Port features from msm8992  [Nicholas Flintham]
    * device/sony/huashan/
 1f524b3  huashan: Introduce sections in the proprietary-files list  [AdrianDC]
-   * frameworks/base/
-346f70b  Option to use volume keys to control media volume anytime (1/2)  [GtrCraft]
-bcf85bc  SettingsProvider: Allow default volume adjust sound to be overlayed.  [Martinusbe]
-03e0bab  Fixes the system server crash issues caused by null pointer in NetworkPolicyManagerService.  [Martinusbe]
    * hardware/qcom/keymaster/
 8b7c470  keymaster: Featureize support for waiting on QSEE to start  [Nicholas Flintham]
 ae0e5f8  Keymaster: Check if keymaster TZ app is loaded  [Nicholas Flintham]
@@ -108,164 +315,4 @@ cbff30e  keymaster: add msm8909 into support list  [Nicholas Flintham]
 032b8ae  keymaster: Allow 8952 to build  [Nicholas Flintham]
    * hardware/qcom/wlan-caf/
 2c30a09  8909w : Add LOCAL_ADDITIONAL_DEPENDENCIES to sanitized kernel headers.  [Nicholas Flintham]
-   * kernel/sony/msm8960t/
-a0c2cb4  defconfig: huashan: Update configuration  [AdrianDC]
-7add4e0  drivers: convert shrinkers to new count/scan API  [AdrianDC]
-b702cf5  shrinker: add node awareness  [AdrianDC]
-ccbd744  mm: new shrinker API  [AdrianDC]
-2b502c7  Revert "mm: zcache: Fix 3.4 backport"  [AdrianDC]
-   * packages/apps/Settings/
-9e533de  Option to use volume keys to control media volume anytime (1/2)  [GtrCraft]
-
-====================
-     06-14-2016
-====================
-
-   * device/qcom/common/
-10bdd6a  power: msm8952: process_video_encode_hint returns void  [Nicholas Flintham]
-   * external/sepolicy/
-9b232eb  Add policy to SELinux to allow ViPER4Android in enforcing mode  [Martinusbe]
-   * external/skia/
-c4db127  skia: qc-perf: link against libqc-opt for msm8937/17/53  [Nicholas Flintham]
-947ab64  skia: qc-perf: link against libqc-opt for msm8909  [Nicholas Flintham]
-   * external/wpa_supplicant_8/
-3bb3c4e  HS 2.0R2: OSU client implementation mismerge  [Nicholas Flintham]
-8f860d0  Fix dependencies  [Nicholas Flintham]
-152d489  eap_proxy: Fix compilation warning  [Nicholas Flintham]
-ab82a48  NFC: Fix payload length validation in NDEF record parser  [Nicholas Flintham]
-7093126  Remove newlines from wpa_supplicant config network output  [Nicholas Flintham]
-481f117  eap_peer: Make the QMI EAP proxy a standalone lib  [Nicholas Flintham]
-5cf0eaf  Revert "p2p: Add p2p_no_group_iface flag to p2p conf file"  [Nicholas Flintham]
-c8ceadd  HTTP (curl): Fix compilation with BoringSSL  [Nicholas Flintham]
-ba69b28  Android: Allow wpa_supplicant to write files to osu-info dir  [Nicholas Flintham]
-2fde094  EST: Comment out X509_REQ_print calls on Android with BoringSSL  [Nicholas Flintham]
-599f46c  EST: Add CSR generation support with BoringSSL  [Nicholas Flintham]
-9e5e18f  EST: Implement pkcs7_to_cert() with BoringSSL  [Nicholas Flintham]
-3523ea3  hs20-osu-client: Disable EST with BoringSSL to fix build  [Nicholas Flintham]
-0b2b2ae  HTTP (curl): OCSP with BoringSSL  [Nicholas Flintham]
-3128df5  BoringSSL: Move OCSP implementation into a separate file  [Nicholas Flintham]
-bda91e4  BoringSSL: Implement support for OCSP stapling  [Nicholas Flintham]
-a659f56  OpenSSL: Reject OCSP-required configuration if no OCSP support  [Nicholas Flintham]
-3ac5df8  Reject SET commands with newline characters in the string values  [Nicholas Flintham]
-b9e667c  Reject SET_CRED commands with newline characters in the string values  [Nicholas Flintham]
-96fb409  Reject psk parameter set with invalid passphrase character  [Nicholas Flintham]
-c6b41cc  WPS: Reject a Credential with invalid passphrase  [Nicholas Flintham]
-44af962  eap_peer: Fix bogus return type  [Nicholas Flintham]
-82fa1f8  Add assocresp_elements parameter for hostapd  [Nicholas Flintham]
-8d19f37  wpa_supplicant: Force the p2p channels to reuse frequencies used by STA  [Nicholas Flintham]
-2fc5d93  wpa_supplicant_conf: Let devices provide their own template  [Nicholas Flintham]
-616f85a  WNM: Workaround for broken AP operating class behavior  [Nicholas Flintham]
-515629f  P2P: Fix P2P configuration file name  [Nicholas Flintham]
-811c609  Fix race condition with PNO stop followed immediately by PNO start  [Nicholas Flintham]
-d28948e  eap: Don't force reassociation when getting the identity and handshakes are in progress  [Nicholas Flintham]
-207e76e  Generate hs20-osu-client as part of compilation  [Nicholas Flintham]
-6518778  hostapd: Add Transmit Power Envelope IE when VHT is enabled  [Nicholas Flintham]
-   * kernel/sony/msm8960t/
-a1aabde  msm: camera: Add checks for integer overflow  [AdrianDC]
-de796ec  msm: camera: Add check for zero length buffer  [AdrianDC]
-7b14181  msm: camera: Add check to prevent array index out of bounds  [AdrianDC]
-79eb768  msm: camera: Fix off by one error  [AdrianDC]
-bd26fbf  msm: camera: Add check to prevent array index out of bounds  [AdrianDC]
-fb2a966  msm: camera: Check for array index out of bounds  [AdrianDC]
-6dc4cd5  msm: camera: Add proper bounds check for resolution config  [AdrianDC]
-80b5344  msm: camera: Check for array index out of bounds  [AdrianDC]
-e87cc51  msm: camera: Add check to prevent array index out of bounds  [AdrianDC]
-f6a1e29  msm: camera: Check for overflow condition  [AdrianDC]
-06d1b93  msm: vpe: Add check to prevent index out of bounds  [AdrianDC]
-c2383ea  Revert "mm: vmstat: make vmstat_work cpu bound during requeue"  [AdrianDC]
-
-====================
-     06-13-2016
-====================
-
-   * device/qcom/common/
-c88d693  power-8992: Remove extraneous boosting  [Josue Rivera]
-8a7d8a1  power: Use declared enums where possible  [Josue Rivera]
-6065021  power-8952: Fix array initialization  [Josue Rivera]
-d6a89ba  power: Fixup typo in 8939 cpu4 timer rate  [Josue Rivera]
-e48f657  power-8992: Add prefetcher support  [Josue Rivera]
-   * device/sony/huashan/
-68071f4  huashan: Isolate device specific parameters of the custombootimg  [AdrianDC]
-   * packages/apps/Bluetooth/
-ffa941c  Bluetooth-OPP: Check URI of sending files before entry cleanup  [Josue Rivera]
-
-====================
-     06-12-2016
-====================
-
-   * kernel/sony/msm8960t/
-68c0029  msm: camera: sensor: Validate step_boundary  [AdrianDC]
-b85f8ba  msm: kgsl: Defer adding the mem entry to a process  [AdrianDC]
-   * packages/apps/Bluetooth/
-7fbbbc5  Bluetooth: fix opp NPE  [Josue Rivera]
-ee02f17  Revert "Ensure synchronized access of JNI callback object"  [Josue Rivera]
-
-====================
-     06-11-2016
-====================
-   * OTA_config/
-df9aa95  Update Huashan to 9.3-RC1  [a7r3]
-461218a  Update Lux  [GitHub]
-d7986a6  Update changelog for June update  [GitHub]
-   * external/stagefright-plugins/
-39b2292  stagefright-plugins: flac does not playback  [Josue Rivera]
-   * kernel/sony/msm8960t/
-12d405c  defconfig: huashan: Disable CONFIG_DYNAMIC_DEBUG  [AdrianDC]
-   * packages/apps/Nfc/
-01ba29d  Revert "Nfc: Clear transfer manager service on Destroy"  [Gerrit Code Review]
-606f7ef  Revert "nfc: create a bootstrap service"  [Roman Birg]
-
-====================
-     06-10-2016
-====================
-   * OTA_config/
-1219432  onepluses: update 20160609 + one chanelog for all  [Martinusbe]
-   * build/
-a64bb48  MOB30M  [Martinusbe]
-acbd5ae  "MOB30L"  [Martinusbe]
-f24d13d  "MOB30K"  [Martinusbe]
-e597bdd  Update security patch string to 2016-06-01  [Martinusbe]
-   * device/sony/huashan/
-cfaf753  Automatic translation import  [pinky@build01]
-   * frameworks/av/
-0081e6d  Fixing ALOGE message in commit ad40e57890f81a3cf436c5f06da66396010bd9e5  [Martinusbe]
-b847d00  SampleTable.cpp: Fixed a regression caused by a fix for bug 28076789.  [Martinusbe]
-ca246c7  Resolve merge conflict when cp'ing ag/931301 to mnc-mr1-release  [Martinusbe]
-58eca4f  h264dec: check for overflows when calculating allocation size.  [Martinusbe]
-41484e6  codecs: check OMX buffer size before use in (avc|hevc|mpeg2)dec  [Martinusbe]
-e50360d  codecs: check OMX buffer size before use in (gsm|g711)dec  [Martinusbe]
-221f4d0  AudioSource: initialize variables  [Martinusbe]
-f159637  Check mp3 output buffer size  [Martinusbe]
-2d4ecf4  codecs: check OMX buffer size before use in (h263|h264)dec  [Martinusbe]
-6389036  DO NOT MERGE codecs: check OMX buffer size before use in (vorbis|opus)dec  [Martinusbe]
-07bd53a  Fix OMX_IndexParamConsumerUsageBits size check  [Martinusbe]
-36a60d5  Fix size check for OMX_IndexParamConsumerUsageBits  [Martinusbe]
-c0a3b69  Fix initialization of AAC presentation struct  [Martinusbe]
-67ab358  DO NOT MERGE Verify OMX buffer sizes prior to access  [Martinusbe]
-7ea1fee  Clear allocation to avoid info leak  [Martinusbe]
-2e10c55  Fixing safteynet logging bug introduced in ag/862848  [Martinusbe]
-759368b  3 uninitialized variables in IOMX.cpp  [Martinusbe]
-c7bbfa5  IOMX.cpp uninitialized pointer in BnOMX::onTransact  [Martinusbe]
-   * frameworks/base/
-0fa9ffc  Kill the real/isolated uid group, not the ApplicationInfo uid  [Martinusbe]
-80d70cb  Add new, hidden MotionEvent flag for partially obscured windows.  [Martinusbe]
-   * kernel/sony/msm8960t/
-6156687  mm/swapfile.c: do not skip lowest_bit in scan_swap_map() scan loop  [AdrianDC]
-8077e82  mm: vmstat: make vmstat_work cpu bound during requeue  [AdrianDC]
-589d1b2  vmscan: fix increasing nr_isolated incurred by putback unevictable pages  [AdrianDC]
-50d593f  mm: compaction: fix the page state calculation in too_many_isolated  [AdrianDC]
-f9b5144  mm: page-writeback: fix page state calculation in  throttle_vm_writeout  [AdrianDC]
-0f7e1fa  mm/compaction: fix wrong order check in compact_finished()  [AdrianDC]
-eb1c618  mm/compaction: make isolate_freepages start at pageblock boundary  [AdrianDC]
-bef7736  mm: compaction: detect when scanners meet in isolate_freepages  [AdrianDC]
-f0b19a8  mm: compaction: reset cached scanner pfn's before reading them  [AdrianDC]
-29034eb  mm: Fix "mm: vmpressure: account allocstalls only on higher pressures"  [AdrianDC]
-e8fc50d  mm: process_reclaim: Fix "mm: process_reclaim: use unbounded cpu workqueue"  [AdrianDC]
-97b8f6d  mm: process_reclaim: fix reclaim skip on low efficiency  [AdrianDC]
-1706885  mm: Remove shrink_page  [AdrianDC]
-98ea3cb  mm: make shrink_page_list with pages work from multiple zones  [AdrianDC]
-   * manifest/
-bac9ca7  r46  [martin coulon]
-   * system/core/
-c563594  Fix overflow in path building  [Martinusbe]
 
