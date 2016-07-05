@@ -1,15 +1,107 @@
 ====================
-     06-28-2016
+     07-05-2016
 ====================
 
    * bionic/
-36008f2  Add prlimit to LP32.  [a7r3]
+3f5307f  Add prlimit to LP32.  [a7r3]
+f130f9a  libc: ARM64: kryo: use generic memmove routine  [Martinusbe]
+36964d9  bionic: Teach fnmatch(3) to handle UTF-8 characters in patterns  [Martinusbe]
    * device/sony/huashan/
-e9836bc  huashan: Use jemalloc instead of dlmalloc  [a7r3]
-1c83c40  huashan: Tune Memory parameters based on recommended values  [a7r3]
-1d00c80  huashan: Avoid a rare bootloop where the SensorService boots late  [a7r3]
+1e7f54c  Howwl!  [a7r3]
+e95d43a  Revert "huashan: Use cmsdk FileUtils"  [a7r3]
+cd062da  Revert "huashan: Fix the use of cmsdk FileUtils"  [a7r3]
+4ed190d  huashan: devicesettings: Always enable Glove Mode service  [a7r3]
+19017ec  huashan: devicesettings: Adapt Doze Sensors for AOSP-based  [a7r3]
+da726a5  huashan: liblights: Remove Multiple LEDs LibLights control  [a7r3]
+1b45334  huashan: overlay: Revert "Enable persistent usb drive notification"  [a7r3]
+ed53348  huashan: overlay: Revert "Add deviceHardwareWakeKeys overlay"  [a7r3]
+1bfc300  huashan: overlay: Revert "Turn off Mobile data by default"  [a7r3]
+   * kernel/sony/msm8960t/
+3af5087  defconfig: huashan: Update configuration  [Adrian DC]
+07cbcbf  drivers: convert shrinkers to new count/scan API  [AdrianDC]
+a47c3ef  shrinker: add node awareness  [AdrianDC]
+fa46a4b  mm: new shrinker API  [AdrianDC]
+b6540ae  Revert "mm: zcache: Fix 3.4 backport"  [AdrianDC]
+ee232a8  arch: msm: restart.c: Partially revert 12.1.A.1.201 Xperia SP  [AdrianDC]
+   * vendor/validus/
+5ef3208  SuperSU 2.52  [Martinusbe]
+
+====================
+     07-04-2016
+====================
+
+
+====================
+     07-03-2016
+====================
+
+   * device/sony/huashan/
+93e3467  huashan: tree: Add a Board field to README.md informations  [Adrian DC]
+   * vendor/sony/
+68bb60c  blue-common: Remove taimport, and setup libta to be linked against  [AdrianDC]
+dfb3054  blue-common: Cleanup libtime_genoff and missing leftover apk  [AdrianDC]
+5eb2c0e  blue-common: Update rmt_storage from flo MOB30D  [AdrianDC]
+869fe1d  blue: Cleanup hayabusa, mint and tsubasa proprietary files  [AdrianDC]
+
+====================
+     07-02-2016
+====================
+
+   * device/sony/huashan/
+9abc98e  huashan: liblights: Fix undisabled side LEDs when fully charged  [AdrianDC]
+
+====================
+     07-01-2016
+====================
+
+
+====================
+     06-30-2016
+====================
+
+   * device/sony/huashan/
+3e77d3b  Automatic translation import  [inky@build01]
+   * packages/apps/SlimLauncher/
+e2399b7  SlimLauncher: fix a typo in strings  [Martinusbe]
+
+====================
+     06-29-2016
+====================
+   * OTA_config/
+11e84b1  oneplus: bacon 06/28  [Martinusbe]
+   * device/sony/huashan/
+dd32386  huashan: Increase ZRAM size to 400MB  [AdrianDC]
+
+====================
+     06-28-2016
+====================
+   * OTA_config/
+1b1c356  Update Huashan 2806  [a7r3]
+   * device/sony/huashan/
+5dd4bd5  huashan: Fix the use of cmsdk FileUtils  [AdrianDC]
+3859cfc  huashan: Use cmsdk FileUtils  [AdrianDC]
+   * packages/apps/CellBroadcastReceiver/
+9cc155a  Layers 4.x - Themes: Expose hardcoded styles and colors for themes  [Jean-Pierre Rasquin]
+   * packages/apps/DeskClock/
+e93388f  Layers 4.x - Allow theming numpad  [Jean-Pierre Rasquin]
+244281e  Layers 4.x - Expose background colors for theming.  [Jean-Pierre Rasquin]
+
+====================
+     06-27-2016
+====================
+
+   * art/
+3e70ed2  Disable Clang_arm  [GitHub]
+   * device/qcom/common/
+da9783d  perf: Wrap v3 opcodes with ifdefs  [Nicholas Flintham]
+4ac0005  power: msm8996: Support boost and perf profile hints  [Nicholas Flintham]
+5e9af90  power: msm8952: Fix previous_boost_time getting reset  [Nicholas Flintham]
+   * device/sony/huashan/
+8c6e221  huashan: Enable bootanimation optimizations  [AdrianDC]
    * external/DUtils/
 cc8ceb4  Merge remote-tracking branch 'duu/mm6.0' into HEAD  [theringmaster]
+   * external/stagefright-plugins/
+1020200  stagefright-plugins: call packet_queue_init earier  [Nicholas Flintham]
    * frameworks/base/
 6aab17a  Few more fixes  [theringmaster]
 b9a59e1  Disable/Enable screenshot sound [1/2]  [theringmaster]
@@ -26,6 +118,21 @@ f8bab1d  SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission  [t
 b4abb01  base: Screenshot Crop & Share: add draw stroke width support Change-Id: Ife8ccaf1775f81d3cdb097e8cbeca53895bd6945  [theringmaster]
 694ac66  SettingsProvider: Allow default volume adjust sound to be overlayed.  [theringmaster]
 2a5214b  SystemUI: add volume tones back  [theringmaster]
+   * hardware/broadcom/libbt/
+f662d09  libbt-vendor (BRCM): Add ssr_cleanup  [Nicholas Flintham]
+   * hardware/qcom/bt-caf/
+4d1355d  Merge branch 'bt.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/bt into HEAD  [Nicholas Flintham]
+   * hardware/qcom/wlan-caf/
+86c2649  Merge branch 'wlan-aosp.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0  [Nicholas Flintham]
+f1df678  Wifi-HAL: Extract wmsg length from nlmsg_hdr with ntohs()  [Josue Rivera]
+1066145  Wifi-HAL: Add length check before proceeding to parse data.  [Josue Rivera]
+9e61ada  wcnss_service: support dynamic replacement for wlan_nv.bin  [Josue Rivera]
+f0d755a  Wifi_HAL: Add new QCA specific wifi config attribute  [Josue Rivera]
+6659c0b  Revert "WiFi-HAL: Remove global variables usage in gscan"  [Josue Rivera]
+1a64bc6  WiFi-HAL: Remove global variables usage in gscan  [Josue Rivera]
+f137bdd  WiFi-HAL: GSCAN- Allow more than max_channels per bucket  [Josue Rivera]
+4fd36a5  wcnss_service: Migrate from QMI to QCCI  [Josue Rivera]
+58437be  WiFi-HAL: Allow number of channels in a bucket to be zero(0)  [Josue Rivera]
    * packages/apps/DUI/
 8b63235  Smartbar/Fling Volume panel action [2/2]  [theringmaster]
 8f0ea4a  SmartBar: expose color res for all the SmartBar things  [theringmaster]
@@ -35,30 +142,26 @@ d72e85b  Disable/Enable screenshot sound [2/2] Change-Id: If254407c43fbcd70c1faf
 1dab5af  More import fixes  [theringmaster]
 c6e902a  Fix call  [theringmaster]
 34f4613  DUI: Use DocumentsProvider API for handling custom icons [1/2] All images requested for DUI features will be copied and kept in a folder in external storage. We can not rely on third party content providers to deliver our icons to SystemUI. Either the provider gets us a good icon and we copy it successfully or we toast an error and let SystemUI know the request was canceled.  [theringmaster]
-
-====================
-     06-27-2016
-====================
-
-   * art/
-3e70ed2  Disable Clang_arm  [GitHub]
-   * device/sony/common/
-a8e5bd5  init: Launch the ramdisk init inside of the main thread  [AdrianDC]
+   * system/vold/
+717d930  cryptfs: Fix returning to default password  [Nicholas Flintham]
+a41f014  Revert "vold: Branch out SW and HW FDE paths to improve boot up time"  [Nicholas Flintham]
+d1c9d99  Fix ioctl parameter  [Nicholas Flintham]
 
 ====================
      06-26-2016
 ====================
 
    * device/sony/common/
+a8e5bd5  init: Launch the ramdisk init inside of the main thread  [AdrianDC]
 97b461a  init: Avoid overriding root toybox binary after booting  [AdrianDC]
+   * device/sony/huashan/
+ef9d67a  huashan: Update custombootimg for renamed toybox_init  [AdrianDC]
+a87d226  huashan: Remove side segmented LEDs usage for charging meter  [AdrianDC]
    * external/DUtils/
 7907183  Smartbar/Fling Volume panel action [1/2]  [xlxfoxxlx]
 f369368  DUI: Use DocumentsProvider API helper methods [2/2]  [xlxfoxxlx]
 fbc92a9  DUI: Bring up "In-app search" bindable action and resources [2/2]  [xlxfoxxlx]
 3dd0800  Revert "No intention of adding lockscreen shortcuts"  [xlxfoxxlx]
-   * frameworks/base/
-1ecb8ae  StrictMode: fix deserialization of ViolationInfo on large stacks  [Martinusbe]
-7f63225  Framework: allow ResolverActivity to be specialized from other package  [Martinusbe]
    * kernel/sony/msm8960t/
 5c89c9f  android: configs: Update Android config fragments  [AdrianDC]
 1cceea4  defconfig: huashan: Restrict access to perf events  [AdrianDC]
@@ -182,6 +285,14 @@ ebe2039  Fix race condition for method root marking in VisitNativeRoots  [Martin
 ded7ef3  ART: Improve Indenter performance.  [Martinusbe]
 5c5aded  Add Non-debug cflags to debug cflags  [Martinusbe]
 4bf3f4f  Disable Clang as Host Compiler  [Martinusbe]
+   * device/sony/huashan/
+d1b3a8f  huashan: Import arch configs first from a PlatformConfig.mk  [AdrianDC]
+   * frameworks/base/
+1ecb8ae  StrictMode: fix deserialization of ViolationInfo on large stacks  [Martinusbe]
+7f63225  Framework: allow ResolverActivity to be specialized from other package  [Martinusbe]
+   * system/bt/
+a51fadd  bt: Don't use CLOCK_BOOTTIME where CLOCK_MONOTONIC was expected  [Josue Rivera]
+bdbff78  bt-vendor: Check for vendor SSR function before attempting to call it  [Josue Rivera]
    * vendor/validus/
 f2f666a  v9.4 keep forgetting that  [Martinusbe]
 
@@ -209,110 +320,11 @@ efae23e  devices:add bullhead  [GitHub]
      06-22-2016
 ====================
 
-   * device/sony/huashan/
-394c30b  Wolves howl on the Source  [a7r3]
-6da70cc  Revert "huashan: Enable persistent usb drive notification"  [a7r3]
-1d3dd87  huashan: Always enable Glove Mode service  [a7r3]
-36d25eb  Revert "huashan: Multiple LEDs LibLights control"  [a7r3]
-353deff  huashan: Adapt Doze Sensors detection for AOSP-based ROMs  [a7r3]
    * hardware/qcom/audio-caf/msm8960/
 36aec39  hal: only open the amplifier once  [Matt Mower]
 2d69794  hal: enable amplifier earlier  [Matt Mower]
 dfe21b6  hal: Notify amplifier of device enable/disable  [Matt Mower]
 1170162  hal: Convert libaudioamp to audio_amplifier HAL  [Matt Mower]
-dbf1e5f  hal: Support the audio amplifier hook  [Matt Mower]
    * packages/apps/DeskClock/
 0f56f58  DeskClock: update translation plural formattings  [Nicholas Flintham]
-
-====================
-     06-21-2016
-====================
-
-
-====================
-     06-20-2016
-====================
-
-   * device/sony/huashan/
-ba2faff  huashan: Rewrite all init.*.rc files structure  [AdrianDC]
-326d202  huashan: Remove libcsd-client.so library  [AdrianDC]
-bbdc121  huashan: Import arch configs first from a PlatformConfig.mk  [AdrianDC]
-5a0fa9c  huashan: Add formattable flag on all Data and Cache fstab  [AdrianDC]
-d1f5c56  huashan: Revert "show app install location option"  [AdrianDC]
-4bbf4de  huashan: Additional relative paths usage and sources cleanup  [AdrianDC]
-6eeffec  huashan: Remove surfaceflinger triple-buffering  [AdrianDC]
-   * system/bt/
-80f6742  bt: Use the clock functions from libutils instead of clock_gettime  [Josue Rivera]
-f81bf67  bt: Unify usage of clock_gettime  [Josue Rivera]
-   * vendor/sony/
-fa82478  blue: Cleanup hayabusa, mint and tsubasa proprietary files  [AdrianDC]
-1fcbfc2  blue-common: Move prima WiFi files to the device tree  [AdrianDC]
-bbb62f0  blue-common: Update to newer mpdecision  [AdrianDC]
-1b084e9  blue-common: Remove libqc-opt and update libmmcamera_wavelet_lib.so  [AdrianDC]
-1d3b595  blue-common: Add libqti-perfd-client to replace libqc-opt  [AdrianDC]
-5965958  blue-common: Use cancro mm fm patch downloader  [AdrianDC]
-dcf4695  hayabusa: Fix camera capture due to overlapping do_mmap_ion  [AdrianDC]
-e7a3c43  hayabusa: Add missing blobs from 9.2.A.1.215 (Sony 4.3)  [AdrianDC]
-a2b1213  hayabusa: Reimport old device blobs  [AdrianDC]
-f2ca570  blue-common: Delete unused yamato firmware  [AdrianDC]
-5aec9b8  huashan: Remove libcsd-client.so library  [AdrianDC]
-
-====================
-     06-19-2016
-====================
-
-   * hardware/ril-caf/
-8248ad7  Revert "Allow voice radio tech update in Airplane Mode"  [Nicholas Flintham]
-c501257  Revert "Fix build libril with RILC_LOG"  [Nicholas Flintham]
-095c27b  Revert "librilutils: Relocate pb-generated objects to their expected path"  [Nicholas Flintham]
-dfe2dda  Revert "Fix memory leaks and use of uninitialized pointers."  [Nicholas Flintham]
-61819f6  Revert "libril: correct include"  [Nicholas Flintham]
-49976a2  Revert "Add p2 option in openLogicalChannel"  [Nicholas Flintham]
-133bd44  Revert "Add pdp data call reject throttle error code"  [Nicholas Flintham]
-6bd70f8  Revert "Revert "Fix libril build errors""  [Nicholas Flintham]
-
-====================
-     06-18-2016
-====================
-
-   * device/sony/huashan/
-93049a3  Automatic translation import  [inky@build01]
-   * external/libnetfilter_conntrack/
-4e75a53  conntrack: Add kernel dependency  [deadman96385]
-6ec2aa5  conntrack: Fix Clang errors  [deadman96385]
-
-====================
-     06-17-2016
-====================
-   * OTA_config/
-94d3404  Update Huashan->1606  [a7r3]
-   * frameworks/opt/telephony/
-45a8c22  Telephony: Migrate to new overlay framework.  [Martinusbe]
-   * manifest/
-1105836  track libnfnetlink & libnetfilter_conntrack from slim  [Martinusbe]
-93099a6  remove 7.0 tc  [Martinusbe]
-
-====================
-     06-16-2016
-====================
-
-   * vendor/validus/
-5f995b9  devices: add oneplus3  [Martinusbe]
-
-====================
-     06-15-2016
-====================
-
-   * device/qcom/common/
-c0a6bdb  power-8994: Port features from msm8992  [Nicholas Flintham]
-   * device/sony/huashan/
-1f524b3  huashan: Introduce sections in the proprietary-files list  [AdrianDC]
-   * hardware/qcom/keymaster/
-8b7c470  keymaster: Featureize support for waiting on QSEE to start  [Nicholas Flintham]
-ae0e5f8  Keymaster: Check if keymaster TZ app is loaded  [Nicholas Flintham]
-cbff30e  keymaster: add msm8909 into support list  [Nicholas Flintham]
-7503fb5  Disable ION_HEAP_MASK_COMPATIBILITY_WA on Sony 3.10 Kernel  [Nicholas Flintham]
-032b8ae  keymaster: Allow 8952 to build  [Nicholas Flintham]
-   * hardware/qcom/wlan-caf/
-2c30a09  8909w : Add LOCAL_ADDITIONAL_DEPENDENCIES to sanitized kernel headers.  [Nicholas Flintham]
 
