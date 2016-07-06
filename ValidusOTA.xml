@@ -187,5 +187,25 @@
                 title="Gapps"
                 description="Download Latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
         </angler>
+        <wt88047>
+            <Filename>validus_huashan-6.0.1.RC1.9.4-Official-20160705.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download Latest Validus build">https://www.androidfilehost.com/?fid=24591000424944771</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View ValidusOs
+		changelogs">https://github.com/ValidusOs-M/OTA_config/blob/master/Changelogs/Xiaomi/wt88047/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download Latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit Validus Redmi-2 thread">http://forum.xda-developers.com/redmi-2/development/rom-gzroms-validus-9-0-t3359935</XDAUrl>
+        </wt88047>
     </Stable>
 </SlimOTA>
