@@ -1,317 +1,240 @@
 ====================
-     05-17-2016
+     07-11-2016
 ====================
 
-[1m   * build/[m
-dbc3c37  airless  [airless   *]
-[1m   * device/sony/fusion3-common/[m
-e751115  simple gov laziness  [airless   *]
-ca29b7a  init changes  [airless   *]
-ce26149  Sony perms  [airless   *]
-[1m   * device/sony/yuga/[m
-25f3fa2  Sony perms  [airless   *]
-8fc5445  build: USE_PIPE  [airless   *]
-5236d42  changes for new audio hal  [airless   *]
-[1m   * frameworks/base/[m
-eb2ccee  disable edgegesture  [airless   *]
-15ceba1  Update Settings.java  [John Brewer]
-6930f37  Remove statusbar icon colors  [theringmaster]
-c838f80  Adjust battery dimensions for better look  [theringmaster]
-82e5505  SysUI: Use VectorDrawable's for rendering battery  [theringmaster]
-[1m   * hardware/qcom/audio-caf/msm8960/[m
-f8c90f5  voice processing  [airless   *]
-[1m   * packages/apps/Settings/[m
-c5f72e2  airless  [airless   *]
-581cd0a  Remove Statusbar icon color  [theringmaster]
-d924e7a  Remove dotted circle battery  [theringmaster]
+   * build/
+f1c7939  Fix for multirom by Vladimir  [airless   *]
+   * device/sony/fusion3-common/
+02ba3e1  init changes  [airless   *]
+fdfe1b4  fusion3-common: Use MONOTONIC for rotation sensor timestamp  [airless   *]
+ba9cfa1  build Snap  [airless   *]
+   * device/sony/yuga/
+3b0846d  Validus  [airless   *]
+2944384  Make the readme pretty like huashan, thanks AdrianDC  [airless   *]
+c500b59  Update bluetooth config to CAF head  [airless   *]
+4c58c35  Sony perms  [airless   *]
+35147fd  build: USE_PIPE  [airless   *]
+a857dfa  changes for new audio hal  [airless   *]
+163a3a2  correct als path  [airless   *]
+ae75366  audio: add remote_submix to audio policy  [airless   *]
+8e5031b  bc: strict aliasing  [airless   *]
+bb2e55c  opts  [airless   *]
+66f1335  yuga: Deprecate common Sony resources  [airless   *]
+b47e44c  correct als path  [airless   *]
+1454cfe  yuga: Remove obsolete vold flag  [airless   *]
+e0700e3  use our kernel  [airless   *]
+15ebc17  yuga: Enable host interleaving BR/EDR device discovery and ble scan  [airless   *]
+a0be0f2  BoardConfig changes  [airless   *]
+5baff01  increase brightness at boot  [airless   *]
+6580698  enable UBER optimizations  [airless   *]
+   * external/f2fs-tools/
+f99a66d  f2fs:Android.mk: twrp compatibility fusion3 line  [airless   *]
+   * external/sepolicy/
+e5a42f3  Add service 'overlay' to service_contexts  [airless   *]
+b7c0b7a  fix previous commit  [airless   *]
+7293e65  fix bootloop causing denial, thanks to Vladimir:  E/SELinux: avc:  denied  { add } for service=overlay pid=1022 uid=1000 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_service:s0 tclass=service_manager 06-07 11:25:50.847 221-221/? E/ServiceManager: add_service('overlay',5f) uid=1000 - PERMISSION DENIED  [airless   *]
+ccadbef  attempt to fix ps denials  [airless   *]
+e0b9727  Changes by Vladimir  [airless   *]
+   * frameworks/base/
+0ac494f  sensors: Rename bool for selecting what timestamp to use for orientation sensor  [airless   *]
+6eb9117  sensors: Create bool to select what timestamp to use  [airless   *]
+   * hardware/qcom/audio-caf/msm8960/
+f56c2d5  hal: Remove listen calibration from 8960 hal  [Gerrit Code Review]
+   * hardware/qcom/display-caf/msm8960/
+9ebff56  Revert "display: libgralloc: Add extradata size to support interlaced clip playback"  [airless   *]
+   * packages/apps/Nfc/
+6644dc5  Revert "Stop building NXP stack."  [airless   *]
+   * packages/apps/Snap/
+08464ac  Revert "Snap: Use new window manager flag for prevent system keys."  [airless   *]
+9765c4d  Revert "Snap: Only override power key"  [airless   *]
+   * system/core/
+d486cf4  Make offline charging show percentage, patch by Vladimir  [airless   *]
+d6516ce  enable adb shell in twrp, patch by Vladimir  [airless   *]
+   * vendor/validus/
+a455ad4  v4a  [airless   *]
+d02d8f1  Update SuperSu to Beta-2.74-2 in a system-mode installer  [airless   *]
 
 ====================
-     05-16-2016
-====================
-
-[1m   * kernel/sony/apq8064/[m
-86334f6  Revert "Revert "arm: smp: Update the topology masks before calling CPU_STARTING notifiers""  [airless   *]
-d2d335b  Revert "Revert "Replace BUG_ON with WARN_ON and return immediately.""  [airless   *]
-cbfeb32  Revert "Revert "ARM: smp: BUG() if smp_send_reschedule() is called for an offline cpu""  [airless   *]
-b980da6  fusion3: defconfig: fix warning  [airless   *]
-
-====================
-     05-15-2016
-====================
-
-[1m   * frameworks/av/[m
-e33b3a7  Revert "Update libwebm include path in MatroskaExtractor"  [theringmaster]
-7d3575a  Update libwebm include path in MatroskaExtractor  [theringmaster]
-333ec2f  DO NOT MERGE:Camera: fix recording stream update logic  [theringmaster]
-c2a9d03  stagefright: ignore port setting change for input port  [theringmaster]
-eb1be19  If the offset is less than 0, it will cause some surprising exceptions.  [theringmaster]
-7ee927d  Remove throttle logcat for bluetooth  [theringmaster]
-1546afd  SoftHEVC: Exit gracefully in case of decoder errors  [theringmaster]
-cad3f83  camera: Fix high battery drain after using flashlight  [theringmaster]
-[1m   * frameworks/base/[m
-0292c34  Revert "base: Fix proximity check on non power key"  [Martinusbe]
-0d01a22  Revert "only use proximity checks on wakeup keys"  [theringmaster]
-b8391e4  Fix misc-macro-parentheses warnings.  [theringmaster]
-b4b408c  Synchronize access of mSubscriptions  [theringmaster]
-e1b053a  Fix Activity.onConfigurationChanged may not be called.  [theringmaster]
-1cb923b  frameworks/base: Support for third party NFC features  [theringmaster]
-ddaed0f  Checking mCurrentValue twice instead of mCurrentValues  [theringmaster]
-b580448  Boolean logic error could result in a NPE  [theringmaster]
-37a127d  Make android_net_NetUtils include what it actually uses.  [theringmaster]
-edd72d6  Fix: Fix dlfree error when delet mZipInflater.  [theringmaster]
-5568f1b  [RenderScript] Interrupt mMessageThread when tearing down context.  [theringmaster]
-eb64b11  Clear more native pointers in finalizers  [theringmaster]
-d694ccd  Avoid ConcurrentModificationException in method dump  [theringmaster]
-ece32d5  Fix phone crashes after tapping Data Usage in Settings  [theringmaster]
-9b59009  Speed up notification panel pulldown animation when called externally  [theringmaster]
-a6b30f1  Adapt ConnectivityServiceTest to persist.pdp.during.noncellular  [theringmaster]
-ad81a4a  Protect TRANSFER_COMPLETE broadcast  [theringmaster]
-c0f4fa3  Fix the issue that App crash on startForeground.  [theringmaster]
-adfd0d9  Fix String object compare issue.  [theringmaster]
-f59fb07  only use proximity checks on wakeup keys  [theringmaster]
-078519c  base: Fix proximity check on non power key  [theringmaster]
-12039b1  GLSurfaceView: Be less picky about EGLConfig alpha sizes  [theringmaster]
-7881a5c  VPN reconnection fails after data access via VPN connection(frameworks)  [theringmaster]
-383455f  Tiles: Clean up spaghetti factory in BatterySaver tile  [theringmaster]
-cda1d61  ThemeTile: tighten up how we execute a theme change  [theringmaster]
-[1m   * packages/apps/Snap/[m
-a549c38  Automatic translation import  [Gerrit Code Review]
-
-====================
-     05-14-2016
-====================
-[1m   * OTA_config/[m
-c92b196  Update ValidusOTA.xml  [Anthony Pyrtle]
-[1m   * external/skia/[m
-6d0d9b1  skia: qc-perf: link against libqc-opt for msm8916  [Josue Rivera]
-d1f3a4b  skia: Fix QC-PERF for msm8992  [Josue Rivera]
-[1m   * hardware/qcom/display-caf/msm8974/[m
-f253df3  Revert "gralloc: Use adreno_utils api for NV21 and NV12 alignment"  [Josue Rivera]
-61ffd12  hwc: Filter out interlace format from edid string  [Josue Rivera]
-d8d171e  Revert "gralloc: fall back to old pixel alignment on old blobs"  [Josue Rivera]
-114f02e  Revert "gralloc: allow forcing old pixel alignment"  [Josue Rivera]
-[1m   * packages/apps/FMRadio/[m
-7f17da9  tracks: Check track states before transitioning states  [Josue Rivera]
-d0e759f  improve audio startup performace  [Josue Rivera]
-[1m   * packages/apps/Settings/[m
-a9d25d9  Use correct icon for sim card  [Martinusbe]
-[1m   * packages/apps/Snap/[m
-1705a87  Snap: Extend user menu, disable dev menu  [Daniel Hillenbrand]
-
-====================
-     05-13-2016
-====================
-
-[1m   * manifest/[m
-17a7e91  track slim's FMRadio  [Martinusbe]
-
-====================
-     05-12-2016
-====================
-
-[1m   * external/stagefright-plugins/[m
-fe44192  stagefright-plugins: Fix crash with invalid FLAC file  [Josue Rivera]
-
-====================
-     05-11-2016
-====================
-[1m   * OTA_config/[m
-1afc869  onyx: add onyx specific changelog  [Martinusbe]
-258d337  Housekeeping: use spaces, no tabs please  [Martinusbe]
-862f2fa  hammerhead: fix up the mess  [Martinusbe]
-7a054d2  fixes  [Anthony Pyrtle]
-b990029  Add hammerhead  [Anthony Pyrtle]
-[1m   * frameworks/base/[m
-f03419c  Introduce FontHelper class  [Martinusbe]
-9d47094  Dashboard font styles 2/2  [Martinusbe]
-4844b31  Dashboard Text Size 2/2  [Martinusbe]
-[1m   * packages/apps/Settings/[m
-2c57ece  Dashboard font styles 1/2  [Martinusbe]
-111f3c6  Dashboard Text Size 1/2  [Martinusbe]
-[1m   * packages/apps/Snap/[m
-90d46ce  Automatic translation import  [Abhisek Devkota]
-
-====================
-     05-10-2016
-====================
-[1m   * OTA_config/[m
-97f86af  bacon: add link to thread on OP Forums  [Martinusbe]
-50650b6  oneplus2: add url to thread on OnePlus Forums  [Martinusbe]
-34f9cc5  Revert "url wants the blob"  [Martinusbe]
-c59d2dc  Add Lux OTA  [Nick]
-4bcfba0  onyx: add OnePlus Forums thread url  [Martinusbe]
-739b891  oneplus2: oneplus2 < OnePlus2  [Martinusbe]
-1881f11  bacon: change to new afh directory  [Martinusbe]
-866c269  onepluses: get their own changelog habitat  [Martinusbe]
-[1m   * build/[m
-a597486  enable adb on userdebug builds  [Martinusbe]
-[1m   * frameworks/base/[m
-0615e82  Allow unlocked USB data access (1/2)  [Martinusbe]
-[1m   * packages/apps/FMRadio/[m
-148b23b  fmradio: Add an optional static library target  [Josue Rivera]
-[1m   * packages/apps/Settings/[m
-b23c743  Allow unlocked USB data access (2/2)  [Martinusbe]
-[1m   * packages/apps/Snap/[m
-006ef8d  Automatic translation import  [Michael Bestas]
-[1m   * system/vold/[m
-ad40674  vold: Fix tool paths for minivold  [Josue Rivera]
-257a82d  cryptfs: Only consider patterns for upgrade conversion  [Josue Rivera]
-d6b8a71  vold: Fix cryptfs changepw parsing  [Josue Rivera]
-
-====================
-     05-09-2016
-====================
-[1m   * OTA_config/[m
-de36157  put chanelogs in their own device folder  [Martinusbe]
-83b85e0  onepluses: add changelog url  [Martinusbe]
-550b04b  add yuga and dogo  [airless   *]
-e8fddb2  add in a changelog  [Martinusbe]
-b327f94  add oneplus2  [Martinusbe]
-254ff13  add bacon  [Martinusbe]
-94f6ec3  url wants the blob  [Martinusbe]
-b1e77ad  onyx: fix typo  [Martinusbe]
-b0607b3  onyx: Banks gapps  [Martinusbe]
-97bd877  fixes  [Martinusbe]
-8cd3268  create initial files  [Martinusbe]
-[1m   * device/sony/fusion3-common/[m
-f3c7e29  fusion3: Add support for encrypted UserData and Adopted Storage  [airless   *]
-822fe81  fusion3: Add settingsstorage on Userdata and MicroSD  [airless   *]
-[1m   * frameworks/av/[m
-23426b8  Fix AMR decoder  [Martinusbe]
-1bf14c2  SoftAMR: check input buffer size to avoid overflow.  [Martinusbe]
-ab59198  SoftAMR: check output buffer size to avoid overflow.  [Martinusbe]
-85c6254  codecs: check OMX buffer size before use in VP8 encoder.  [Martinusbe]
-f1e81c9  NuPlayerStreamListener: NULL and bounds check before memcpy  [Martinusbe]
-a604ab7  Camera3Device: Validate template ID  [Martinusbe]
-2db02ec  Add VPX output buffer size check  [Martinusbe]
-[1m   * frameworks/base/[m
-48c0d40  dexopt: logo size 300dp  [Martinusbe]
-9d87274  [DO NOT MERGE] Disallow guest user from changing Wifi settings  [Martinusbe]
-[1m   * frameworks/native/[m
-9271b3e  BQ: fix some uninitialized variables  [Martinusbe]
-320865e  Fix issue #27252896: Security Vulnerability -- weak binder  [Martinusbe]
-[1m   * hardware/qcom/audio-caf/msm8994/[m
-86be6af  extn: dolby: fix unused variable warnings  [Nicholas Flintham]
-fc37534  Fix incall music enabled error  [Nicholas Flintham]
-105eee2  policy_hal: Fix setOutputDevice call when starting source  [Nicholas Flintham]
-8951c60  hal: Fix build break when incall music isn't set  [Nicholas Flintham]
-08d4a82  hal: Fix warnings when building with clang  [Nicholas Flintham]
-86e7f52  policy_hal: fix improper voice-playback concurrency handling  [Nicholas Flintham]
-bebcb45  hal: Fix warnings in audio HAL and policy  [Nicholas Flintham]
-114a3d8  hal: Add performance lock for playback usecase  [Nicholas Flintham]
-49ad81c  hal: Add support for LINE out device  [Nicholas Flintham]
-4e261ca  policy_hal: handle incall sonification without checking output refCount  [Nicholas Flintham]
-7ddec54  hal: Validate active input before accessing source  [Nicholas Flintham]
-[1m   * hardware/qcom/display-caf/msm8916/[m
-b7ec524  hwc: Start with ROI set to destination  [Josue Rivera]
-[1m   * hardware/qcom/display-caf/msm8994/[m
-4aaa86a  display: Fix warnings on 64-bit clang  [Nicholas Flintham]
-e8ec461  hwc: cursor: Set cursor layer updating hint to driver  [Nicholas Flintham]
-[1m   * hardware/qcom/media-caf/msm8916/[m
-655d20e  mm-video-v4l2: venc: add safety checks for freeing buffers  [Josue Rivera]
-3479103  mm-video-v4l2: vdec: add safety checks for freeing buffers  [Josue Rivera]
-479b72a  mm-video-v4l2: vdec: deprecate unused config OMX_IndexVendorVideoExtraData  [Josue Rivera]
-8666786  mm-video-v4l2: vidc: validate omx param/config data  [Josue Rivera]
-ed6acbf  mm-video: swvenc: No longer access 'extradata' fields.  [Josue Rivera]
-[1m   * hardware/qcom/media-caf/msm8994/[m
-58b493a  media: Fix issues when building with Clang  [Nicholas Flintham]
-9561b23  mm-video-v4l2: vdec: deprecate unused config OMX_IndexVendorVideoExtraData  [Nicholas Flintham]
-d1958e6  mm-video-v4l2: venc: add safety checks for freeing buffers  [Nicholas Flintham]
-3c26d52  mm-video-v4l2: vidc: validate omx param/config data  [Nicholas Flintham]
-833a88d  mm-video-v4l2: vdec: add safety checks for freeing buffers  [Nicholas Flintham]
-[1m   * kernel/sony/apq8064/[m
-b3bc58c  Revert "enable dt2w on dogo & odin"  [airless   *]
-21b7f37  Revert "dogo, odin, pollux: enable wake gestures"  [airless   *]
-[1m   * libcore/[m
-4d0ee69  CipherTest: add test for multiple updateAAD calls  [Martinusbe]
-6d93f65  CipherTest: test instance reuse with updateAAD  [Martinusbe]
-[1m   * manifest/[m
-cf54f24  OTA_config  [Martinusbe]
-[1m   * packages/apps/Snap/[m
-1fdf46f  Snap: force enable zsl for lge hdr  [codeworkx]
-[1m   * system/core/[m
-8644945  fix adb on TWRP  [airless   *]
-b3a7f7a  add battery capacity drawing to healthd  [airless   *]
-c7b2f6d  Don't demangle symbol names.  [Martinusbe]
-
-====================
-     05-08-2016
+     07-10-2016
 ====================
 
 
 ====================
-     05-07-2016
+     07-09-2016
 ====================
 
-[1m   * device/sony/fusion3-common/[m
-87b32e5  fusion3: Improve Camera HAL wrapper for SensorService init  [airless   *]
-[1m   * hardware/qcom/media-caf/msm8974/[m
-92d00cb  mm-video-v4l2: vdec: deprecate unused config OMX_IndexVendorVideoExtraData  [Josue Rivera]
-48a24be  mm-video-v4l2: venc: add safety checks for freeing buffers  [Josue Rivera]
-d49d1ee  mm-video-v4l2: vidc: validate omx param/config data  [Josue Rivera]
-8083b22  mm-video-v4l2: vdec: add safety checks for freeing buffers  [Josue Rivera]
-[1m   * vendor/validus/[m
-a15935c  airless  [airless   *]
-10494aa  Revert "SuperSU 2.70"  [airless   *]
-beeabc7  Revert "SuperSu 2.71"  [airless   *]
-d619a9c  Add and update apns for R. of Macedonia  [airless   *]
+   * hardware/qcom/audio-caf/msm8960/
+43f190b  DO NOT MERGE Fix AudioEffect reply overflow  [Michael Bestas]
 
 ====================
-     05-06-2016
+     07-08-2016
 ====================
 
-[1m   * device/sony/fusion3-common/[m
-af66d5c  update qs tiles  [airless   *]
-47b6227  init changes  [airless   *]
-da14448  audio: switch to new msm8960 hal  [airless   *]
-[1m   * vendor/sony/[m
-c8fae66  Revert "Yuga 10.7.A.0.228"  [airless   *]
-e786648  Revert "fusion3 10.7.A.0.228"  [airless   *]
-d97419c  Revert "fusion3 : Binaries and firmware from razor-mmb29v (flo)"  [airless   *]
+   * build/
+dd38f57  "MOB30R"  [Martinusbe]
+9db1d03  MOB30Q  [Martinusbe]
+2d9f703  "MOB30P"  [Martinusbe]
+542f75f  "MOB30O"  [Martinusbe]
+169643c  Updating security string to 2016-07-05 to release branches  [Martinusbe]
+6e70f98  "MOB30N"  [Martinusbe]
+   * external/stagefright-plugins/
+7d12776  stagefright-plugins: Clean up warnings for invalid format strings  [Josue Rivera]
+60f693c  stagefright-plugins: Stop using AVPicture  [Josue Rivera]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel/
+bc28090  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x-kernel/
+a6f06e6  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
+c31f433  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
+69f20cd  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
+37df54c  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
+d67fa5c  Initial commit  [DespairFactor]
 
 ====================
-     05-05-2016
+     07-07-2016
 ====================
-
-[1m   * build/[m
-887c6ae  "MOB30J"  [Martinusbe]
-76749be  "MOB30I"  [Martinusbe]
-f81e08d  "MOB30H"  [Martinusbe]
-b605a2e  "MOB30G"  [Martinusbe]
-f6f45dd  "MOB30F"  [Martinusbe]
-ef2d0a4  "MOB30E"  [Martinusbe]
-3c54ff9  Update Security String to 2016-05-01 in preparation for May 2016 Security OTA  [Martinusbe]
-[1m   * external/stagefright-plugins/[m
-8690a43  stagefright-plugins: Fix crash if nal size is not 3/4  [Josue Rivera]
-[1m   * manifest/[m
-97d2758  6.0.1_r43  [martin coulon]
+   * OTA_config/
+bd40954  update Redmi-2 (wt88047)  [Prema Chand Alugu]
+   * packages/apps/Snap/
+aca0818  Automatic translation import  [pinky@build01]
 
 ====================
-     05-04-2016
+     07-06-2016
+====================
+   * OTA_config/
+a81acad  Update Huashan 0705  [a7r3]
+   * bionic/
+535fb04  libc: Fix invalid offset warning with Clang  [Martinusbe]
+f130f9a  libc: ARM64: kryo: use generic memmove routine  [Martinusbe]
+36964d9  bionic: Teach fnmatch(3) to handle UTF-8 characters in patterns  [Martinusbe]
+   * external/sepolicy/
+9e80071  op3 temp: allow dalvikcache_data_file:dir write  [Martinusbe]
+   * packages/apps/Settings/
+a0ce6b6  Added Redmi-2 maintainer  [Prema Chand Alugu]
+   * vendor/validus/
+5ef3208  SuperSU 2.52  [Martinusbe]
+
+====================
+     07-05-2016
 ====================
 
-[1m   * external/wpa_supplicant_8/[m
-c9ffe7b  Guard against return value already being null  [Josue Rivera]
-a2ad534  Remove newlines from config output  [Josue Rivera]
-[1m   * hardware/broadcom/wlan/[m
-7b9cfbd  net: wireless: bcmdhd: update bcm4358 FW (7.112.200.5) [DO NOT MERGE]  [Josue Rivera]
-f7c620c  net: wireless: bcmdhd: Update bcm4354/56 FW(7.35.101.1) [DO NOT MERGE]  [Josue Rivera]
-e194377  net: wireless: bcmdhd: update bcm4339 FW 6.37.32.RC23.34.42 [DO NOT MERGE]  [Josue Rivera]
-[1m   * kernel/sony/apq8064/[m
-c679f78  ALSA: hrtimer: Fix stall by hrtimer_cancel()  [airless   *]
-969a4b8  pipe: limit the per-user amount of pages allocated in pipes  [airless   *]
-8f732c6  ALSA: timer: Harden slave timer list handling  [airless   *]
-413b633  ALSA: timer: Fix race among timer ioctls  [airless   *]
-c747d49  ALSA: timer: Fix double unlink of active_list  [airless   *]
-9ace317  ALSA: usb-audio: avoid freeing umidi object twice  [airless   *]
-[1m   * packages/apps/Email/[m
-a02b005  Don't allow cachedFile Attachments if the content Uri is pointing to EmailProvider.  [Josue Rivera]
-[1m   * packages/apps/UnifiedEmail/[m
-022143f  Don't allow cachedFile Attachments if the content Uri is pointing to EmailProvider.  [Josue Rivera]
-[1m   * system/bt/[m
-b14b280  Add Renault MediaNav to HFP 1.7 blacklist  [Josue Rivera]
-7ecccf2  add medianav to unsupported device for hfp 1.7  [Josue Rivera]
-d939a69  bt-vendor: Fix sporadic crashes on shutdown  [Josue Rivera]
-0a6a3ef  Bluetooth: Allow REMOVE_EAGER_THREADS to be unset  [Josue Rivera]
-13b51eb  DO NOT MERGE Check size of pin before replying  [Josue Rivera]
+   * packages/apps/Snap/
+9c7a687  Automatic translation import  [blinky@build01]
+
+====================
+     07-04-2016
+====================
+
+   * device/sony/dogo/
+2437694  du  [airless   *]
+
+====================
+     07-03-2016
+====================
+
+
+====================
+     07-02-2016
+====================
+
+
+====================
+     07-01-2016
+====================
+
+   * device/sony/fusion3-common/
+d048df8  audio: Fix incall audio  [airless   *]
+95f6bba  audio: switch to new msm8960 hal  [airless   *]
+3f67df2  Revert "audio: switch to new msm8960 hal"  [airless   *]
+c03b0ac  Revert "link toybox against /sbin/mv"  [airless   *]
+   * packages/apps/Snap/
+f5c6dd5  Snap: Fix name for OnePlus 3 resolution  [dianlujitao]
+   * vendor/sony/
+2773add  Revert "add libaudiopolicymanager from .222"  [airless   *]
+
+====================
+     06-30-2016
+====================
+   * OTA_config/
+11e84b1  oneplus: bacon 06/28  [Martinusbe]
+   * device/sony/common/
+12f6d2e  init: Launch the ramdisk init inside of the main thread  [airless   *]
+4e4b77e  init: Avoid overriding root toybox binary after booting  [airless   *]
+74aa060  init: Add a device overridable finish_keycheck function  [airless   *]
+a60a099  init: Cleanup unrequired init_board.h input configurations  [airless   *]
+d09dfd8  init: Prevent recovery access on charger powerup  [airless   *]
+   * device/sony/dogo/
+f6047d6  Update bluetooth config to CAF head  [airless   *]
+cd1656d  Sony perms  [airless   *]
+dcb8269  build: USE_PIPE  [airless   *]
+   * device/sony/fusion3-common/
+2b6f92b  fusion3-common: Update custombootimg for renamed toybox_init  [airless   *]
+   * packages/apps/SlimLauncher/
+e2399b7  SlimLauncher: fix a typo in strings  [Martinusbe]
+   * packages/apps/Snap/
+0ef0a63  Automatic translation import  [inky@build01]
+
+====================
+     06-29-2016
+====================
+   * OTA_config/
+1b1c356  Update Huashan 2806  [a7r3]
+
+====================
+     06-28-2016
+====================
+
+   * art/
+3e70ed2  Disable Clang_arm  [GitHub]
+   * device/qcom/common/
+da9783d  perf: Wrap v3 opcodes with ifdefs  [Nicholas Flintham]
+4ac0005  power: msm8996: Support boost and perf profile hints  [Nicholas Flintham]
+5e9af90  power: msm8952: Fix previous_boost_time getting reset  [Nicholas Flintham]
+   * external/DUtils/
+cc8ceb4  Merge remote-tracking branch 'duu/mm6.0' into HEAD  [theringmaster]
+   * external/stagefright-plugins/
+1020200  stagefright-plugins: call packet_queue_init earier  [Nicholas Flintham]
+   * frameworks/base/
+6aab17a  Few more fixes  [theringmaster]
+b9a59e1  Disable/Enable screenshot sound [1/2]  [theringmaster]
+36898e6  Add missing drawables  [theringmaster]
+ce67726  Revert "SettingsProvider: Allow default volume adjust sound to be overlayed."  [theringmaster]
+d59927e  SystemUI: [Screenshot Crop & Share] Add blur feature  [theringmaster]
+dba938a  SystemUI: fix wrong intent extra for screenshot edit  [theringmaster]
+6dcccaa  SystemUI: add edit action for screenshot notification to start the crop&share editor thanks to @LorDClockaN for the idea  [theringmaster]
+11b6884  Don't let rogue themes ruin notifications If we encounter an exception when inflating a notification's views, and a theme is applied, we should make a second attempt at inflating the notification without a theme applied in case the theme cause the issue.  If the exception still occurs, we treat it like we normally do and allow the app to be killed for posting a bad notification.  [theringmaster]
+e022e8e  Themes: Clear out bootanimation if pkgName empty An empty string for the package name implies the given component should be cleared out, so make sure updateBootAnim respects that.  [theringmaster]
+b05d4f5  Themes: Use default audibles when pkgName is empty Fixes an issue where audibles would be "unknown" causing them to not play when phone rings, notifications arive or an alarm goes off  [theringmaster]
+897f9d9  Adding NullPointerException check in DocumentsUI  [theringmaster]
+f8bab1d  SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission  [theringmaster]
+b4abb01  base: Screenshot Crop & Share: add draw stroke width support Change-Id: Ife8ccaf1775f81d3cdb097e8cbeca53895bd6945  [theringmaster]
+694ac66  SettingsProvider: Allow default volume adjust sound to be overlayed.  [theringmaster]
+2a5214b  SystemUI: add volume tones back  [theringmaster]
+   * hardware/broadcom/libbt/
+f662d09  libbt-vendor (BRCM): Add ssr_cleanup  [Nicholas Flintham]
+   * hardware/qcom/bt-caf/
+4d1355d  Merge branch 'bt.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/bt into HEAD  [Nicholas Flintham]
+   * hardware/qcom/wlan-caf/
+86c2649  Merge branch 'wlan-aosp.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0  [Nicholas Flintham]
+   * packages/apps/CellBroadcastReceiver/
+9cc155a  Layers 4.x - Themes: Expose hardcoded styles and colors for themes  [Jean-Pierre Rasquin]
+   * packages/apps/DUI/
+8b63235  Smartbar/Fling Volume panel action [2/2]  [theringmaster]
+8f0ea4a  SmartBar: expose color res for all the SmartBar things  [theringmaster]
+026d311  Add a visual cue for editing smartbar  [theringmaster]
+   * packages/apps/DeskClock/
+e93388f  Layers 4.x - Allow theming numpad  [Jean-Pierre Rasquin]
+244281e  Layers 4.x - Expose background colors for theming.  [Jean-Pierre Rasquin]
+   * packages/apps/Settings/
+d72e85b  Disable/Enable screenshot sound [2/2] Change-Id: If254407c43fbcd70c1fafce244686f07b20864b7  [theringmaster]
+1dab5af  More import fixes  [theringmaster]
+c6e902a  Fix call  [theringmaster]
+34f4613  DUI: Use DocumentsProvider API for handling custom icons [1/2] All images requested for DUI features will be copied and kept in a folder in external storage. We can not rely on third party content providers to deliver our icons to SystemUI. Either the provider gets us a good icon and we copy it successfully or we toast an error and let SystemUI know the request was canceled.  [theringmaster]
+   * system/vold/
+717d930  cryptfs: Fix returning to default password  [Nicholas Flintham]
+a41f014  Revert "vold: Branch out SW and HW FDE paths to improve boot up time"  [Nicholas Flintham]
+d1c9d99  Fix ioctl parameter  [Nicholas Flintham]
 
