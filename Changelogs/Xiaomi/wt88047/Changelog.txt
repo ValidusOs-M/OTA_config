@@ -1,4 +1,156 @@
 ====================
+     07-12-2016
+====================
+
+   * device/wingtech/wt88047/
+5204c9a  sepolicy updates  [Prema Chand Alugu]
+   * external/sepolicy/
+12a6700  Further restrict socket ioctls available to apps  [Martinusbe]
+f1636ae  Remove generic socket access from untrusted processes  [Martinusbe]
+   * frameworks/av/
+bf7c5cb  Resolve a merge issue between lmp and lmp-mr1+  [Martinusbe]
+e1a1059  MPEG4Extractor: ensure kKeyTrackID exists before creating an MPEG4Source as track.  [Martinusbe]
+74a6cd5  limit mediaserver memory  [Martinusbe]
+7190466  Fix security vulnerability in libstagefright  [Martinusbe]
+5d9ad73  h264bsdActivateParamSets: Prevent multiplication overflow.  [Martinusbe]
+e4d6e60  Clear unused pointer field when sending across binder  [Martinusbe]
+2552184  Check section size when verifying CRC  [Martinusbe]
+   * frameworks/base/
+fcab51a  Backport of backup transport whitelist  [Martinusbe]
+0fe5613  Backport ChooserTarget package source check from N  [Martinusbe]
+ee23c5e  Don't pass URL path and username/password to PAC scripts  [Martinusbe]
+bb693a6  Fix missing permission check when saving pattern/password  [Martinusbe]
+   * frameworks/native/
+ada2181  Correctly handle dup() failure in Parcel::readNativeHandle  [Martinusbe]
+   * manifest/
+dc8740d  r52  [GitHub]
+   * system/core/
+c8e5152  Fix scanf %s in lsof.  [Martinusbe]
+
+====================
+     07-11-2016
+====================
+   * OTA_config/
+a8eb3f6  update yuga 0711  [airless   *]
+   * device/wingtech/wt88047/
+e56b7e9   kernel defconfig definition updated  [Prema Chand Alugu]
+   * kernel/cyanogen/msm8916/
+8b6f180  Release Jerrica-MM-3.2  [Prema Chand Alugu]
+a964c1e  Fix whitespce errors  [Prema Chand Alugu]
+7dd75d4  mm/zpool: add name argument to create zpool  [Prema Chand Alugu]
+04c19ef  mm/zpool: use prefixed module loading  [Prema Chand Alugu]
+e6ad1b4  mm/zpool: implement common zpool api to zbud/zsmalloc  [Prema Chand Alugu]
+a2629b6  Revert "cpuidle: kick all cpu after idle handler installed"  [Prema Chand Alugu]
+31c7ac1  Revert "msm: lpm-levels: add suspend_again handler"  [Prema Chand Alugu]
+93bb6f9  Revert "drivers: lpm-levels: Don't allow idle low power modes during resume"  [Prema Chand Alugu]
+d28daae  Revert "power: get rid of quick_wakeup driver"  [Prema Chand Alugu]
+0513e47  update defconfig - KCAL  [Prema Chand Alugu]
+5d8dee8  msm: mdss: KCAL: Only apply updates on index 0  [Prema Chand Alugu]
+0625589  msm: mdss: KCAL: Use PCC for negative display mode  [Prema Chand Alugu]
+c230cc7  msm: mdss: KCAL: Send a pp display commit when changes are made  [Prema Chand Alugu]
+7c8e435  msm: mdss: KCAL: Do not read from picture adjustment registers  [Prema Chand Alugu]
+6521d7c  msm: mdss: KCAL: Read values from MDP registers wherever possible  [Prema Chand Alugu]
+522e9ae  msm: mdss: KCAL: Apply default values on boot  [Prema Chand Alugu]
+fff2da7  msm: mdss: KCAL: Queue changes when panel is powered off  [Prema Chand Alugu]
+d73342b  msm: mdss: KCAL: Remove MODULE_DESCRIPTION  [Prema Chand Alugu]
+ed74d13  msm: mdss: KCAL: Update Kconfig description  [Prema Chand Alugu]
+cd83bb2  msm: mdss: KCAL: Update according to linux guidelines and checkpatch.pl  [Prema Chand Alugu]
+c7141ba  msm: mdss: KCAL: Check panel power state before applying values  [Prema Chand Alugu]
+cc91c38  msm: mdss: KCAL: Allow kcal_enable to control all post-processing features  [Prema Chand Alugu]
+fef204a  msm: mdss: Keep KCAL within its own source file  [Prema Chand Alugu]
+22d81b5  msm: mdss: Remove deprecated __dev* markings  [Prema Chand Alugu]
+b8c9aec  msm: mdss: Add pa_v2 support to KCAL  [Prema Chand Alugu]
+c6793f7  msm: mdss: Replace PGC implementation with PCC for KCAL  [Prema Chand Alugu]
+7c374e4  msm: mdss: Add KCAL support for post processing control [v2]  [Prema Chand Alugu]
+a2ad2aa  Release Jerrica-MM-3.1  [Prema Chand Alugu]
+d5646f3  mako hotplug - fix stats conflict with driver code  [Prema Chand Alugu]
+fc679ef  cpufreq: add an helper to get/set cpu utilization to be used by mako_hotplug  [Prema Chand Alugu]
+41bdf29  Mako: Add working toggle.  [Prema Chand Alugu]
+c16b329  mako_hotplug: increase the work schedule time when dual-core or quad-core mode is active, from 1 to 2 seconds  [Prema Chand Alugu]
+478fab1  mako_hotplug: don't use PAGE_SIZE for snprintf  [Prema Chand Alugu]
+c0f663b  mako_hotplug: run the main work only once every second if special cases apply  [Prema Chand Alugu]
+8549028  mako_hotplug: don't offline cores if the load at that sample is above the threshold, even if we met all the other conditions  [Prema Chand Alugu]
+56bc2d8  mako_hotplug: let's use an unbound wq  [Prema Chand Alugu]
+57706aa  mako_hotplug: remove works for resume/suspend entirely  [Prema Chand Alugu]
+9fa5291  mako_hotplug: squash code from lollipop branch  [Prema Chand Alugu]
+de15efa  msm: mpm: disable debugging  [Prema Chand Alugu]
+091129d  update deconfig  [Prema Chand Alugu]
+c7d8214  state_helper: Remove delay for state notifier events  [Prema Chand Alugu]
+c78210a  state_helper: Follow reverse sequence to online offline cores  [Prema Chand Alugu]
+574482d  state_helper: Reschedule when thermal driver hotplugs  [Prema Chand Alugu]
+3e95d39  state_helper: implement for Redmi2  [Prema Chand Alugu]
+c312609  state_notifier: enabled by default  [Prema Chand Alugu]
+f526dcb  msm: Import state notifier driver  [Prema Chand Alugu]
+ee7e31e  lz4: fix compression/decompression signedness mismatch  [Prema Chand Alugu]
+5728070  lib: add lz4 compressor module  [Prema Chand Alugu]
+9644de1  lib: add support for LZ4-compressed kernel  [Prema Chand Alugu]
+ed95a0c  decompressor: add LZ4 decompressor module  [Prema Chand Alugu]
+86f43e7  mm: zsmalloc: backport from Linux 4.1  [Prema Chand Alugu]
+63e971d  block: zram: make lz4 the default compressor  [Prema Chand Alugu]
+8cccb8a  block: zram: Backport from Linux 4.1  [Prema Chand Alugu]
+4255e9b  Revert "Revert "block/fs: keep track of the task that dirtied the page""  [Prema Chand Alugu]
+
+====================
+     07-10-2016
+====================
+
+   * hardware/qcom/audio-caf/msm8916/
+4dd5633  DO NOT MERGE Fix AudioEffect reply overflow  [Josue Rivera]
+   * hardware/qcom/audio-caf/msm8974/
+30d1a97  DO NOT MERGE Fix AudioEffect reply overflow  [Josue Rivera]
+
+====================
+     07-09-2016
+====================
+
+
+====================
+     07-08-2016
+====================
+
+   * build/
+dd38f57  "MOB30R"  [Martinusbe]
+9db1d03  MOB30Q  [Martinusbe]
+2d9f703  "MOB30P"  [Martinusbe]
+542f75f  "MOB30O"  [Martinusbe]
+169643c  Updating security string to 2016-07-05 to release branches  [Martinusbe]
+6e70f98  "MOB30N"  [Martinusbe]
+   * hardware/broadcom/wlan/
+f869801  net: wireless: bcmdhd: Update bcm4354 FW (7.35.101.3) [DO NOT MERGE]  [Josue Rivera]
+c5daa39  net: wireless: bcmdhd: Update bcm4339 FW (6.37.34.43) [DO NOT MERGE]  [Josue Rivera]
+26f73b5  net: wireless: bcmdhd: Update bcm4356 FW (7.35.101.3) [DO NOT MERGE]  [Josue Rivera]
+   * hardware/libhardware/
+ac0c295  Add guest mode functionality (1/3)  [Josue Rivera]
+   * hardware/qcom/media/default/
+ea607a8  DO NOT MERGE mm-video-v4l2: venc: Avoid processing ETBs/FTBs in invalid states  [Josue Rivera]
+ee58472  DO NOT MERGE mm-video-v4l2: vdec: Avoid processing ETBs/FTBs in invalid states  [Josue Rivera]
+   * packages/apps/Bluetooth/
+c222c65  Add guest mode functionality (3/3)  [Josue Rivera]
+   * packages/apps/Nfc/
+51caf47  Verify setForegroundDispatch caller is in foreground.  [Josue Rivera]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
+c31f433  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
+69f20cd  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
+37df54c  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
+d67fa5c  Initial commit  [DespairFactor]
+   * system/bt/
+42618ba  Fix call to enable(bool) which changed as part of 049eae4ff84fbbdbc4b0068cb2a217f9f0460bf4  [Josue Rivera]
+ae12c32  DO NOT MERGE btif: check overflow on create_pbuf size  [Josue Rivera]
+eaf1fda  Add guest mode functionality (2/3)  [Josue Rivera]
+
+====================
+     07-07-2016
+====================
+   * OTA_config/
+bd40954  update Redmi-2 (wt88047)  [Prema Chand Alugu]
+   * external/stagefright-plugins/
+7d12776  stagefright-plugins: Clean up warnings for invalid format strings  [Josue Rivera]
+60f693c  stagefright-plugins: Stop using AVPicture  [Josue Rivera]
+
+====================
      07-06-2016
 ====================
    * OTA_config/
@@ -13,123 +165,11 @@ f130f9a  libc: ARM64: kryo: use generic memmove routine  [Martinusbe]
 a0ce6b6  Added Redmi-2 maintainer  [Prema Chand Alugu]
    * vendor/validus/
 5ef3208  SuperSU 2.52  [Martinusbe]
-   * vendor/wingtech/
-f7fd8c7  Merge pull request #3 from kumajaya/cm-13.0  [GitHub]
 
 ====================
      07-05-2016
 ====================
 
-   * kernel/cyanogen/msm8916/
-e4c4a46  Release Jerrica-MM-3.1  [Prema Chand Alugu]
-f0ef6d6  mako hotplug - fix stats conflict with driver code  [Prema Chand Alugu]
-482a9b1  cpufreq: add an helper to get/set cpu utilization to be used by mako_hotplug  [Prema Chand Alugu]
-c923c17  Mako: Add working toggle.  [Prema Chand Alugu]
-73714f9  mako_hotplug: increase the work schedule time when dual-core or quad-core mode is active, from 1 to 2 seconds  [Prema Chand Alugu]
-92ce402  mako_hotplug: don't use PAGE_SIZE for snprintf  [Prema Chand Alugu]
-8480ef5  mako_hotplug: run the main work only once every second if special cases apply  [Prema Chand Alugu]
-e893149  mako_hotplug: don't offline cores if the load at that sample is above the threshold, even if we met all the other conditions  [Prema Chand Alugu]
-a244804  mako_hotplug: let's use an unbound wq  [Prema Chand Alugu]
-18ebe35  mako_hotplug: remove works for resume/suspend entirely  [Prema Chand Alugu]
-f9e44b4  mako_hotplug: squash code from lollipop branch  [Prema Chand Alugu]
-c11e5e2  cpu: send KOBJ_ONLINE event when enabling cpus  [Prema Chand Alugu]
-3d6190c  sched/rt: Reduce rq lock contention by eliminating locking of non-feasible target  [Prema Chand Alugu]
-baf7aa6  sched: Change autogroup_move_group() to use for_each_thread()  [Prema Chand Alugu]
-f047c6b  sched: Change thread_group_cputime() to use for_each_thread()  [Prema Chand Alugu]
-bd4f74f  sched: s/do_each_thread/for_each_process_thread/ in debug.c  [Prema Chand Alugu]
-fcb47885  sched: s/do_each_thread/for_each_process_thread/ in core.c  [Prema Chand Alugu]
-b1fd20e  sched: Fix exec_start/task_hot on migrated tasks  [Prema Chand Alugu]
-619486a  sched/fair: Avoid integer overflow  [Prema Chand Alugu]
-a297841  sched: Optimize task_sched_runtime()  [Prema Chand Alugu]
-b6fdea9  sched/balancing: Reduce the rate of needless idle load balancing  [Prema Chand Alugu]
-fb8ae70  sched/fair: Stop searching for tasks in newidle balance if there are runnable tasks  [Prema Chand Alugu]
-bcb6d6e  rcu: Don't disable CPU hotplug during OOM notifiers  [Prema Chand Alugu]
-a05da0e  sched/fair: Implement fast idling of CPUs when the system is partially loaded  [Prema Chand Alugu]
-afde496  kthread_work: wake up worker only when the worker is idle  [Prema Chand Alugu]
-b6bffa1  sched/idle: Avoid spurious wakeup IPIs  [Prema Chand Alugu]
-5fcdf5e  ring-buffer: Prevent overflow of size in ring_buffer_resize()  [Prema Chand Alugu]
-592dc52  ring-buffer: Use long for nr_pages to avoid overflow failures  [Prema Chand Alugu]
-1b4720e  tracing: Fix crash from reading trace_pipe with sendfile  [Prema Chand Alugu]
-21fda0c  pipe: limit the per-user amount of pages allocated in pipes  [Prema Chand Alugu]
-614f127  workqueue: fix hang involving racing cancel[_delayed]_work_sync()'s for PREEMPT_NONE  [Prema Chand Alugu]
-9876b11  mm: fix prctl_set_vma_anon_name  [Prema Chand Alugu]
-61aed41  __ptrace_may_access() should not deny sub-threads  [Prema Chand Alugu]
-36921b1  msm: mpm: disable debugging  [Prema Chand Alugu]
-e6f7ae0  soc: qcom: bam_dmux: Sync SSR with disconnect/reconnect  [Prema Chand Alugu]
-38e2885  msm: performance: prevent userspace hints to decrease max cpu freq  [Prema Chand Alugu]
-43eb683  msm: performance: prevent the driver from handling userspace min freq cpu boost hints. We'll use the standard cpu-boost input-boost functionality which gives users freedom to choose their own settings  [Prema Chand Alugu]
-42dce0f  memshare: Place error check to prevent out of bound access  [Prema Chand Alugu]
-31284bd  soc: qcom: common_log: Fix a memory leak in common_log driver  [Prema Chand Alugu]
-fb1243c  msm: Fix high load average from uninterruptible waits  [Prema Chand Alugu]
-de2d502  msm_performance: Make input boosting optional  [Prema Chand Alugu]
-96a21f4  PM: devfreq: Use high priority workqueue  [Prema Chand Alugu]
-3ca8e0a  update deconfig  [Prema Chand Alugu]
-6c6bd2c  state_helper: Remove delay for state notifier events  [Prema Chand Alugu]
-a7b678b  state_helper: Follow reverse sequence to online offline cores  [Prema Chand Alugu]
-2c2ed1a  state_helper: Reschedule when thermal driver hotplugs  [Prema Chand Alugu]
-ff0655e  state_helper: implement for Redmi2  [Prema Chand Alugu]
-6b6c012  state_notifier: enabled by default  [Prema Chand Alugu]
-ad28fa3  msm: Import state notifier driver  [Prema Chand Alugu]
-db399fc  update defconfig zram/zsmalloc  [Prema Chand Alugu]
-5d1aede  zram: compact zram when suspended  [Prema Chand Alugu]
-1d4f8e9  zsmalloc: reorganize struct size_class to pack 4 bytes hole  [Prema Chand Alugu]
-197abc6  zsmalloc: use page->private instead of page->first_page  [Prema Chand Alugu]
-eff1e7a  zsmalloc: reduce size_class memory usage  [Prema Chand Alugu]
-15faf38  mm/zsmalloc.c: remove useless line in obj_free()  [Prema Chand Alugu]
-06162ec  zsmalloc: use preempt.h for in_interrupt()  [Prema Chand Alugu]
-f89a788  zsmalloc: fix obj_to_head use page_private(page) as value but not pointer  [Prema Chand Alugu]
-c074600  zsmalloc: add comments for ->inuse to zspage  [Prema Chand Alugu]
-0fd12a4  zsmalloc: remove null check from destroy_handle_cache()  [Prema Chand Alugu]
-1ff0c0b  zsmalloc: use class->pages_per_zspage  [Prema Chand Alugu]
-701aa3e  zsmalloc: consider ZS_ALMOST_FULL as migrate source  [Prema Chand Alugu]
-3d4ac4d  zram: update documentation  [Prema Chand Alugu]
-9f3f109  zsmalloc: account the number of compacted pages  [Prema Chand Alugu]
-1ddfe7c  zsmalloc/zram: introduce zs_pool_stats api  [Prema Chand Alugu]
-290e695  zsmalloc: cosmetic compaction code adjustments  [Prema Chand Alugu]
-6b34f0a  zsmalloc: introduce zs_can_compact() function  [Prema Chand Alugu]
-36eff36  zsmalloc: always keep per-class stats  [Prema Chand Alugu]
-a7a3d3a  zsmalloc: drop unused variable `nr_to_migrate'  [Prema Chand Alugu]
-ee6fee5  zram: add `compact` sysfs entry to documentation  [Prema Chand Alugu]
-cd8de46  zsmalloc: remove obsolete ZSMALLOC_DEBUG  [Prema Chand Alugu]
-47c8787  zsmalloc: partial page ordering within a fullness_list  [Prema Chand Alugu]
-ab1d2ad  zram: don't call idr_remove() from zram_remove()  [Prema Chand Alugu]
-8f4776c  zram/zcomp: do not zero out zcomp private pages  [Prema Chand Alugu]
-d7a154f  zram: pass gfp from zcomp frontend to backend  [Prema Chand Alugu]
-fbe00f5  zram: make is_partial_io/valid_io_request/page_zero_filled return boolean  [Prema Chand Alugu]
-9329e8f  zram: keep the exact overcommited value in mem_used_max  [Prema Chand Alugu]
-67b571b  zram: introduce comp algorithm fallback functionality  [Prema Chand Alugu]
-2cbf71d  zram: fix possible use after free in zcomp_create()  [Prema Chand Alugu]
-4c613d2  zram: unify error reporting  [Prema Chand Alugu]
-5aa9634  zram: fix pool name truncation  [Prema Chand Alugu]
-74a2dc1  zram: check comp algorithm availability earlier  [Prema Chand Alugu]
-7a968de  zram: cut trailing newline in algorithm name  [Prema Chand Alugu]
-6a140ba  zram: cosmetic zram_bvec_write() cleanup  [Prema Chand Alugu]
-c5be451  zram: add dynamic device add/remove functionality  [Prema Chand Alugu]
-6dd5ec5  zram: close race by open overriding  [Prema Chand Alugu]
-f7fc5a4  zram: return zram device_id from zram_add()  [Prema Chand Alugu]
-2bd525d  zram: trivial: correct flag operations comment  [Prema Chand Alugu]
-2d86cf1  zram: report every added and removed device  [Prema Chand Alugu]
-a8265f3e  zram: remove max_num_devices limitation  [Prema Chand Alugu]
-984e2ff  zram: reorganize code layout  [Prema Chand Alugu]
-7630d7c  zram: use idr instead of `zram_devices' array  [Prema Chand Alugu]
-16325a5  zram: cosmetic ZRAM_ATTR_RO code formatting tweak  [Prema Chand Alugu]
-a9f4db0  zram: Add back show_mem_notifier and QUEUE_FAST_FLAG  [Prema Chand Alugu]
-8e3d6f3  staging: zram: Rate limit memory allocation errors  [Prema Chand Alugu]
-a3d605e  zram: Disable allocation failure logging  [Prema Chand Alugu]
-960a4ba  zram: remove obsolete ZRAM_DEBUG option  [Prema Chand Alugu]
-a8e269f  zram: try vmalloc() after kmalloc()  [Prema Chand Alugu]
-9154ed9  zram/zcomp: use GFP_NOIO to allocate streams  [Prema Chand Alugu]
-07b8eca  mm/zpool: add name argument to create zpool  [Prema Chand Alugu]
-66ccb38  mm/zpool: use prefixed module loading  [Prema Chand Alugu]
-0bdc3f5  mm/zpool: implement common zpool api to zbud/zsmalloc  [Prema Chand Alugu]
-ea70311  lz4: fix compression/decompression signedness mismatch  [Prema Chand Alugu]
-c57a313  lib: add lz4 compressor module  [Prema Chand Alugu]
-7f8edb5  lib: add support for LZ4-compressed kernel  [Prema Chand Alugu]
-d6b0011  decompressor: add LZ4 decompressor module  [Prema Chand Alugu]
-507825eb  mm: zsmalloc: backport from Linux 4.1  [Prema Chand Alugu]
-c255a18  block: zram: make lz4 the default compressor  [Prema Chand Alugu]
-f51628a  block: zram: Backport from Linux 4.1  [Prema Chand Alugu]
-86cd928  Revert "Revert "block/fs: keep track of the task that dirtied the page""  [Prema Chand Alugu]
 
 ====================
      07-04-2016
@@ -140,14 +180,6 @@ f51628a  block: zram: Backport from Linux 4.1  [Prema Chand Alugu]
      07-03-2016
 ====================
 
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
-7ac6d49  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
-91c3c32  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
-12e682a  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
-4750571  Initial commit  [DespairFactor]
 
 ====================
      07-02-2016
@@ -166,360 +198,10 @@ f51628a  block: zram: Backport from Linux 4.1  [Prema Chand Alugu]
 11e84b1  oneplus: bacon 06/28  [Martinusbe]
    * packages/apps/SlimLauncher/
 e2399b7  SlimLauncher: fix a typo in strings  [Martinusbe]
-   * vendor/wingtech/
-7da5573  wt88047: Add missing OpenCL library  [Ketut Putu Kumajaya]
-cfff077  wt88047: Adreno blobs update  [Ketut Putu Kumajaya]
 
 ====================
      06-29-2016
 ====================
    * OTA_config/
 1b1c356  Update Huashan 2806  [a7r3]
-   * kernel/cyanogen/msm8916/
-8e441bf  Fix whitespce errors  [Prema Chand Alugu]
-
-====================
-     06-28-2016
-====================
-
-   * art/
-3e70ed2  Disable Clang_arm  [GitHub]
-   * device/qcom/common/
-da9783d  perf: Wrap v3 opcodes with ifdefs  [Nicholas Flintham]
-4ac0005  power: msm8996: Support boost and perf profile hints  [Nicholas Flintham]
-5e9af90  power: msm8952: Fix previous_boost_time getting reset  [Nicholas Flintham]
-   * external/DUtils/
-cc8ceb4  Merge remote-tracking branch 'duu/mm6.0' into HEAD  [theringmaster]
-   * external/stagefright-plugins/
-1020200  stagefright-plugins: call packet_queue_init earier  [Nicholas Flintham]
-   * frameworks/base/
-6aab17a  Few more fixes  [theringmaster]
-b9a59e1  Disable/Enable screenshot sound [1/2]  [theringmaster]
-36898e6  Add missing drawables  [theringmaster]
-ce67726  Revert "SettingsProvider: Allow default volume adjust sound to be overlayed."  [theringmaster]
-d59927e  SystemUI: [Screenshot Crop & Share] Add blur feature  [theringmaster]
-dba938a  SystemUI: fix wrong intent extra for screenshot edit  [theringmaster]
-6dcccaa  SystemUI: add edit action for screenshot notification to start the crop&share editor thanks to @LorDClockaN for the idea  [theringmaster]
-11b6884  Don't let rogue themes ruin notifications If we encounter an exception when inflating a notification's views, and a theme is applied, we should make a second attempt at inflating the notification without a theme applied in case the theme cause the issue.  If the exception still occurs, we treat it like we normally do and allow the app to be killed for posting a bad notification.  [theringmaster]
-e022e8e  Themes: Clear out bootanimation if pkgName empty An empty string for the package name implies the given component should be cleared out, so make sure updateBootAnim respects that.  [theringmaster]
-b05d4f5  Themes: Use default audibles when pkgName is empty Fixes an issue where audibles would be "unknown" causing them to not play when phone rings, notifications arive or an alarm goes off  [theringmaster]
-897f9d9  Adding NullPointerException check in DocumentsUI  [theringmaster]
-f8bab1d  SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission  [theringmaster]
-b4abb01  base: Screenshot Crop & Share: add draw stroke width support Change-Id: Ife8ccaf1775f81d3cdb097e8cbeca53895bd6945  [theringmaster]
-694ac66  SettingsProvider: Allow default volume adjust sound to be overlayed.  [theringmaster]
-2a5214b  SystemUI: add volume tones back  [theringmaster]
-   * hardware/broadcom/libbt/
-f662d09  libbt-vendor (BRCM): Add ssr_cleanup  [Nicholas Flintham]
-   * hardware/qcom/audio-caf/msm8994/
-9661bd1  msm8994: fix werror when AUDIO_FEATURE_ENABLED_DTS_EAGLE is enabled  [Nicholas Flintham]
-   * hardware/qcom/bt-caf/
-4d1355d  Merge branch 'bt.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/bt into HEAD  [Nicholas Flintham]
-   * hardware/qcom/wlan-caf/
-86c2649  Merge branch 'wlan-aosp.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0  [Nicholas Flintham]
-   * kernel/cyanogen/msm8916/
-6618393  Release Jerrica-MM-2.1  [Prema Chand Alugu]
-3a8ae9b  update defconfig  [Prema Chand Alugu]
-5b1ebcb  localversion - dirty append is removed  [Prema Chand Alugu]
-529ac51  update deconfig - enable LionFish,Impulse governors  [Prema Chand Alugu]
-3c95062  sched: prevent task migration while governor queries CPUs' load  [Prema Chand Alugu]
-0006f1f  msm: mdss: Adding lcd notifier  [Prema Chand Alugu]
-9b5a059  update defconfig  [Prema Chand Alugu]
-c7d7c8f  cpufreq: remove unused notifier: CPUFREQ_{SUSPENDCHANGE|RESUMECHANGE}  [Prema Chand Alugu]
-e7128f3  ARM: 7789/1: Do not run dummy_flush_tlb_a15_erratum() on non-Cortex-A15  [Prema Chand Alugu]
-bba58e4  ARM: fix debug prints relevant to PCI devices  [Prema Chand Alugu]
-8282adb  arm: idle: add missing need_resched check  [Prema Chand Alugu]
-b77d1f4  ARM: make kernel oops easier to read  [Prema Chand Alugu]
-223c6c0  crypto: msm: remove wakeup lock in qcrypto driver  [Prema Chand Alugu]
-e89543b  power: get rid of quick_wakeup driver  [Prema Chand Alugu]
-3eae58b  drivers: lpm-levels: Don't allow idle low power modes during resume  [Prema Chand Alugu]
-4d8e69a  msm: lpm-levels: add suspend_again handler  [Prema Chand Alugu]
-bf31291  cpuidle: kick all cpu after idle handler installed  [Prema Chand Alugu]
-5c2cfd9  crypto: user - lock crypto_alg_list on alg dump  [Prema Chand Alugu]
-0e28665  ARM: 8120/1: crypto: sha512: add ARM NEON implementation  [Prema Chand Alugu]
-251ac4b  ARM: 8119/1: crypto: sha1: add ARM NEON implementation  [Prema Chand Alugu]
-a2453da  ARM: add support for bit sliced AES using NEON instructions  [Prema Chand Alugu]
-0bf4358  drivers: apanic_mmc: write panic information to raw MMC partition  [Prema Chand Alugu]
-78769d4  soc: qcom: Add back MSM_CPU_FREQ_SET_MIN_MAX  [Prema Chand Alugu]
-4fc30e3  cpufreq: ondemand: Eliminate the deadband effect  [Prema Chand Alugu]
-74547bf  cpufreq: Introduce new relation for freq selection  [Prema Chand Alugu]
-4a1288c  cpufreq: Resolve CPUFREQ_NOTIFY issue  [Prema Chand Alugu]
-678a050  cpufreq: Break out early when frequency equals target_freq  [Prema Chand Alugu]
-51d8e1b  cpufreq: cpu-boost: Bring up to latest iteration  [Prema Chand Alugu]
-54cc606  cpufreq: Delete interactive_pro governor  [Prema Chand Alugu]
-45cc082  cpufreq: governor: remove copy_prev_load from 'struct cpu_dbs_common_info'  [Prema Chand Alugu]
-561a40f  cpufreq: governor: Be friendly towards latency-sensitive bursty workloads  [Prema Chand Alugu]
-b616f76  cpufreq: Fix timer/workqueue corruption by protecting reading governor_enabled  [Prema Chand Alugu]
-3201fc1  cpufreq: remove race while accessing cur_policy  [Prema Chand Alugu]
-1a3cd39  Revert "cpufreq: Don't create empty /sys/devices/system/cpu/cpufreq directory"  [Prema Chand Alugu]
-aa542a7  cpufreq: Add impulse governor  [Prema Chand Alugu]
-a41b181  cpufreq: Add lionfish governor v1.1  [Prema Chand Alugu]
-45ebe48  cpufreq: interactive_pro: Align timer windows for all CPUs  [Prema Chand Alugu]
-2131b4f  cpufreq: interactive_pro: Permanently cache tunable values  [Prema Chand Alugu]
-b800777  cpufreq: interactive_pro: Call cpufreq_get/put_global_kobject correctly  [Prema Chand Alugu]
-462835b  cpufreq: interactive_pro: Rename new governor to interactive_pro  [Prema Chand Alugu]
-0ebe3a5  cpufreq: interactive_pro: Fix double definition of get_cpu_idle_time()  [Prema Chand Alugu]
-b4221bb  cpufreq: interactive: Duplicate upstream governor implementation  [Prema Chand Alugu]
-e146c8b  deadline: decrease fifo_batch  [Prema Chand Alugu]
-b3dbffb  block: bfq: set IOPS mode by default with slice_idle set to 0  [Prema Chand Alugu]
-2ba3d7f  block: Reserve only one queue tag for sync IO if only 3 tags are available  [Prema Chand Alugu]
-aa7b4bd  block: don't allow nr_pending to go negative  [Prema Chand Alugu]
-05101c6  block/compat_ioctl.c: do not leak info to user-space  [Prema Chand Alugu]
-b202663  block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.10.8+  [Prema Chand Alugu]
-0f1e57d  - block: add real written data size in /sys/block/<dev>/stat  [Prema Chand Alugu]
-57a7f6c  Revert "block/fs: keep track of the task that dirtied the page"  [Prema Chand Alugu]
-453e3dd  block: blk-core: trace task names for blk requests  [Prema Chand Alugu]
-f80e1e0  block: partition: apanic_mmc hook  [Prema Chand Alugu]
-220eed0  block: introduce the BFQ-v7r8 I/O sched for 3.10.8+  [Prema Chand Alugu]
-112fafc  block: Add sioplus,tripndroid & zen scheduler  [Prema Chand Alugu]
-8466cbd  block: cgroups, kconfig, build bits for BFQ-v7r8-3.10.8+  [Prema Chand Alugu]
-501fee3  Added fiops IO scheduler  [Prema Chand Alugu]
-37d914d  Fix up compilation error for qpnp with redefition  [Prema Chand Alugu]
-58e6407  Reenable dt2w with ltr559 support  [Prema Chand Alugu]
-ea39be3  Fix up dt2w debug messages  [Prema Chand Alugu]
-   * packages/apps/CellBroadcastReceiver/
-9cc155a  Layers 4.x - Themes: Expose hardcoded styles and colors for themes  [Jean-Pierre Rasquin]
-   * packages/apps/DUI/
-8b63235  Smartbar/Fling Volume panel action [2/2]  [theringmaster]
-8f0ea4a  SmartBar: expose color res for all the SmartBar things  [theringmaster]
-026d311  Add a visual cue for editing smartbar  [theringmaster]
-   * packages/apps/DeskClock/
-e93388f  Layers 4.x - Allow theming numpad  [Jean-Pierre Rasquin]
-244281e  Layers 4.x - Expose background colors for theming.  [Jean-Pierre Rasquin]
-   * packages/apps/Settings/
-d72e85b  Disable/Enable screenshot sound [2/2] Change-Id: If254407c43fbcd70c1fafce244686f07b20864b7  [theringmaster]
-1dab5af  More import fixes  [theringmaster]
-c6e902a  Fix call  [theringmaster]
-34f4613  DUI: Use DocumentsProvider API for handling custom icons [1/2] All images requested for DUI features will be copied and kept in a folder in external storage. We can not rely on third party content providers to deliver our icons to SystemUI. Either the provider gets us a good icon and we copy it successfully or we toast an error and let SystemUI know the request was canceled.  [theringmaster]
-   * system/vold/
-717d930  cryptfs: Fix returning to default password  [Nicholas Flintham]
-a41f014  Revert "vold: Branch out SW and HW FDE paths to improve boot up time"  [Nicholas Flintham]
-d1c9d99  Fix ioctl parameter  [Nicholas Flintham]
-
-====================
-     06-27-2016
-====================
-
-   * external/DUtils/
-7907183  Smartbar/Fling Volume panel action [1/2]  [xlxfoxxlx]
-f369368  DUI: Use DocumentsProvider API helper methods [2/2]  [xlxfoxxlx]
-fbc92a9  DUI: Bring up "In-app search" bindable action and resources [2/2]  [xlxfoxxlx]
-3dd0800  Revert "No intention of adding lockscreen shortcuts"  [xlxfoxxlx]
-   * hardware/qcom/wlan-caf/
-f1df678  Wifi-HAL: Extract wmsg length from nlmsg_hdr with ntohs()  [Josue Rivera]
-1066145  Wifi-HAL: Add length check before proceeding to parse data.  [Josue Rivera]
-9e61ada  wcnss_service: support dynamic replacement for wlan_nv.bin  [Josue Rivera]
-f0d755a  Wifi_HAL: Add new QCA specific wifi config attribute  [Josue Rivera]
-6659c0b  Revert "WiFi-HAL: Remove global variables usage in gscan"  [Josue Rivera]
-1a64bc6  WiFi-HAL: Remove global variables usage in gscan  [Josue Rivera]
-f137bdd  WiFi-HAL: GSCAN- Allow more than max_channels per bucket  [Josue Rivera]
-4fd36a5  wcnss_service: Migrate from QMI to QCCI  [Josue Rivera]
-58437be  WiFi-HAL: Allow number of channels in a bucket to be zero(0)  [Josue Rivera]
-   * kernel/cyanogen/msm8916/
-6bdfe7e  msm: vibrator: Add a sysfs node for the default (boot-up) level.  [Prema Chand Alugu]
-7116f1b  msm: vibrator: Properly unregister device files  [Prema Chand Alugu]
-ee71954  msm: vibrator: Add min/max voltage sysfs entries  [Prema Chand Alugu]
-87cf85d  msm: Improve qpnp-vibrator scheduling  [Prema Chand Alugu]
-dde9675  input: misc: ltr559: Report proper initial value to userspace  [Prema Chand Alugu]
-3bf9ed0  ltr559 - enable, fix whitespace errors  [Prema Chand Alugu]
-
-====================
-     06-26-2016
-====================
-
-   * art/
-3c59cf6  Small correction in Optimizing's ARM64 code generator.  [Martinusbe]
-1c367ed  Allow void to get in ARM64ReturnLocation.  [Martinusbe]
-3bf7afb  Optimizing String.Equals as an intrinsic (ARM64)  [Martinusbe]
-498f255  Structure for String.Equals intrinsic  [Martinusbe]
-2f14fbc  Remove interpreter entrypoint in ArtMethod.  [Martinusbe]
-1e0e698  ARM/ARM64: Implement numberOfLeadingZeros intrinsic.  [Martinusbe]
-2b936d1  ART: Disable Math.round intrinsics  [Martinusbe]
-1e09a9e  ARM/ARM64: Implement numberOfLeadingZeros intrinsic.  [Martinusbe]
-91fb148  Fix missing header inclusion in art/runtime/thread.cc.  [Martinusbe]
-c1f25e1  ART: Speed up thread stack tracing for ANRs  [Martinusbe]
-cf84bc0  SafeStack-friendly stack protection in ART.  [Martinusbe]
-be91148  Rename VisitCondition's argument in code generators.  [Martinusbe]
-ba99d4f  Opt compiler: Speedup div/rem by constants on arm32 and arm64.  [Martinusbe]
-0ecbb29  Use _exit instead of exit for the system exit.  [Martinusbe]
-680bc6b  Use delete/delete[] rather than free/realloc in tracedump  [Martinusbe]
-01d3ba3  ART: Clean up undefines and target clang  [Martinusbe]
-7dab683  Optimizing: Add direct calls to math intrinsics  [Martinusbe]
-006935e  Rename ZipEntryName to ZipString  [Martinusbe]
-91ae8f0  Remove bogus DCHECK().  [Martinusbe]
-aa64122  ART: Speed up stack guard page install  [Martinusbe]
-40a1bde  Fix lock ordering violation  [Martinusbe]
-aa20fc2  Allow for sig chain to be disabled.  [Martinusbe]
-2c49b9a  Suppress a valgrind libc issue.  [Martinusbe]
-c2540da  ART: Allow unwinding unattached threads  [Martinusbe]
-3626dd7  Change JIT code to use optimizing.  [Martinusbe]
-5f9009a  Make the JIT the default in ART.  [Martinusbe]
-8d187b7  Build dex2oat without asan instrumentation.  [Martinusbe]
-c81fdc0  Fix imgdiag build rules.  [Martinusbe]
-5079e81  ART: Fix missing include  [Martinusbe]
-3862f9c  JDWP: fix returned tag for ClassType.NewInstance  [Martinusbe]
-acf0263  JDWP: fix java.lang.String creation  [Martinusbe]
-033c3c2  ART: Refactor CommonRuntimeTest::SetUp  [Martinusbe]
-1629dd4  Skip DumpForSigQuit if debugger is active  [Martinusbe]
-4984d8d  Fix braino in parallel move resolver.  [Martinusbe]
-9daf74d  Add test case for bad arm code generation.  [Martinusbe]
-1be5f34  Assert we don't store an invalid dex_pc in the stack maps.  [Martinusbe]
-97ab3e1  Block callee save fp registers in debuggable.  [Martinusbe]
-27c52b8  ART: Use an iterative way in DoDFSPreOrderSSARename()  [Martinusbe]
-4c5b43d  Quick: Avoid shifting -1 left (undefined behavior).  [Martinusbe]
-d9a7f7c  Add deoptimization test.  [Martinusbe]
-78f20d1  ART: Fix DeadPhiHandling creating >2 equivalents  [Martinusbe]
-4a0339f  Disable class unloading test for tracing tests  [Martinusbe]
-ec0850b  ART: PathClassLoader test  [Martinusbe]
-3b92d10  Minor cleanup of Monitor::VisitLocks  [Martinusbe]
-cefadd5  Use _exit instead of exit after exec fails  [Martinusbe]
-4a330c9  Adjust jit code cache on ThreadStress to avoid timeouts.  [Martinusbe]
-f4a4966  Fix dependencies when not building with Jack.  [Martinusbe]
-5912f77  Refactor the alloc entry point generation code.  [Martinusbe]
-02971d4  Use HashMap for DexFileVerifier  [Martinusbe]
-9e3fa54  ART: Add VLOG printing of SetStatus(Error)  [Martinusbe]
-7c4d72e  ART: Fix arm32 assembly for Clang  [Martinusbe]
-000f037  Revert "Disable clang optimization to boot up on arm64."  [Martinusbe]
-f04789a  Reduce sleep duration in SuspendAllDaemonThreads  [Martinusbe]
-d2f9c8f  Get class loader to remember interrupts  [Martinusbe]
-1263d7f  ART: Special form of lock aliasing  [Martinusbe]
-1e63866  ART: Recognize cortex-a53.a57 for ARM features  [Martinusbe]
-4a8f7f3  ART: Use __ANDROID__ instead of HAVE_ANDROID_OS  [Martinusbe]
-7f6c16c  Add oat location to oatdump.  [Martinusbe]
-943d215  JIT: Fix incorrect CHECK  [Martinusbe]
-f9dd198  Fix memory fences in the ARM64 UnsafeCas intrinsics.  [Martinusbe]
-6335594  Use --oat-fd instead of --oat-file when calling dex2oat.  [Martinusbe]
-aa4190a  Disable the ARM & ARM64 UnsafeCASObject intrinsic with heap poisoning.  [Martinusbe]
-25d8fd5  ART: Fix left-shift of negative numbers  [Martinusbe]
-85d1b9f  Block signals before invoking special or user handlers  [Martinusbe]
-808833d  Change dex_location_ from const char* to std::string.  [Martinusbe]
-e49dada  Optimizing: Allow storing value objects in containers.  [Martinusbe]
-753b54f  ARM64: Better recognition of constants encodable as immediates.  [Martinusbe]
-8ef4461  Remove unnecessary std::move from variant_map.h  [Martinusbe]
-bf92a45  ART: Enable the JustInTime compiler  [Martinusbe]
-958f41a  Use liblog for logging  [Martinusbe]
-02c602f  art: fix dex2oat watchdog timeout  [Martinusbe]
-6c7c853  art: disable FDO  [Martinusbe]
-74ec133  ART: remove fallthrough  [Martinusbe]
-bbf296b  tests: All or nothing  [Martinusbe]
-820aebf  build: Major Cleanup  [Martinusbe]
-e2350ac  dalvikvm: Compile with GCC  [Martinusbe]
-8de4af0  Register signal handler to kernel if not claimed  [Martinusbe]
-3cb51c0  Fix DDM reply buffer deallocation  [Martinusbe]
-7738f43  ART: Fix stub_test  [Martinusbe]
-b4973a2  ART: Remove unique-numbered labels from arm64 assembly  [Martinusbe]
-65f1266  ART-Optimizing: Fix the type of HDivZeroCheck  [Martinusbe]
-d5d1339  ART: Fix bug in DeadPhiHandling  [Martinusbe]
-e137760  ART: Make dex2oat timing a bit more granular  [Martinusbe]
-a67a994  ART: Fix destruction order in Runtime.  [Martinusbe]
-9aba189  ART: Include zero-padding in String::SizeOf().  [Martinusbe]
-6a02354  ART: Abort if malloc() fails in SwapAllocator::allocate().  [Martinusbe]
-297c5c4  ART: (Partially) fix lock aliasing  [Martinusbe]
-22976d2  Remove unused WorkStealing thread pool  [Martinusbe]
-b76b2dc  Clean up some includes  [Martinusbe]
-68d32d1  Fix oatdump after ArtMethod change.  [Martinusbe]
-61aa509  Added next condition check to branch instruction  [Martinusbe]
-abcdb30  Make oatdump work with .art files and code generated by Optimizing.  [Martinusbe]
-5f396b4  Disable sanitization of dex2oat on device.  [Martinusbe]
-e636aac  ART: Simplify (Not)Equal bool vs. int to true/false  [Martinusbe]
-fa4cb3f  ART: Compiler generated GC map should take care of temp registers.  [Martinusbe]
-9d4db96  Use GetOffsetDuringLinking instead of GetOffset.  [Martinusbe]
-d62a45a  base: Fix an infinite loop in HashSet::Insert  [Martinusbe]
-6c45470  ART: Fix potential integer overflow in JNI.  [Martinusbe]
-5017409  Remove unnecessary std::move from test_dex_file_builder  [Martinusbe]
-2f48bc7  Move dmtracedump from dalvik to art.  [Martinusbe]
-61b08b2  ART: Tuning compiler thread count for application runtime  [Martinusbe]
-b0bfc46  Optimizing: Move optimization objects to Arena.  [Martinusbe]
-5f4e2c1  Fix hash set memory leaks  [Martinusbe]
-a00b6a1  Fix C++14 bitrot.  [Martinusbe]
-c39a98f  Delegate long-to-float type conversions to the runtime on ARM.  [Martinusbe]
-ebe2039  Fix race condition for method root marking in VisitNativeRoots  [Martinusbe]
-ded7ef3  ART: Improve Indenter performance.  [Martinusbe]
-5c5aded  Add Non-debug cflags to debug cflags  [Martinusbe]
-4bf3f4f  Disable Clang as Host Compiler  [Martinusbe]
-   * frameworks/base/
-1ecb8ae  StrictMode: fix deserialization of ViolationInfo on large stacks  [Martinusbe]
-7f63225  Framework: allow ResolverActivity to be specialized from other package  [Martinusbe]
-   * hardware/qcom/audio-caf/msm8960/
-e381a89  hal: Don't make missing CSD init/deinit functions fatal  [Nicholas Flintham]
-6e07338  hal: Detect additional baseband properties  [Nicholas Flintham]
-f2dbf82  hal: Add support for HTC CSD client  [Nicholas Flintham]
-4237bc4  hal: Support old CSD API and add support for Samsung CSD client  [Nicholas Flintham]
-eb73b76  hal: only open the amplifier once  [Nicholas Flintham]
-b19024e  hal: enable amplifier earlier  [Nicholas Flintham]
-bd9a832  hal: Notify amplifier of device enable/disable  [Nicholas Flintham]
-acbcc54  hal: Convert libaudioamp to audio_amplifier HAL  [Nicholas Flintham]
-de8d1bf  hal: Support the audio amplifier hook  [Nicholas Flintham]
-dca3e81  hal: Clean up from merge  [Nicholas Flintham]
-6e7f246  hal: Remove obsolete FM_ENABLED flag  [Nicholas Flintham]
-4a43a82  hal: Add support for AUDIO_DEVICE_OUT_LINE  [Nicholas Flintham]
-1e9158e  voice_extn: remove redundant check of mode when stop voice use case  [Nicholas Flintham]
-7ad58b1  audiopolicy: enable deep buffer output by default for music streams  [Nicholas Flintham]
-e44680c  audiopolicy: use deep buffer output by default for music streams  [Nicholas Flintham]
-1f9c149  mm-audio: omx: Fix OMX encoders timestamp  [Nicholas Flintham]
-62d7034  hal: fix resource leak issues in platform.c  [Nicholas Flintham]
-00a5b37  audio HAL: do not stop capture on overrun  [Nicholas Flintham]
-9a0f3ca  audio HAL: fix thread starvation  [Nicholas Flintham]
-819c5a2  hal: Validate active input before accessing source  [Nicholas Flintham]
-a29c885  hal: fm: add parameter to set mute options  [Nicholas Flintham]
-f923e54  policy_hal: fix for FM playback without active music stream  [Nicholas Flintham]
-27d2d20  policy_hal: fix for volume burst during FM device switch  [Nicholas Flintham]
-fa7ef22  policy: Delay FM volume update to start of FM playback  [Nicholas Flintham]
-4705f5f  policy: Avoid unnecessary set_parameter calls  [Nicholas Flintham]
-f772bbe  hal: audio_extn: fix pop noise when FM is interrupted by voice call  [Nicholas Flintham]
-a6263ab  audio: update flags for selection of VoIP direct output  [Nicholas Flintham]
-93075e6  hal: add support to use low latency as primary output  [Nicholas Flintham]
-ec095cd  hal: Sync name_to_index table with pcm_device_table  [Nicholas Flintham]
-4af2a71  hal: Comment out FM recording usecase  [Nicholas Flintham]
-b3554c3  hal: Fix voice call recording on msm8960  [Nicholas Flintham]
-2005227  hal: Adjust DEEP_BUFFER_OUTPUT_PERIOD_COUNT to match legacy kernel  [Nicholas Flintham]
-8d02756  hal: Reduce some logspam  [Nicholas Flintham]
-47263e9  hal: Update and cleanup makefiles  [Nicholas Flintham]
-cb9c394  hal: Use old API for setting voice volume and mute states  [Nicholas Flintham]
-dbe50fc  hal: Disable building multiple hw variants for msm8960  [Nicholas Flintham]
-583afdf  hal: Minor adjustments for msm8960 platform  [Nicholas Flintham]
-4377f98  hal: Copy msm8974 platform to msm8960  [Nicholas Flintham]
-8ce02f2  hal: Squashed set of updates and fixes from 8974 branch  [Nicholas Flintham]
-790f5da  hal: header file fix for audio_hw  [Nicholas Flintham]
-9014e02  audio: Fix compilation errors  [Nicholas Flintham]
-e35fd50  audio: fix member initialization  [Nicholas Flintham]
-124002e  hal: fix the input device selection for headphones  [Nicholas Flintham]
-3cc24d3  hal: fix miscellaneous errors  [Nicholas Flintham]
-3036df9  hal: fix unused param warnings  [Nicholas Flintham]
-15a4f2e  hal: fix incompatible APIs  [Nicholas Flintham]
-d668d0a  hal: avoid usage of extern functions and tables  [Nicholas Flintham]
-a209d9d  hal: miscellaneous fixes  [Nicholas Flintham]
-ba723ef  hal: Remove unnecessary check in make file  [Nicholas Flintham]
-7f29cf3  hal: Import LA.BF.1.1.3_rb1.13  [Nicholas Flintham]
-9df9878  policy_hal: Always call local implementation of updateCallRouting  [Nicholas Flintham]
-9cbb394  policy_hal: Add custom audio policy  [Nicholas Flintham]
-fc741f1  alsa_sound: Remove deprecated DEVICE_OUT_FM_TX  [Nicholas Flintham]
-19d458f  alsa_sound: Remove deprecated audio policy sources  [Nicholas Flintham]
-640b145  alsa_sound: Enable QCOM_PROXY_DEVICE_ENABLED by default  [Nicholas Flintham]
-   * system/bt/
-a51fadd  bt: Don't use CLOCK_BOOTTIME where CLOCK_MONOTONIC was expected  [Josue Rivera]
-bdbff78  bt-vendor: Check for vendor SSR function before attempting to call it  [Josue Rivera]
-   * vendor/validus/
-f2f666a  v9.4 keep forgetting that  [Martinusbe]
-
-====================
-     06-25-2016
-====================
-
-   * packages/apps/Browser/
-08342a0  Browser: runtime permissions  [Josue Rivera]
-
-====================
-     06-24-2016
-====================
-   * OTA_config/
-1e34090  Update Huashan 2206  [a7r3]
-   * vendor/validus/
-efae23e  devices:add bullhead  [GitHub]
-
-====================
-     06-23-2016
-====================
-
-   * kernel/cyanogen/msm8916/
-87431ce  Update defconfig - Jerrica-MM-v1.7  [Prema Chand Alugu]
 
