@@ -1,7 +1,79 @@
 ====================
+     07-19-2016
+====================
+
+   * frameworks/base/
+1d3a992  Rollback ALIGN macros  [Prema Chand Alugu]
+   * packages/apps/InCallUI/
+6b7e94e  Reduced dimensions for incall number  [Prema Chand Alugu]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
+307c4a1  Initial commit  [DespairFactor]
+   * vendor/wingtech/
+416e9f1  wt88047: Fix dark video capture  [Prema Chand Alugu]
+
+====================
+     07-18-2016
+====================
+
+
+====================
+     07-17-2016
+====================
+
+
+====================
+     07-16-2016
+====================
+
+
+====================
+     07-15-2016
+====================
+
+   * kernel/cyanogen/msm8916/
+e31e938  Release Jerrica-MM-REL4.0  [Prema Chand Alugu]
+89603e5  LTR559 - define CONFIG_MACH_WT88047 locally  [Prema Chand Alugu]
+a91e892  dts: wt88047: Change LTR-559 interrupt type  [Prema Chand Alugu]
+
+====================
+     07-14-2016
+====================
+   * OTA_config/
+015e749  Add the LG G4  [GitHub]
+410aa16  Add Changelog structure for the LG G4  [oadam11]
+   * kernel/cyanogen/msm8916/
+a38241c  Ondemand proximity sensor for CM version of LTR559  [Prema Chand Alugu]
+1ef1701  input: misc: Modify LTR-559 for WT88047  [Prema Chand Alugu]
+13055d0  update defconfig  [Prema Chand Alugu]
+a2706d9  Add MSM hotplug  [Prema Chand Alugu]
+60c3201  cpufreq: add despair governor  [Prema Chand Alugu]
+f45d92b  Added fsync on/off support.  [Prema Chand Alugu]
+612e45c  Add /dev/frandom support  [Prema Chand Alugu]
+bc99dcb  wakeup: add toggles for wlan wakelocks. They are all enabled by default, it's up to the user and I provide no support if Wi-Fi stops working normally without these locks enabled. This is for advanced users  [Prema Chand Alugu]
+61b0182  int_sqrt: Improve 3x faster integer sqrt.  [Prema Chand Alugu]
+76eee55  int_sqrt: correction square root algo with naming  [Prema Chand Alugu]
+
+====================
+     07-13-2016
+====================
+   * OTA_config/
+e7cd9aa  OTA 20160712 build for Redmi-2  [Prema Chand Alugu]
+   * frameworks/base/
+75d9356  Temp:storagemonitor: fix storage full warning hackery op3 keeps getting a storage full warning, it's caused by DragonTC clang. this is a temp fix  [Martinusbe]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
+0d0e694  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
+2920e9c  Initial commit  [DespairFactor]
+
+====================
      07-12-2016
 ====================
 
+   * device/qcom/common/
+be51b79  power: Don't send obsolete DISPLAY_OFF opcode  [Nicholas Flintham]
+4a4bc7b  power: Use ARRAY_SIZE macro where possible  [Nicholas Flintham]
+50bbff3  power/8996: Disable sched grouping for flings  [Nicholas Flintham]
+b4deb15  power: add support for PowerHAL in Feero  [Nicholas Flintham]
    * device/wingtech/wt88047/
 5204c9a  sepolicy updates  [Prema Chand Alugu]
    * external/sepolicy/
@@ -22,10 +94,23 @@ ee23c5e  Don't pass URL path and username/password to PAC scripts  [Martinusbe]
 bb693a6  Fix missing permission check when saving pattern/password  [Martinusbe]
    * frameworks/native/
 ada2181  Correctly handle dup() failure in Parcel::readNativeHandle  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8960/
+160e843  DO NOT MERGE Fix AudioEffect reply overflow  [Nicholas Flintham]
+57cc075  hal: Remove listen calibration from 8960 hal  [Nicholas Flintham]
+   * hardware/qcom/audio-caf/msm8994/
+5654f38  DO NOT MERGE Fix AudioEffect reply overflow  [Nicholas Flintham]
+   * hardware/qcom/wlan-caf/
+a0cb1ab  wifi-hal: Only try LOWI once  [Nicholas Flintham]
+27e9bad  Wifi-HAL: Remove CLANG Warnings and errors  [Nicholas Flintham]
+25a1ce8  Revert "Opt out of clang till issues are fixed"  [Nicholas Flintham]
+87ffd57  Wifi-Hal: NAN feature enhancements  [Nicholas Flintham]
+5dafaaf  Wifi-HAL: Remove NAN_2.0 references  [Nicholas Flintham]
    * manifest/
 dc8740d  r52  [GitHub]
    * system/core/
 c8e5152  Fix scanf %s in lsof.  [Martinusbe]
+   * system/extras/
+845ffba  verity: Let the tools ask for a password if needed  [Nicholas Flintham]
 
 ====================
      07-11-2016
@@ -115,6 +200,9 @@ dd38f57  "MOB30R"  [Martinusbe]
 542f75f  "MOB30O"  [Martinusbe]
 169643c  Updating security string to 2016-07-05 to release branches  [Martinusbe]
 6e70f98  "MOB30N"  [Martinusbe]
+   * external/stagefright-plugins/
+7d12776  stagefright-plugins: Clean up warnings for invalid format strings  [Josue Rivera]
+60f693c  stagefright-plugins: Stop using AVPicture  [Josue Rivera]
    * hardware/broadcom/wlan/
 f869801  net: wireless: bcmdhd: Update bcm4354 FW (7.35.101.3) [DO NOT MERGE]  [Josue Rivera]
 c5daa39  net: wireless: bcmdhd: Update bcm4339 FW (6.37.34.43) [DO NOT MERGE]  [Josue Rivera]
@@ -128,14 +216,6 @@ ee58472  DO NOT MERGE mm-video-v4l2: vdec: Avoid processing ETBs/FTBs in invalid
 c222c65  Add guest mode functionality (3/3)  [Josue Rivera]
    * packages/apps/Nfc/
 51caf47  Verify setForegroundDispatch caller is in foreground.  [Josue Rivera]
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
-c31f433  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
-69f20cd  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
-37df54c  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
-d67fa5c  Initial commit  [DespairFactor]
    * system/bt/
 42618ba  Fix call to enable(bool) which changed as part of 049eae4ff84fbbdbc4b0068cb2a217f9f0460bf4  [Josue Rivera]
 ae12c32  DO NOT MERGE btif: check overflow on create_pbuf size  [Josue Rivera]
@@ -146,9 +226,6 @@ eaf1fda  Add guest mode functionality (2/3)  [Josue Rivera]
 ====================
    * OTA_config/
 bd40954  update Redmi-2 (wt88047)  [Prema Chand Alugu]
-   * external/stagefright-plugins/
-7d12776  stagefright-plugins: Clean up warnings for invalid format strings  [Josue Rivera]
-60f693c  stagefright-plugins: Stop using AVPicture  [Josue Rivera]
 
 ====================
      07-06-2016
@@ -165,43 +242,6 @@ f130f9a  libc: ARM64: kryo: use generic memmove routine  [Martinusbe]
 a0ce6b6  Added Redmi-2 maintainer  [Prema Chand Alugu]
    * vendor/validus/
 5ef3208  SuperSU 2.52  [Martinusbe]
-
-====================
-     07-05-2016
-====================
-
-
-====================
-     07-04-2016
-====================
-
-
-====================
-     07-03-2016
-====================
-
-
-====================
-     07-02-2016
-====================
-
-
-====================
-     07-01-2016
-====================
-
-
-====================
-     06-30-2016
-====================
-   * OTA_config/
-11e84b1  oneplus: bacon 06/28  [Martinusbe]
-   * packages/apps/SlimLauncher/
-e2399b7  SlimLauncher: fix a typo in strings  [Martinusbe]
-
-====================
-     06-29-2016
-====================
-   * OTA_config/
-1b1c356  Update Huashan 2806  [a7r3]
+   * vendor/wingtech/
+f7fd8c7  Merge pull request #3 from kumajaya/cm-13.0  [GitHub]
 
