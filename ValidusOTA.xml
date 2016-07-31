@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <onyx>
-            <Filename>validus_onyx-6.0.1.beta.9.2-Official-20160609.zip</Filename>
+            <Filename>validus_onyx-6.0.1.RC1.9.4-Official-20160731.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -14,7 +14,7 @@
             <GappsUrl
                 id="gapps"
                 title="Gapps"
-                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+                description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
             <XDAUrl
                 id="xda"
                 title="OnePlus Forums"
@@ -237,5 +237,20 @@
                 title="Gapps"
                 description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
         </h815>
+        <mako>
+            <Filename>validus_mako-6.0.1.RC1.9.4-Official-20160731.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ValidusOs build">https://www.androidfilehost.com/?w=files&amp;flid=84832</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View ValidusOs changelogs">https://raw.githubusercontent.com/ValidusOs-M/OTA_config/master/Changelogs/OnePlus/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
+        </mako>
     </Stable>
 </SlimOTA>
