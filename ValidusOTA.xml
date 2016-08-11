@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <onyx>
-            <Filename>validus_onyx-6.0.1.RC1.9.4-Official-20160731.zip</Filename>
+            <Filename>validus_onyx-6.0.1.RC2.v9.5-Official-20160810.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -238,7 +238,7 @@
                 description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
         </h815>
         <mako>
-            <Filename>validus_mako-6.0.1.RC1.9.4-Official-20160731.zip</Filename>
+            <Filename>validus_mako-6.0.1.RC2.v9.5-Official-20160810.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -253,7 +253,7 @@
                 description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
         </mako>
         <titan>
-            <Filename>validus_titan-6.0.1.RC1.9.4-Official-20160801.zip</Filename>
+            <Filename>validus_titan-6.0.1.RC2.v9.5-Official-20160810.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
