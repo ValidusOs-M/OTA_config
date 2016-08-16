@@ -1,330 +1,521 @@
 ====================
-     07-05-2016
+     08-16-2016
 ====================
 
-   * bionic/
-3f5307f  Add prlimit to LP32.  [a7r3]
-f130f9a  libc: ARM64: kryo: use generic memmove routine  [Martinusbe]
-36964d9  bionic: Teach fnmatch(3) to handle UTF-8 characters in patterns  [Martinusbe]
    * device/sony/huashan/
-1e7f54c  Howwl!  [a7r3]
-e95d43a  Revert "huashan: Use cmsdk FileUtils"  [a7r3]
-cd062da  Revert "huashan: Fix the use of cmsdk FileUtils"  [a7r3]
-4ed190d  huashan: devicesettings: Always enable Glove Mode service  [a7r3]
-19017ec  huashan: devicesettings: Adapt Doze Sensors for AOSP-based  [a7r3]
-da726a5  huashan: liblights: Remove Multiple LEDs LibLights control  [a7r3]
-1b45334  huashan: overlay: Revert "Enable persistent usb drive notification"  [a7r3]
-ed53348  huashan: overlay: Revert "Add deviceHardwareWakeKeys overlay"  [a7r3]
-1bfc300  huashan: overlay: Revert "Turn off Mobile data by default"  [a7r3]
+82bfc1f  huashan: init: Remove ro.crypto.fuse_sdcard property  [a7r3]
+5d82370  huashan: camerawrapper: Fix an undefined behavior on buffer  [a7r3]
+d744ce1  huashan: audio: Add missing speaker volume to speaker-and-headphones  [a7r3]
+
+====================
+     08-15-2016
+====================
+
    * kernel/sony/msm8960t/
-3af5087  defconfig: huashan: Update configuration  [Adrian DC]
-07cbcbf  drivers: convert shrinkers to new count/scan API  [AdrianDC]
-a47c3ef  shrinker: add node awareness  [AdrianDC]
-fa46a4b  mm: new shrinker API  [AdrianDC]
-b6540ae  Revert "mm: zcache: Fix 3.4 backport"  [AdrianDC]
-ee232a8  arch: msm: restart.c: Partially revert 12.1.A.1.201 Xperia SP  [AdrianDC]
-   * vendor/validus/
-5ef3208  SuperSU 2.52  [Martinusbe]
+e113c43  defconfig: huashan: Update configuration  [Adrian DC]
+3f2bc00  drivers: convert shrinkers to new count/scan API  [Adrian DC]
+54fcf06  shrinker: add node awareness  [Adrian DC]
+459871f  mm: new shrinker API  [Adrian DC]
+8cab7c8  Revert "mm: zcache: Fix 3.4 backport"  [Adrian DC]
 
 ====================
-     07-04-2016
-====================
-
-
-====================
-     07-03-2016
-====================
-
-   * device/sony/huashan/
-93e3467  huashan: tree: Add a Board field to README.md informations  [Adrian DC]
-   * vendor/sony/
-68bb60c  blue-common: Remove taimport, and setup libta to be linked against  [AdrianDC]
-dfb3054  blue-common: Cleanup libtime_genoff and missing leftover apk  [AdrianDC]
-5eb2c0e  blue-common: Update rmt_storage from flo MOB30D  [AdrianDC]
-869fe1d  blue: Cleanup hayabusa, mint and tsubasa proprietary files  [AdrianDC]
-
-====================
-     07-02-2016
-====================
-
-   * device/sony/huashan/
-9abc98e  huashan: liblights: Fix undisabled side LEDs when fully charged  [AdrianDC]
-
-====================
-     07-01-2016
-====================
-
-
-====================
-     06-30-2016
-====================
-
-   * device/sony/huashan/
-3e77d3b  Automatic translation import  [inky@build01]
-   * packages/apps/SlimLauncher/
-e2399b7  SlimLauncher: fix a typo in strings  [Martinusbe]
-
-====================
-     06-29-2016
+     08-14-2016
 ====================
    * OTA_config/
-11e84b1  oneplus: bacon 06/28  [Martinusbe]
-   * device/sony/huashan/
-dd32386  huashan: Increase ZRAM size to 400MB  [AdrianDC]
-
-====================
-     06-28-2016
-====================
-   * OTA_config/
-1b1c356  Update Huashan 2806  [a7r3]
-   * device/sony/huashan/
-5dd4bd5  huashan: Fix the use of cmsdk FileUtils  [AdrianDC]
-3859cfc  huashan: Use cmsdk FileUtils  [AdrianDC]
-   * packages/apps/CellBroadcastReceiver/
-9cc155a  Layers 4.x - Themes: Expose hardcoded styles and colors for themes  [Jean-Pierre Rasquin]
-   * packages/apps/DeskClock/
-e93388f  Layers 4.x - Allow theming numpad  [Jean-Pierre Rasquin]
-244281e  Layers 4.x - Expose background colors for theming.  [Jean-Pierre Rasquin]
-
-====================
-     06-27-2016
-====================
-
-   * art/
-3e70ed2  Disable Clang_arm  [GitHub]
-   * device/qcom/common/
-da9783d  perf: Wrap v3 opcodes with ifdefs  [Nicholas Flintham]
-4ac0005  power: msm8996: Support boost and perf profile hints  [Nicholas Flintham]
-5e9af90  power: msm8952: Fix previous_boost_time getting reset  [Nicholas Flintham]
-   * device/sony/huashan/
-8c6e221  huashan: Enable bootanimation optimizations  [AdrianDC]
-   * external/DUtils/
-cc8ceb4  Merge remote-tracking branch 'duu/mm6.0' into HEAD  [theringmaster]
-   * external/stagefright-plugins/
-1020200  stagefright-plugins: call packet_queue_init earier  [Nicholas Flintham]
+f9f5f8f  Update ValidusOTA.xml  [GitHub]
    * frameworks/base/
-6aab17a  Few more fixes  [theringmaster]
-b9a59e1  Disable/Enable screenshot sound [1/2]  [theringmaster]
-36898e6  Add missing drawables  [theringmaster]
-ce67726  Revert "SettingsProvider: Allow default volume adjust sound to be overlayed."  [theringmaster]
-d59927e  SystemUI: [Screenshot Crop & Share] Add blur feature  [theringmaster]
-dba938a  SystemUI: fix wrong intent extra for screenshot edit  [theringmaster]
-6dcccaa  SystemUI: add edit action for screenshot notification to start the crop&share editor thanks to @LorDClockaN for the idea  [theringmaster]
-11b6884  Don't let rogue themes ruin notifications If we encounter an exception when inflating a notification's views, and a theme is applied, we should make a second attempt at inflating the notification without a theme applied in case the theme cause the issue.  If the exception still occurs, we treat it like we normally do and allow the app to be killed for posting a bad notification.  [theringmaster]
-e022e8e  Themes: Clear out bootanimation if pkgName empty An empty string for the package name implies the given component should be cleared out, so make sure updateBootAnim respects that.  [theringmaster]
-b05d4f5  Themes: Use default audibles when pkgName is empty Fixes an issue where audibles would be "unknown" causing them to not play when phone rings, notifications arive or an alarm goes off  [theringmaster]
-897f9d9  Adding NullPointerException check in DocumentsUI  [theringmaster]
-f8bab1d  SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission  [theringmaster]
-b4abb01  base: Screenshot Crop & Share: add draw stroke width support Change-Id: Ife8ccaf1775f81d3cdb097e8cbeca53895bd6945  [theringmaster]
-694ac66  SettingsProvider: Allow default volume adjust sound to be overlayed.  [theringmaster]
-2a5214b  SystemUI: add volume tones back  [theringmaster]
-   * hardware/broadcom/libbt/
-f662d09  libbt-vendor (BRCM): Add ssr_cleanup  [Nicholas Flintham]
-   * hardware/qcom/bt-caf/
-4d1355d  Merge branch 'bt.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/bt into HEAD  [Nicholas Flintham]
-   * hardware/qcom/wlan-caf/
-86c2649  Merge branch 'wlan-aosp.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0  [Nicholas Flintham]
-f1df678  Wifi-HAL: Extract wmsg length from nlmsg_hdr with ntohs()  [Josue Rivera]
-1066145  Wifi-HAL: Add length check before proceeding to parse data.  [Josue Rivera]
-9e61ada  wcnss_service: support dynamic replacement for wlan_nv.bin  [Josue Rivera]
-f0d755a  Wifi_HAL: Add new QCA specific wifi config attribute  [Josue Rivera]
-6659c0b  Revert "WiFi-HAL: Remove global variables usage in gscan"  [Josue Rivera]
-1a64bc6  WiFi-HAL: Remove global variables usage in gscan  [Josue Rivera]
-f137bdd  WiFi-HAL: GSCAN- Allow more than max_channels per bucket  [Josue Rivera]
-4fd36a5  wcnss_service: Migrate from QMI to QCCI  [Josue Rivera]
-58437be  WiFi-HAL: Allow number of channels in a bucket to be zero(0)  [Josue Rivera]
-   * packages/apps/DUI/
-8b63235  Smartbar/Fling Volume panel action [2/2]  [theringmaster]
-8f0ea4a  SmartBar: expose color res for all the SmartBar things  [theringmaster]
-026d311  Add a visual cue for editing smartbar  [theringmaster]
-   * packages/apps/Settings/
-d72e85b  Disable/Enable screenshot sound [2/2] Change-Id: If254407c43fbcd70c1fafce244686f07b20864b7  [theringmaster]
-1dab5af  More import fixes  [theringmaster]
-c6e902a  Fix call  [theringmaster]
-34f4613  DUI: Use DocumentsProvider API for handling custom icons [1/2] All images requested for DUI features will be copied and kept in a folder in external storage. We can not rely on third party content providers to deliver our icons to SystemUI. Either the provider gets us a good icon and we copy it successfully or we toast an error and let SystemUI know the request was canceled.  [theringmaster]
+8332dc2  Merge branch 'mm6.0' of https://github.com/ValidusOs-M/frameworks_base into mm6.0  [theringmaster]
+feb746f  Themes: Misc fixes that came in with CMSDK refactor  [theringmaster]
+2d9b155  Fix native memory leak caused by small HWUI path cache creation  [theringmaster]
+725da94  Fix compiler warning (clobbered by longjmp)  [theringmaster]
+
+====================
+     08-13-2016
+====================
+
+   * system/extras/
+9238cf5  Revert "verity: Split the signer arguments correctly"  [Josue Rivera]
    * system/vold/
-717d930  cryptfs: Fix returning to default password  [Nicholas Flintham]
-a41f014  Revert "vold: Branch out SW and HW FDE paths to improve boot up time"  [Nicholas Flintham]
-d1c9d99  Fix ioctl parameter  [Nicholas Flintham]
+c5a33c9  Revert "vold: Allow reset after shutdown"  [Josue Rivera]
 
 ====================
-     06-26-2016
-====================
-
-   * device/sony/common/
-a8e5bd5  init: Launch the ramdisk init inside of the main thread  [AdrianDC]
-97b461a  init: Avoid overriding root toybox binary after booting  [AdrianDC]
-   * device/sony/huashan/
-ef9d67a  huashan: Update custombootimg for renamed toybox_init  [AdrianDC]
-a87d226  huashan: Remove side segmented LEDs usage for charging meter  [AdrianDC]
-   * external/DUtils/
-7907183  Smartbar/Fling Volume panel action [1/2]  [xlxfoxxlx]
-f369368  DUI: Use DocumentsProvider API helper methods [2/2]  [xlxfoxxlx]
-fbc92a9  DUI: Bring up "In-app search" bindable action and resources [2/2]  [xlxfoxxlx]
-3dd0800  Revert "No intention of adding lockscreen shortcuts"  [xlxfoxxlx]
-   * kernel/sony/msm8960t/
-5c89c9f  android: configs: Update Android config fragments  [AdrianDC]
-1cceea4  defconfig: huashan: Restrict access to perf events  [AdrianDC]
-34d31bd  FROMLIST: security,perf: Allow further restriction of perf_event_open  [AdrianDC]
-a79f223  BACKPORT: perf tools: Document the perf sysctls  [AdrianDC]
-da29301  KEYS: potential uninitialized variable  [AdrianDC]
-f9637fa  net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom  [AdrianDC]
-827bc1b  mnt: Fail collect_mounts when applied to unmounted mounts  [AdrianDC]
-
-====================
-     06-25-2016
-====================
-
-   * art/
-3c59cf6  Small correction in Optimizing's ARM64 code generator.  [Martinusbe]
-1c367ed  Allow void to get in ARM64ReturnLocation.  [Martinusbe]
-3bf7afb  Optimizing String.Equals as an intrinsic (ARM64)  [Martinusbe]
-498f255  Structure for String.Equals intrinsic  [Martinusbe]
-2f14fbc  Remove interpreter entrypoint in ArtMethod.  [Martinusbe]
-1e0e698  ARM/ARM64: Implement numberOfLeadingZeros intrinsic.  [Martinusbe]
-2b936d1  ART: Disable Math.round intrinsics  [Martinusbe]
-1e09a9e  ARM/ARM64: Implement numberOfLeadingZeros intrinsic.  [Martinusbe]
-91fb148  Fix missing header inclusion in art/runtime/thread.cc.  [Martinusbe]
-c1f25e1  ART: Speed up thread stack tracing for ANRs  [Martinusbe]
-cf84bc0  SafeStack-friendly stack protection in ART.  [Martinusbe]
-be91148  Rename VisitCondition's argument in code generators.  [Martinusbe]
-ba99d4f  Opt compiler: Speedup div/rem by constants on arm32 and arm64.  [Martinusbe]
-0ecbb29  Use _exit instead of exit for the system exit.  [Martinusbe]
-680bc6b  Use delete/delete[] rather than free/realloc in tracedump  [Martinusbe]
-01d3ba3  ART: Clean up undefines and target clang  [Martinusbe]
-7dab683  Optimizing: Add direct calls to math intrinsics  [Martinusbe]
-006935e  Rename ZipEntryName to ZipString  [Martinusbe]
-91ae8f0  Remove bogus DCHECK().  [Martinusbe]
-aa64122  ART: Speed up stack guard page install  [Martinusbe]
-40a1bde  Fix lock ordering violation  [Martinusbe]
-aa20fc2  Allow for sig chain to be disabled.  [Martinusbe]
-2c49b9a  Suppress a valgrind libc issue.  [Martinusbe]
-c2540da  ART: Allow unwinding unattached threads  [Martinusbe]
-3626dd7  Change JIT code to use optimizing.  [Martinusbe]
-5f9009a  Make the JIT the default in ART.  [Martinusbe]
-8d187b7  Build dex2oat without asan instrumentation.  [Martinusbe]
-c81fdc0  Fix imgdiag build rules.  [Martinusbe]
-5079e81  ART: Fix missing include  [Martinusbe]
-3862f9c  JDWP: fix returned tag for ClassType.NewInstance  [Martinusbe]
-acf0263  JDWP: fix java.lang.String creation  [Martinusbe]
-033c3c2  ART: Refactor CommonRuntimeTest::SetUp  [Martinusbe]
-1629dd4  Skip DumpForSigQuit if debugger is active  [Martinusbe]
-4984d8d  Fix braino in parallel move resolver.  [Martinusbe]
-9daf74d  Add test case for bad arm code generation.  [Martinusbe]
-1be5f34  Assert we don't store an invalid dex_pc in the stack maps.  [Martinusbe]
-97ab3e1  Block callee save fp registers in debuggable.  [Martinusbe]
-27c52b8  ART: Use an iterative way in DoDFSPreOrderSSARename()  [Martinusbe]
-4c5b43d  Quick: Avoid shifting -1 left (undefined behavior).  [Martinusbe]
-d9a7f7c  Add deoptimization test.  [Martinusbe]
-78f20d1  ART: Fix DeadPhiHandling creating >2 equivalents  [Martinusbe]
-4a0339f  Disable class unloading test for tracing tests  [Martinusbe]
-ec0850b  ART: PathClassLoader test  [Martinusbe]
-3b92d10  Minor cleanup of Monitor::VisitLocks  [Martinusbe]
-cefadd5  Use _exit instead of exit after exec fails  [Martinusbe]
-4a330c9  Adjust jit code cache on ThreadStress to avoid timeouts.  [Martinusbe]
-f4a4966  Fix dependencies when not building with Jack.  [Martinusbe]
-5912f77  Refactor the alloc entry point generation code.  [Martinusbe]
-02971d4  Use HashMap for DexFileVerifier  [Martinusbe]
-9e3fa54  ART: Add VLOG printing of SetStatus(Error)  [Martinusbe]
-7c4d72e  ART: Fix arm32 assembly for Clang  [Martinusbe]
-000f037  Revert "Disable clang optimization to boot up on arm64."  [Martinusbe]
-f04789a  Reduce sleep duration in SuspendAllDaemonThreads  [Martinusbe]
-d2f9c8f  Get class loader to remember interrupts  [Martinusbe]
-1263d7f  ART: Special form of lock aliasing  [Martinusbe]
-1e63866  ART: Recognize cortex-a53.a57 for ARM features  [Martinusbe]
-4a8f7f3  ART: Use __ANDROID__ instead of HAVE_ANDROID_OS  [Martinusbe]
-7f6c16c  Add oat location to oatdump.  [Martinusbe]
-943d215  JIT: Fix incorrect CHECK  [Martinusbe]
-f9dd198  Fix memory fences in the ARM64 UnsafeCas intrinsics.  [Martinusbe]
-6335594  Use --oat-fd instead of --oat-file when calling dex2oat.  [Martinusbe]
-aa4190a  Disable the ARM & ARM64 UnsafeCASObject intrinsic with heap poisoning.  [Martinusbe]
-25d8fd5  ART: Fix left-shift of negative numbers  [Martinusbe]
-85d1b9f  Block signals before invoking special or user handlers  [Martinusbe]
-808833d  Change dex_location_ from const char* to std::string.  [Martinusbe]
-e49dada  Optimizing: Allow storing value objects in containers.  [Martinusbe]
-753b54f  ARM64: Better recognition of constants encodable as immediates.  [Martinusbe]
-8ef4461  Remove unnecessary std::move from variant_map.h  [Martinusbe]
-bf92a45  ART: Enable the JustInTime compiler  [Martinusbe]
-958f41a  Use liblog for logging  [Martinusbe]
-02c602f  art: fix dex2oat watchdog timeout  [Martinusbe]
-6c7c853  art: disable FDO  [Martinusbe]
-74ec133  ART: remove fallthrough  [Martinusbe]
-bbf296b  tests: All or nothing  [Martinusbe]
-820aebf  build: Major Cleanup  [Martinusbe]
-e2350ac  dalvikvm: Compile with GCC  [Martinusbe]
-8de4af0  Register signal handler to kernel if not claimed  [Martinusbe]
-3cb51c0  Fix DDM reply buffer deallocation  [Martinusbe]
-7738f43  ART: Fix stub_test  [Martinusbe]
-b4973a2  ART: Remove unique-numbered labels from arm64 assembly  [Martinusbe]
-65f1266  ART-Optimizing: Fix the type of HDivZeroCheck  [Martinusbe]
-d5d1339  ART: Fix bug in DeadPhiHandling  [Martinusbe]
-e137760  ART: Make dex2oat timing a bit more granular  [Martinusbe]
-a67a994  ART: Fix destruction order in Runtime.  [Martinusbe]
-9aba189  ART: Include zero-padding in String::SizeOf().  [Martinusbe]
-6a02354  ART: Abort if malloc() fails in SwapAllocator::allocate().  [Martinusbe]
-297c5c4  ART: (Partially) fix lock aliasing  [Martinusbe]
-22976d2  Remove unused WorkStealing thread pool  [Martinusbe]
-b76b2dc  Clean up some includes  [Martinusbe]
-68d32d1  Fix oatdump after ArtMethod change.  [Martinusbe]
-61aa509  Added next condition check to branch instruction  [Martinusbe]
-abcdb30  Make oatdump work with .art files and code generated by Optimizing.  [Martinusbe]
-5f396b4  Disable sanitization of dex2oat on device.  [Martinusbe]
-e636aac  ART: Simplify (Not)Equal bool vs. int to true/false  [Martinusbe]
-fa4cb3f  ART: Compiler generated GC map should take care of temp registers.  [Martinusbe]
-9d4db96  Use GetOffsetDuringLinking instead of GetOffset.  [Martinusbe]
-d62a45a  base: Fix an infinite loop in HashSet::Insert  [Martinusbe]
-6c45470  ART: Fix potential integer overflow in JNI.  [Martinusbe]
-5017409  Remove unnecessary std::move from test_dex_file_builder  [Martinusbe]
-2f48bc7  Move dmtracedump from dalvik to art.  [Martinusbe]
-61b08b2  ART: Tuning compiler thread count for application runtime  [Martinusbe]
-b0bfc46  Optimizing: Move optimization objects to Arena.  [Martinusbe]
-5f4e2c1  Fix hash set memory leaks  [Martinusbe]
-a00b6a1  Fix C++14 bitrot.  [Martinusbe]
-c39a98f  Delegate long-to-float type conversions to the runtime on ARM.  [Martinusbe]
-ebe2039  Fix race condition for method root marking in VisitNativeRoots  [Martinusbe]
-ded7ef3  ART: Improve Indenter performance.  [Martinusbe]
-5c5aded  Add Non-debug cflags to debug cflags  [Martinusbe]
-4bf3f4f  Disable Clang as Host Compiler  [Martinusbe]
-   * device/sony/huashan/
-d1b3a8f  huashan: Import arch configs first from a PlatformConfig.mk  [AdrianDC]
-   * frameworks/base/
-1ecb8ae  StrictMode: fix deserialization of ViolationInfo on large stacks  [Martinusbe]
-7f63225  Framework: allow ResolverActivity to be specialized from other package  [Martinusbe]
-   * system/bt/
-a51fadd  bt: Don't use CLOCK_BOOTTIME where CLOCK_MONOTONIC was expected  [Josue Rivera]
-bdbff78  bt-vendor: Check for vendor SSR function before attempting to call it  [Josue Rivera]
-   * vendor/validus/
-f2f666a  v9.4 keep forgetting that  [Martinusbe]
-
-====================
-     06-24-2016
-====================
-
-   * packages/apps/Browser/
-08342a0  Browser: runtime permissions  [Josue Rivera]
-
-====================
-     06-23-2016
+     08-12-2016
 ====================
    * OTA_config/
-1e34090  Update Huashan 2206  [a7r3]
-   * hardware/qcom/audio-caf/msm8960/
-fb47c68  hal: Don't make missing CSD init/deinit functions fatal  [Ethan Chen]
-a4fb123  hal: Detect additional baseband properties  [Ethan Chen]
-a6a5908  hal: Add support for HTC CSD client  [Ethan Chen]
-5a07631  hal: Support old CSD API and add support for Samsung CSD client  [Ethan Chen]
+001b07b  Updates  [GitHub]
+   * bionic/
+2b93378  Rename ZipEntryName to ZipString  [Martinusbe]
+b2e19e5  libc: Fix invalid offset warning with Clang  [Martinusbe]
+cbb384a  Do not depend on host bits to get the right size to write.  [Martinusbe]
+cbc07df  cortex-a9: Fix reference to __memcpy_base_aligned.  [Martinusbe]
+02770d4  bionic: Teach fnmatch(3) to handle UTF-8 characters in patterns  [Martinusbe]
+60fc740  bionic: Use a more simple strrchr for arm64  [Martinusbe]
+0f7b44e  Update timezone data to 2016a  [Martinusbe]
+13e6b4d  libm: ARM: reorganize a bit to match ARM64  [Martinusbe]
+65b2158  Fix arm64 fenv warnings, and make warnings errors.  [Martinusbe]
+f713935  Fix regoff_t for LP32 and _FILE_OFFSET_BITS=64.  [Martinusbe]
+34e58e3  bionic: Let popen fall back to /sbin/sh  [Martinusbe]
+87eafbe  libc: ARM64: improve performance in strlen  [Martinusbe]
+248c059  libc: ARM64: optimize memset.  [Martinusbe]
+5f86b1e  libc: ARM64: remove bcopy from memset  [Martinusbe]
+ed2b3ab  libc: ARM64: optimize memmove  [Martinusbe]
+a8fd81d  libc: remove bcopy from memmove on 64-bit architectures  [Martinusbe]
+e02e28e  libc: AArch64: Tune memcpy  [Martinusbe]
+f5d3eae  libc: ARM64: Optimize memcpy.  [Martinusbe]
+6cd18e8  libc: include strrchr for kryo and denver64  [Martinusbe]
+7d6c091  libc: ARM64: add assembly strrchr  [Martinusbe]
+7e63a84  libc: arm: Add optimised memchr to scorpion  [Martinusbe]
+50a7ddd  [AOSP Master] libc: krait: Use performance version of memcpy  [Martinusbe]
+3f0e40f  Remove pushes from memsets (krait/cortex-a9).  [Martinusbe]
+6d9d325  Replace bx lr with update of pc from the stack.  [Martinusbe]
+1a56bac  libc: Add memchr to a53+a57 target  [Martinusbe]
+1427852  Add cortex-a53.a57 target for 32 bit big/little.  [Martinusbe]
+04dda25  libc: arm: add optimized memchr implementation  [Martinusbe]
+97c9dba  Add optimized cortex-a7/cortex-a53 memset/memcpy.  [Martinusbe]
+af39561  bionic: Add flag to restore legacy mmap behavior  [Martinusbe]
+df52978  Revert "Revert "Use compiler builtins for fabs.""  [Martinusbe]
+9e1d630  Fix potential race condition on CTS TC pthread_gettid_np  [Martinusbe]
+22b98fa  Fix over read in strcpy/stpcpy/strcat.  [Martinusbe]
+d37e9bb  Make all labels local.  [Martinusbe]
+f4cc226  Sync with upstream FreeBSD libm.  [Martinusbe]
+f6f5e39  Use __builtin_* in <math.h>.  [Martinusbe]
+c50efbf  linker: Allow text-relocs for x86 (only)  [Martinusbe]
+3eb1de5  Don't leak sockets if setsockopt() or fchown() fail.  [Martinusbe]
+68cb0c7  Fix GNU/POSIX basename headers.  [Martinusbe]
+70433ab  Add prlimit to LP32.  [Martinusbe]
+5c5f204  libc: ARM64: kryo: use generic memmove routine  [Martinusbe]
+6760e54  libc: ARM64: denver64: optimized memmove breaks denver  [Martinusbe]
+cbe32bc  bionic: linker: Load shim libs *before* the self-linked libs  [Martinusbe]
+bbd6d35  libc: Add Scorpion-optimized variant  [Martinusbe]
+c22c27a  Make shim lib load failure non-fatal.  [Martinusbe]
+fff6659  bionic: Do not allow LD_SHIM_LIBS for setuid executables  [Martinusbe]
+004882f  linker: Don't try to walk the g_active_shim_libs when doing dlsym  [Martinusbe]
+a1a3a12  linker: Reset the active shim libs each time we do a dlopen  [Martinusbe]
+876f33d  linker: Fix the fact that shim libs do not properly call constructors  [Martinusbe]
+c7f65cb  linker: Add support for dynamic "shim" libs  [Martinusbe]
+26b7c91  bionic: Allow devices to add device specfic static libs  [Martinusbe]
+   * dalvik/
+e3745e5  Fix stream not being closed on all exception paths.  [Martinusbe]
+ed2cd34  Fix resource leaks.  [Martinusbe]
+cfba518  Catch classes that inherit from themselves in dexmerger.  [Martinusbe]
+9b083d0  Fix misc-macro-parentheses warnings.  [Martinusbe]
+   * device/qcom/sepolicy/
+46b314d  sepolicy: Re-add legacy IOP rules  [Martinusbe]
+57c18b2  sepolicy: Fix garbage in upstream commit  [Martinusbe]
+c7dfe25  seandroid: allow QFP dameon access to Android services  [Martinusbe]
+a67e550  sepolicy: Add policy for VR service  [Martinusbe]
+cc9e48f  sepolicy: remove exec permission for radio  [Martinusbe]
+f228ccd  sepolicy: Add permissions for new dsp node  [Martinusbe]
+0cec68a  Location: added media server access permission for test app  [Martinusbe]
+c66198e  SEPolicy: Update SePolicy for IOP  [Martinusbe]
+e50467c  sepolicy: add permissions for i2c-6 device  [Martinusbe]
+3802d67  sepolicy : add inital rule to bootanimation.  [Martinusbe]
+76ce84c  sepolicy: Add secontexts boot and persist.nativehmi.exit  [Martinusbe]
+1f32b47  sepolicy : Allow bootkpi access to system apps and vold  [Martinusbe]
+bf0e567  common: add selinux policy for fastmmi  [Martinusbe]
+4682bd5  sepolicy: Policy for SmartcardService  [Martinusbe]
+131653c  sepolicy: allow fstman write permissions to wifi directory  [Martinusbe]
+8a5245b  sepolicy: update iop socket path  [Martinusbe]
+6a59e84  sepolicy: Mark time_daemon domain as mlstrusted  [Martinusbe]
+e31a20d  sepolicy: msm8909: Remove duplicate boot/recovery/cache lines  [Martinusbe]
+100f8c6  perfd: add permissions to read/write proc/<PID> of appdomain  [Martinusbe]
+c817ab2  wcnss: Fix I40eeb6895f1c5550813bf8b4182e33f9a4dc5dfd  [Martinusbe]
+92e41c9  wcnss: Fix annoying warning when ptt looks for its log dir  [Martinusbe]
+4a035af  file_contexts: Adding context to block devices  [Martinusbe]
+5ad2b36  dpm: Let dpmserviceapp create its subdirs  [Martinusbe]
+dc2b9df  msm8937: Fix labeling of the cache and FRP partitions  [Martinusbe]
+41a9026  sepolicy: add mpctl related policies  [Martinusbe]
+8c679ce  ridl.te fix formatting  [Martinusbe]
+8281a94  healthd : allow healthd have right to read rtc dev file  [Martinusbe]
+3e2ad4a  mm-camera2: mct: Add missing permission for graphics fd  [Martinusbe]
+8a79bb7  SELINUX: Add BootUp Music Permission  [Martinusbe]
+923747c  SELINUX: Add BootUp Music Permission  [Martinusbe]
+f34dc88  sepolicy: add kill permissions to perfd  [Martinusbe]
+bcaa34d  Seandroid: Tidy up policy for WLAN.  [Martinusbe]
+0811b2c  "sepolicy:common: QFP daemon read permissions to qc_senseid"  [Martinusbe]
+8668af5  sepolicy: add selinux polices for gamed  [Martinusbe]
+16a0790  sepolicy: Policy for FIDO Secure UI  [Martinusbe]
+10b4c48  netmgrd: Allow netmgrd to set xlat property  [Martinusbe]
+30ee643  sepolicy: Add zram, swap disks creation permission  [Martinusbe]
+32a001f  sepolicy : Add new properties for ubwc support  [Martinusbe]
+1a9bbf1  sepolicy: Add hand biometrics manager permission  [Martinusbe]
+7b9cd42  sepolicy: Add improveTouch gesture manager permission  [Martinusbe]
+ae738f7  sepolicy: Add support for new mdtpd  [Martinusbe]
+5bf5433  sepolicy: update perfd socket path  [Martinusbe]
+   * frameworks/base/
+6806373  Revert "Revert "Temp:storagemonitor: fix storage full warning""  [Martinusbe]
+299daf0  Add config to show HD icon on EVS codec.  [Martinusbe]
+8974279  framework: add string for wifi subscription change notification  [Martinusbe]
+8092a43  framework: add "Turn wifi off" string  [Martinusbe]
+cd053d3  Make WIFI_IDLE_MS default into an overlay  [Martinusbe]
+1f3e4cc  Wifi: Make maximum selective channel scans and interval configurable  [Martinusbe]
+7960872  WifiDisplayController: Fix p2p disconnect before rtsp teardown completes  [Martinusbe]
+84ee864  connectivity: Configure additional TCP parameters  [Martinusbe]
+8005b83  wifi: Framework support for Ad-Hoc WiFi (IBSS mode)  [Martinusbe]
+d1aad75  Avoid wrongly reported SIM PIN mismatch.  [Martinusbe]
+99ac8cb  aidl: Support for duplicate methods having different arguments  [Martinusbe]
+d9453ca  Revert "Temp:storagemonitor: fix storage full warning"  [Martinusbe]
+8e5d24c  telephony: Add compatibility version of registrationConnected()  [Martinusbe]
+bdb4905  Wi-Fi: Introduce state variable to signify Wi-Fi turn on Fail  [Martinusbe]
+f40c4cf  Hotspot: add config to save passpoint on/off state  [Martinusbe]
+0b04ea4  Hotspot: customize hotspot for specific carriers  [Martinusbe]
+107e5f2  IMS: Fix video call forwarding options issue  [Martinusbe]
+   * frameworks/opt/net/ims/
+a396ae2  Volte: add volte feature system property and api's.  [Martinusbe]
+3b02b34  IMS: Enhanced 4G LTE mode is turning off IMS.  [Martinusbe]
+e57f466  IMS: Set the correct reason code for merged call  [Martinusbe]
+1e8c24c  ims: Add backwards compatibility for registrationConnected/Progressing  [Martinusbe]
+   * frameworks/opt/telephony/
+80c4d02  backport security fix: avoid set NITZ time to 2038  [Martinusbe]
+f6a88da  Fix ims pdn issue on non dds sub on iwlan  [Martinusbe]
+93a67b1  Fix to resolve data call issue for sim hot swap case  [Martinusbe]
+9568be2  Notify disconnect on phone dispose  [Martinusbe]
+8a695d0  Use EVS codec for HD if carrier supports it.  [Martinusbe]
+343fbba  Fix Dds switch issue for wifi and IWLAN scenarios  [Martinusbe]
+4abc06d  Fix to avoid unnecessary PS attach.  [Martinusbe]
+6354291  Fix ims pdn request issue  [Martinusbe]
+6a02f23  Fix DDS switch issues for CDMA and IWLAN scenarios.  [Martinusbe]
+db1b7e8  Fix issue when two MMS requests with same priority on both SUB's  [Martinusbe]
+2c5c876  Telephony Data: Introduce DataAllowed state  [Martinusbe]
+   * kernel/sony/msm8960t/
+dc4a795  wcnss: Avoid user buffer overloading for write cal data  [Adrian DC]
+   * system/core/
+dd42c35  Rename ZipEntryName to ZipString  [Martinusbe]
+b1584be  healthd: Add DASH charger type  [Martinusbe]
+8c43f59  add a property for controlling perf_event_paranoid  [Martinusbe]
+5b5c271  libcutils: abort for invalid fd  [Martinusbe]
+e961044  libcutils: ashmem print error message for invalid fd  [Martinusbe]
+bc251a9  libcutils: ashmem check fd validity  [Martinusbe]
+0b58df2  libcutils: ashmem fortify and comply with Android coding standard  [Martinusbe]
+bb7ea9a  Fix scanf %s in lsof.  [Martinusbe]
+f2d5458  rootdir: Put bootanimation service in system-background group  [Martinusbe]
+9bcc9eb  Fix overflow in path building  [Martinusbe]
+fa3daff  Use fsck.f2fs -a instead of -f for faster boot  [Martinusbe]
+f34ec48  Revert "Revert "fs_mgr: let fsck.f2fs actually attempt a fix""  [Martinusbe]
+f789db6  rootdir: Remove cpufreq mode settings  [Martinusbe]
+a7f7a7a  fastboot: Add Nextbit's USB vendor id  [Martinusbe]
+97175da  fastboot: add ZTE to the list of known vendors  [Martinusbe]
+c3fc518  Don't demangle symbol names.  [Martinusbe]
+ea3d549  Revert "Init: Modify user/group option for bootanim"  [Martinusbe]
+a645b24  liblog: Add xlog symbols on MTK hardware  [Martinusbe]
+f34280e  liblog: build log_event_write regardless of TARGET_USES_LOGD  [Martinusbe]
+73ab6a4  liblog: fix building with LOGD disabled  [Martinusbe]
+26ef5d7  liblog: optimize code hotspot  [Martinusbe]
+2236d14  logd: optimize code hotspots  [Martinusbe]
+f7ddbef  logd: log_strtok_r deal with nuls  [Martinusbe]
+f17dc62  logd: Add LogUtils.h  [Martinusbe]
+552c9e7  logd: klogd deal with nuls in dmesg  [Martinusbe]
+c1dc1ed  logd: klogd: sniff for time correction on Mediatek  [Martinusbe]
+8cda75f  logd: klogd and Mediatek part deux  [Martinusbe]
+5c9b631  Logd: Handle unused variable and fields  [Martinusbe]
+0b120f8  healthd: Fix NO_CHARGER_LED  [Martinusbe]
+c589f03  healthd: Allow devices to opt-out of enabling charger LED  [Martinusbe]
+700bd4d  healthd: Rename default QCOM libhealthd library  [Martinusbe]
+d5b8d96  Revert "Revert "init: Temporarily increase coldboot timeout to 5s""  [Martinusbe]
+6c0e8f6  fs_mgr: Add an optional libfs_mgr shared library  [Martinusbe]
+86c3c52  sched_policy: zero proc_name buffer before populating  [Martinusbe]
+2cc90a5  sched_policy: split add_tid_to_cgroup  [Martinusbe]
+91d9efd  sched_policy: Split cpuset/cgroup init  [Martinusbe]
+dcf8a62  libcutils: Add process name to logs  [Martinusbe]
+2b7c407  libcutils: make sched_policy more robust  [Martinusbe]
+d0c763c  init: Fix derp in property name for rebooting to charger hook  [Martinusbe]
+f7d1a43  init: Add a hook to turn a shutdown into a reboot  [Martinusbe]
+8f68164  init: Add property_get_bool  [Martinusbe]
+9dfbf4d  Add optional target-specific LD_PRELOAD to environment  [Martinusbe]
+43e2de8  healthd: use timerfd if dev alarm not exist  [Martinusbe]
+acfb0f7  fastboot: add 'fastboot update -a' argument  [Martinusbe]
+ceaf123  fs_mgr: BLKGETSIZE causes memory corruption  [Martinusbe]
+d228b46  Software-accelerated Pixel Flinger  [Martinusbe]
+1e28c1f  healthd: Reduce permissions needed for alarm tracking  [Martinusbe]
+47dd018  healthd: Reboot to Android when off mode charger timer expires  [Martinusbe]
+36e852e  healthd: Separate power off alarm implementation into MSM specific HAL  [Martinusbe]
+a591232  healthd: Support alarm in power off charging mode  [Martinusbe]
+fcd7aa1  init: Android.mk: don't build  libext4_utils_static twice  [Martinusbe]
+1275e88  charger: Show all charger animations  [Martinusbe]
+5fb8b52  fastboot: add -R, --reboot switch  [Martinusbe]
+c544003  fastboot: add Zuk to the list of known vendors  [Martinusbe]
+20e3fa4  rootdir: Update cpufreq permissions when governor changes  [Martinusbe]
+5978a53  Add vendor hook to handle_control_message  [Martinusbe]
+9bf0f63  Revert "fs_mgr: let fsck.f2fs actually attempt a fix"  [Martinusbe]
+dffa94e  fs_mgr: Change f2fs path  [Martinusbe]
+d29abf8  Revert "healthd: Support QC2.0 type charger"  [Martinusbe]
+1e8eecd  adb: host: Provide better sideload status  [Martinusbe]
+e735aaa  Partially revert "healthd: allow custom charger"  [Martinusbe]
+71a6884  adb: Fix recovery_mode  [Martinusbe]
+b6eab75  healthd: Actually use correct common backlight function  [Martinusbe]
+29916ee  healthd: Call common backlight function  [Martinusbe]
+3ca4887  Revert "healthd: charger: Add backlight control in charging animation"  [Martinusbe]
+213495d  healthd: charger: Add backlight control in charging animation  [Martinusbe]
+ef716f9  healthd: Turn screen off before rebooting  [Martinusbe]
+3c5352b  init: Allow targets to ignore the ro.revision property  [Martinusbe]
+737c1b3  ueventd: Fix bootdevice by-name/by-num link creation  [Martinusbe]
+61a3987  healthd: allow custom charger  [Martinusbe]
+d7fd9c2  init: Fire a trigger when a class is started/stopped  [Martinusbe]
+f3d541f  [gatekeeperd] copy uid to local before passing to u_map  [Martinusbe]
+136ad02  init: fix logic for determining charger mode  [Martinusbe]
+0be5ca2  set /system/etc/init.d/* permissions  [Martinusbe]
+b99a739  init: create symlinks to mtd block device nodes  [Martinusbe]
+5d5c0e3  init: define BOARD_CHARGING_CMDLINE parameters  [Martinusbe]
+60dfebc  init: Bring back support for arbitrary chargermode cmdlines  [Martinusbe]
+1f37838  init: Allow devices to use user-space tools to set ro.serialno  [Martinusbe]
+595b1ca  init: add detection of charging mode  [Martinusbe]
+88c3e91  sdcard: Allow building as a static library  [Martinusbe]
+0ce2c0a  core: Add some static libraries  [Martinusbe]
+4b0565d  healthd: Support QC2.0 type charger  [Martinusbe]
+2e0413f  healthd: Stop logspam  [Martinusbe]
+bcd2f54  healthd: Disable the RTC wakeup timer  [Martinusbe]
+e10810c  healthd: fix LED color on 100%  [Martinusbe]
+4bbbc0a  healthd: more descriptive LED path opening error message  [Martinusbe]
+e675d66  healthd: remove useless goto in charger mode  [Martinusbe]
+113e95d  Healthd: charger: allow override of LED/BACKLIGHT paths  [Martinusbe]
+a93db68  Core: fix compile issue of healthd.`  [Martinusbe]
+a13f14e  charger: allow home button to wake  [Martinusbe]
+050f650  healthd: charger: Add tricolor led to indicate battery capacity  [Martinusbe]
+756a5ef  toolbox: new applet restart  [Martinusbe]
+ed01d7e  ueventd: Add bootdevice links support for selinux  [Martinusbe]
+43f3d3a  fastboot: Add missing fastboot USB IDs  [Martinusbe]
+1d8318c  Provide better advice on using gdb with debuggerd on crashed applications.  [Martinusbe]
+d16e1ea  libutils: Improve support for POSIX timers  [Martinusbe]
+37f6f70  Set gateway properties for being accessible in DataCallResponse  [Martinusbe]
+ad73b0c  healthd: charger: Increase unplugged shutdown time to 5s  [Martinusbe]
+e33edd8  healthd: Detect power supply type for all charger devices  [Martinusbe]
+c3daba1  adb: Fix compilation issue  [Martinusbe]
+e053fa3  adb: Changes for factory mode  [Martinusbe]
+d362823  adb: Allow configuring the adb shell with a persistent property.  [Martinusbe]
+1e30372  adb: Fix compilation warning  [Martinusbe]
+8115a73  adb: Look for bu in /sbin when in recovery mode  [Martinusbe]
+4384007  fix up adb to prefer /sbin/sh if it exists  [Martinusbe]
+
+====================
+     08-11-2016
+====================
+
+   * frameworks/base/
+2ede79d  update dexopt logo  [Martinusbe]
+08d9666  Theming adjustments (Night mode)  [theringmaster]
+   * frameworks/native/
+cea00f9  surfaceflinger: Don't allow QC HWC virtual display without QC HWC copy  [Martinusbe]
+9def71c  surfaceflinger: Correct QTI_BSP ifdef  [Martinusbe]
+   * packages/apps/Bluetooth/
+be92d16  Automatic translation import  [Andreas Blaesius]
+   * packages/apps/Browser/
+c29c3d4  Automatic translation import  [Andreas Blaesius]
+   * packages/apps/SlimLauncher/
+8d7eebb  Automatic translation import  [Andreas Blaesius]
    * vendor/validus/
-efae23e  devices:add bullhead  [GitHub]
+6760a1c  update supersu  [Martinusbe]
 
 ====================
-     06-22-2016
+     08-10-2016
 ====================
 
-   * hardware/qcom/audio-caf/msm8960/
-36aec39  hal: only open the amplifier once  [Matt Mower]
-2d69794  hal: enable amplifier earlier  [Matt Mower]
-dfe21b6  hal: Notify amplifier of device enable/disable  [Matt Mower]
-1170162  hal: Convert libaudioamp to audio_amplifier HAL  [Matt Mower]
-   * packages/apps/DeskClock/
-0f56f58  DeskClock: update translation plural formattings  [Nicholas Flintham]
+   * frameworks/base/
+ec67c18  keyguard: adapt to DayNight  [theringmaster]
+b988819  Repair Visualizer not showing  [GitHub]
+   * hardware/qcom/display-caf/msm8996/
+e3052cf  sdm: Fix HDMI Primary and Virtual Display concurrency use case  [Martinusbe]
+530f29c  sdm: Set system property when HDMI is Primary  [Martinusbe]
+5711f9f  sdm: Handle spurious wakeup from pthread_cond_wait  [Martinusbe]
+37501c3  hwc: Initialize pipe type to kPipeTypeUnused  [Martinusbe]
+d30a46b  sdm: Fix HDMI connect failures while changing the mode  [Martinusbe]
+7fbb883  Revert "sdm: Fix Dynamic frame rate issue"  [Martinusbe]
+c0f8998  hdmi: Reset S3D configuration on bootup  [Martinusbe]
+d3afc6b  sdm: Reconfigure display on SetRefreshRate  [Martinusbe]
+38b6c6f  sdm: Fix Dynamic frame rate issue  [Martinusbe]
+ac2e898  hdmi: Set correct initial S3D configuration  [Martinusbe]
+0a45bdd  hdmi: Set correct S3D configuration on bootup  [Martinusbe]
+b929760  sdm: Notify surfaceflinger to draw S3D framebuffer target  [Martinusbe]
+3d3fdbb  sdm: Remain display framerate after dynamic resolution change  [Martinusbe]
+15412bc  sdm: Fix rotator input buffer fence initialization for S3D use case  [Martinusbe]
+1e7523e  sdm: Fix dynamic refresh rate setting during S3D video playback.  [Martinusbe]
+3e66eff  sdm: Add binder support to force set HDMI framerate  [Martinusbe]
+8568d9b  sdm: Add mode chose for dynamic framerate switch  [Martinusbe]
+535cd8c  libmemtrack: Update the parsing of flags field  [Martinusbe]
+d338285  sdm:  Adding mapping of MDP RGB565_UBWC  format to SDM format  [Martinusbe]
+3d0443e  gralloc: Handle RAW_OPAQUE formats similar to blob  [Martinusbe]
+
+====================
+     08-09-2016
+====================
+
+   * external/DUtils/
+381624c  [Smartbar] Smarbar editor action [2/2]  [theringmaster]
+8b44de9  Smartbar/Fling clear notifications action [1/2]  [theringmaster]
+   * external/sepolicy/
+5602c5b  expose control over unpriv perf access to shell  [Martinusbe]
+   * frameworks/av/
+c3d1a91  DO NOT MERGE: Camera: Adjust pointers to ANW buffers to avoid infoleak  [Martinusbe]
+a2c37ce  DO NOT MERGE omx: check buffer port before using  [Martinusbe]
+326efbc  Check effect command reply size in AudioFlinger  [Martinusbe]
+d1b2718  Don't use sp<>&  [Martinusbe]
+ced707d  SoftAAC2: fix crash on all-zero adts buffer  [Martinusbe]
+2df7b4f  Fix potential overflow  [Martinusbe]
+   * frameworks/base/
+1131b2d  Build Fixes  [theringmaster]
+6e62e56  FWB: Move Pulse Configs to Secure [1/3]  [theringmaster]
+f4dc494  Revert "Get the reboot menus to follow power menu animations previously merged"  [theringmaster]
+16c5ea2  Don't enable screen until keyguard is ready  [theringmaster]
+f019221  Wait until the Keyguard is drawn to dismiss the boot dialog.  [theringmaster]
+a9d4fcb  Get the reboot menus to follow power menu animations previously merged  [theringmaster]
+7081272  Fix up AwesomeAnimationHelper  [theringmaster]
+657364e  FWBcmte: More system animations improvements (1/2)  [theringmaster]
+b241aed  Fix race condition in panel expansion handling.  [theringmaster]
+7558dab  FWB:Pulse Solid Bar Sanity Levels & Lavalamp Anim Speed [1/3]  [theringmaster]
+649cb10  SystemConfig: allow app-link to be set to any possible state  [theringmaster]
+32cc0a1  pm: Fix lock insanity with ActivityManager  [theringmaster]
+e6901f5  Pulse 2.0 Advanced Audio/Visual Rendering [3/3]  [theringmaster]
+e55abe1  Themes: Use CMSDK permission model [1/3]  [theringmaster]
+5893772  Reduce sscanf times for optimization  [theringmaster]
+d443ed9  Handle NPE due to threading race  [theringmaster]
+7a06d1c  Fix ListView is not scrolled properly with arrows  [theringmaster]
+c0acd0d  Fragment animations are not being saved across configuration changes  [theringmaster]
+bbe743e  Make implementation of isEmpty consistent with implementation of getCount in HeaderListViewAdapter  [theringmaster]
+e7a4878  Fix volume dialog showing wrong icon at times  [theringmaster]
+3bba253  Add IME Switcher icon back into the statusbar  [theringmaster]
+97fca8a  Fix custom lockscreen after adding visualizer  [theringmaster]
+45801a0  Revert "Themes: Bring up CMSDK compliance for ThemeManager [1/3]"  [theringmaster]
+393958c  Revert "Fix custom lockscreen after adding visualizer"  [theringmaster]
+a8c7d70  Revert "Battery bar enhancements [1/2]"  [theringmaster]
+71a6137  Add flashlight notification reminder  [theringmaster]
+a519b4e  DocumentsUI: use proper provider client for cut  [theringmaster]
+5072f11  frameworks_base: non-translatables  [theringmaster]
+e30925c  Battery bar enhancements [1/2]  [theringmaster]
+f8e9200  Change battery full level from 90 to 100  [theringmaster]
+f1da1e1  Update QS panel resources to fix padding issues  [theringmaster]
+087c873  Themes: Bring up CMSDK compliance for ThemeManager [1/3]  [theringmaster]
+3fc1818  BootAnimation: Use npot textures  [theringmaster]
+e5b05de  Fix custom lockscreen after adding visualizer  [theringmaster]
+dce0b5d  Visualizer: Let visualizer fill the entire available screen  [theringmaster]
+9c54efc  Lock screen: Add music visualizer, (1/2):  [theringmaster]
+b4af072  Don't trust callers to supply app info to bindBackupAgent()  [Martinusbe]
+790d20c  Add pm operation to set user restrictions.  [Martinusbe]
+d38e791  Reduce shell power over user management.  [Martinusbe]
+f2dd556  DO NOT MERGE Disable app pinning when emergency call button pressed  [Martinusbe]
+ef8de02  DO NOT MERGE Fix intent filter priorities  [Martinusbe]
+   * frameworks/native/
+fc92af8  sf: Fix blending mode for legacy BSP  [Martinusbe]
+ff7d4b3  system_server BINDER_TYPE_FD driver ashmem accessors  [Martinusbe]
+a646328  system_server BINDER_TYPE_FD sockets using ashmem accessors  [Martinusbe]
+bbe733f  Parcel: file descriptor leak  [Martinusbe]
+3a155b6  libbinder: allow devices to disable ashmem size tracking  [Martinusbe]
+59d1d56  sf: Make sure HWC_BLENDING_NONE is set for opaque layer  [Martinusbe]
+57bbc78  sf: Only apply hwrotation to primary displays  [Martinusbe]
+39bbb4a  surfaceflinger: Reimplement hwrotation  [Martinusbe]
+9c27e3a  Add FrameStats default constructor  [Martinusbe]
+   * packages/apps/DUI/
+fea9e43  SmartBar: fix bar alpha when pulse enabled and music paused from lockscreen  [theringmaster]
+d0772b8  Solid Bar Sanity Levels, Lavalamp Speed, and Sliders [2/3]  [theringmaster]
+b4325da  Pulse 2.0 Advanced Audio/Visual Rendering [1/3]  [theringmaster]
+8da034e  [Smartbar] Smarbar editor action [1/2]  [theringmaster]
+2bac5c6  Add a visual cue when editing smartbar  [theringmaster]
+60e2316  SmartBar: reset button animation/pressed state when cancelled  [theringmaster]
+3bc7103  Smartbar/Fling clear notifications action [2/2]  [theringmaster]
+64c35bc  Pulse: Move Pulse Configs to Secure[2/3]  [theringmaster]
+   * packages/apps/Settings/
+245f5e0  missing string  [GitHub]
+54918c9  Fix FC  [GitHub]
+16286ed  Derp  [GitHub]
+29a35e3  Merge branch 'update' into mm6.0  [theringmaster]
+6bc26bd  Build Fixes  [theringmaster]
+3b71126  Solid Bar Sanity Levels, Lavalamp Speed, and Sliders [3/3] commit bdf1edd730e42cdbc85d236f69786cb18f1f4bbd Author: Varun Date <date.varun123@gmail.com> Date:   Wed Jul 13 23:35:46 2016 -0700  [theringmaster]
+c7c0906  Pull requests Issues Gist  @TheRingMaster  Watch 1   Star 0  Fork 565 AOSIP/platform_packages_apps_Settings forked from android/platform_packages_apps_settings  Code  Pull requests 0  Wiki  Pulse  Graphs Browse files Solid Bar Sanity Levels, Lavalamp Speed, and Sliders [3/3] commit bdf1edd730e42cdbc85d236f69786cb18f1f4bbd Author: Varun Date <date.varun123@gmail.com> Date:   Wed Jul 13 23:35:46 2016 -0700  [theringmaster]
+c3aa5d1  Pulse 2.0 Advanced Audio/Visual Rendering [2/3] We now have "Fading bars" and "Solid lines" rendering implementations Keep LavaLamp and Pulse color global, label "Fading bars" settings appropriately. Disable "Fading bars" settings when it is not the selected renderer. Change-Id: I270edec0f6cc2ccdacd685ecb23bd5073260ff98  [theringmaster]
+e518c41  Smartbar: save/restore profiles  [theringmaster]
+0d1f565  Settings: display fstype for mounted volumes  [theringmaster]
+6d8093c  Adjust PagerTab a little  [theringmaster]
+9cab650  Remove screen rotation from accessibility  [theringmaster]
+a6222c8  Settings: Fix Storage Applications Manager dropdown  [theringmaster]
+0dff853  Settings: Fix possible NPE  [theringmaster]
+ce4529a  Settings: Add Volume adjust sound preference  [theringmaster]
+ff1fcfd  Lock screen: Add music visualizer, (2/2)  [theringmaster]
+1041fb2  Settings: Allow sorting Applications by size  [theringmaster]
+   * packages/apps/ThemeChooser/
+416a487  Themes: Use CMSDK permission model [2/3]  [theringmaster]
+   * packages/providers/ThemesProvider/
+15f3958  Apply bandaid to ensure preview permissions are correct  [theringmaster]
+9e4f5a8  Use correct read/write perms for provider  [theringmaster]
+0dc4480  Themes: Use CMSDK permission model [3/3]  [theringmaster]
+   * packages/services/OmniJaws/
+781dbdd  OmniJaws: Re-enable and fix Yahoo provider  [theringmaster]
+   * system/bt/
+340b3a3  Fix annoying typo in Android.mk  [Nicholas Flintham]
+   * vendor/validus/
+6d84d5a  version: RC2 v9.5  [Martinusbe]
+
+====================
+     08-08-2016
+====================
+
+   * build/
+88b4915  "MOB30Z"  [Martinusbe]
+ad3eb9b  "MOB30Y"  [Martinusbe]
+7d6a180  "MOB30X"  [Martinusbe]
+95c7676  "MOB30W"  [Martinusbe]
+d2ca9ee  "MOB30V"  [Martinusbe]
+a877823  MOB30U  [Martinusbe]
+fac78ad  "MOB30T"  [Martinusbe]
+69e0890  "MOB30S"  [Martinusbe]
+47d58b6  disable unpriv perf by default in user{,debug} builds  [Martinusbe]
+1864cd6  Updating security string to 2016-08-05 - directly to mnc-mr2-release  [Martinusbe]
+   * manifest/
+eeea38f  r61  [GitHub]
+
+====================
+     08-07-2016
+====================
+
+
+====================
+     08-06-2016
+====================
+
+
+====================
+     08-05-2016
+====================
+
+
+====================
+     08-04-2016
+====================
+
+   * frameworks/base/
+9db3afc  cleanup things after proximity wake merge  [Prema Chand Alugu]
+355f122  base: Fix proximity check on non power key  [Prema Chand Alugu]
+c18ac40  [1/2] frameworks_base: Add ProximityWake  [Prema Chand Alugu]
+baace35  power: Disable keyboard/button lights while dozing/dreaming  [Prema Chand Alugu]
+   * kernel/sony/msm8960t/
+b42c5fc  power: pm8921-charger: Remove the unplug userspace blocking event  [Adrian DC]
+   * packages/apps/Settings/
+8de0a3b  Fix crash when proximity wake is not enabled  [Prema Chand Alugu]
+643353b  Move prevent wake switch to wakeup section  [Prema Chand Alugu]
+990b2cd  [2/2] Settings: Add ProximityWake  [Prema Chand Alugu]
+   * system/vold/
+e5b9668  vold: Allow reset after shutdown  [Nicholas Flintham]
+   * vendor/sony/
+6169b5b  Merge pull request #177 from RonGokhale/cm-13.0  [GitHub]
+ef0ecf4  nicki: Undrep  [RonGokhale]
+146c36d  Merge pull request #176 from AdrianDC/cm-13.0  [GitHub]
+6cdc914  blue-common: Add blur blob  [Adrian DC]
+60c7654  huashan: Add blur blob  [Adrian DC]
+ddec545  Merge pull request #175 from RonGokhale/cm-13.0  [GitHub]
+
+====================
+     08-03-2016
+====================
+
+   * kernel/sony/msm8960t/
+e12fbd3  Revert "Enable setting security contexts on rootfs inodes."  [Adrian DC]
+c7df2cb  fix infoleak in rtnetlink  [Adrian DC]
+1feb2e6  qseecom: Add checks for user space buffer pointers  [Adrian DC]
+0ff4f79  qseecom: Add checks for API called in IOCTL  [Adrian DC]
+5a4f440  qseecom: Validate pointer offset in qseecom_send_modfd_cmd  [Adrian DC]
+6579ec2  msm: ultrasound: add verifications of some input parameters  [Adrian DC]
+9555498  diag: dci: Check for request pkt length being lesser than minimum  length  [Adrian DC]
+d8fa7c8  Fix the buffer overflow issue observed in static code analysis.  [Adrian DC]
+3b71f4a  mmc: core : fix arbitrary read/write to user space  [Adrian DC]
+   * packages/apps/Nfc/
+72fb115  Merge tag 'android-6.0.1_r61' into HEAD  [Jessica Wagantall]
+   * system/bt/
+edc8cbf  Fix potential DoS caused by delivering signal to BT process  [Josue Rivera]
 
