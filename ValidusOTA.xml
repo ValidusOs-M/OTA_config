@@ -120,11 +120,11 @@
                 description="Visit Validus lux thread">http://forum.xda-developers.com/moto-x-play/development/rom-validus-rom-6-0-1r30-t3361151</XDAUrl>
         </lux>
         <hammerhead>
-            <Filename>validus_hammerhead-6.0.1.RC1.9.3-Unofficial-20160605.zip</Filename>
+            <Filename>validus_hammerhead-6.0.1.RC2.9.5-Unofficial-20160814.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download Latest Validus build">https://www.androidfilehost.com/?fid=24566466246345076</RomUrl>
+                description="Download Latest Validus build">https://www.androidfilehost.com/?fid=24665509702140959</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
